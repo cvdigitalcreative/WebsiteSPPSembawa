@@ -1186,7 +1186,7 @@ table th[class*="span"],
   background-color: #c4e3f3;
 }
 form {
-  margin: 0 0 18px;
+  margin: 8px 0 7px;
 }
 fieldset {
   padding: 0;
@@ -5257,6 +5257,12 @@ button.close {
   .hidden-tablet {
     display: none !important;
   }
+  .cp-menu{
+	display:none !important;
+  }
+  .has_mega_menu{
+  display:block !important;
+  }
 }
 @media (max-width: 767px) {
 .elastislide-carousel ul li a img{ margin:0 auto; }
@@ -5283,6 +5289,12 @@ button.close {
   }
   .hidden-phone {
     display: none !important;
+  }
+  .cp-menu{
+	display:none !important;
+  }
+  .has_mega_menu{
+  display:block !important;
   }
 
 }
@@ -5410,6 +5422,12 @@ button.close {
     bottom: 10px;
     left: 55%;
 }
+.cp-menu{
+	display:none !important;
+  }
+  .has_mega_menu{
+  display:block !important;
+  }
 }
 @media (max-width: 480px) {
 .banner-bg.home{ margin-bottom:-390px !important; }
@@ -5463,6 +5481,12 @@ button.close {
     position: static;
   }
   .container{ width:320px;}
+  .cp-menu{
+	display:none !important;
+  }
+  .has_mega_menu{
+  display:block !important;
+  }
   
 }
 
@@ -5477,10 +5501,24 @@ button.close {
 .news-bar.has_home_slider_2{ margin-top:0;}
 #index_1 .banner-bg{ margin-bottom:-781px !important;}
 .btn-sep {    background: url("../images/sep-line.png") no-repeat scroll 60px 0 transparent;    display: block;    float: left;    line-height: 48px;    margin-bottom: 10px;    margin-top: 10px;    text-align: left;    text-indent: 50px;    width: 100%;}
+
+.cp-menu{
+	display:none !important;
+  }
+  .has_mega_menu{
+  display:block !important;
+  }
 }
 
 
 @media (min-width: 768px) and (max-width: 979px) {
+
+.cp-menu{
+	display:none !important;
+  }
+  .has_mega_menu{
+  display:block !important;
+  }
   .row {
     margin-left: -20px;
     *zoom: 1;
@@ -5839,7 +5877,7 @@ button.close {
   [class*="span"] {
     float: left;
     min-height: 1px;
-    margin-left: 30px;
+    margin-left: -18px;
   }
   .container,
   .navbar-static-top .container,
@@ -5875,7 +5913,7 @@ button.close {
     width: 370px;
   }
   .span3 {
-    width: 270px;
+    width: 235px;
   }
   .span2 {
     width: 170px;
@@ -5945,7 +5983,7 @@ button.close {
     *margin-left: 2.5109110747408616%;
   }
   .row-fluid [class*="span"]:first-child {
-    margin-left: 0;
+    margin-left: 10px;
   }
   .row-fluid .controls-row [class*="span"] + [class*="span"] {
     margin-left: 2.564102564102564%;
@@ -5983,11 +6021,12 @@ button.close {
     *width: 40.11774868157847%;
   }
   .row-fluid .span4 {
+    margin-left: 13px;
     width: 31.623931623931625%;
     *width: 31.570740134569924%;
   }
   .row-fluid .span3 {
-    width: 23.076923076923077%;
+    width: 22.076923%;
     *width: 23.023731587561375%;
   }
   .row-fluid .span2 {
