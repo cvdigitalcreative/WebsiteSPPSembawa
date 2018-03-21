@@ -46,6 +46,7 @@
 @import url(http://fonts.googleapis.com/css?family=Great+Vibes);
 @import url(http://fonts.googleapis.com/css?family=Medula+One);
 @import url('circle-hover.css');
+@import url('cp-menu.css');
 /* Getting the new tags to behave */
 article, aside, audio, canvas, command, datalist, details, embed, figcaption, figure, footer, header, hgroup, keygen, meter, nav, output, progress, section, source, video {
 	display:block;
@@ -91,7 +92,7 @@ a img:hover{ opacity:0.6; transition: width 1s; -moz-transition: 1s; /* Firefox 
 
 #nav{ width:100%; font-family:Georgia; font-size:12px;}
 .nav-holder{ padding-top:3px; background:url(../images/nav-top.png) repeat-x top;}
-
+.has_mega_menu{ display:none;}
 .banner-bg{ background:url(../images/main-bg.jpg) no-repeat top center; position: relative; text-align: center;}
 #banner{ margin-top:200px;}
 .banner-inner{ width:100%;}
@@ -499,7 +500,7 @@ filter: gray; /* IE6-9 */
 .inner_page input[type="text"]{ background:#ebebeb; color:#4b4b4b; border:1px solid #dad9d7; }
 .inner_page textarea{ background:#ebebeb; padding:10px 20px; color:#4b4b4b; border:1px solid #dad9d7; margin-bottom:10px; resize:none; width:auto;}
 .inner_page p{ color:#403f3d; }
-.inner_page input.search_ico, input.search_ico{ background:url('../images/searach_icon.png') top center no-repeat #ebebeb; width:51px !important; height:37px; text-indent:-5000px; overflow:hidden; border:0;}
+.inner_page input.search_ico, input.search_ico{ background:url('../images/searach_icon.png') top center no-repeat #ebebeb; width:51px !important; height:37px; text-indent:-5000px; overflow:hidden; border:0;margin-bottom: 10px;}
 .page_content img{ width:100%;}
 .page_content .span9 img{ margin-bottom:10px;}
 .inner_page a:hover,.inner_page a:focus{ color:#670b1d;}
@@ -513,7 +514,7 @@ filter: gray; /* IE6-9 */
 
 
 /** Sidebar **/ 
-#search_form input[type="text"]{ max-width:77%; padding:10px 20px; height:39px; }
+#search_form input[type="text"]{ max-width:77%; padding:10px 20px; height: 39px;}
 .widget{border-bottom:2px solid #dcdcdc; max-width:100%; padding:20px 0; overflow:hidden; list-style-type:none;}
 .widget:first-child{ padding-top:0;}
 .widget h2{ font-size: 24px; margin:0; line-height:20px; margin-bottom:20px; }
