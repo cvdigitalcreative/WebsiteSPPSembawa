@@ -42,4 +42,20 @@ class M_portfolio extends CI_Model{
 		$hsl=$this->db->query("SELECT tbl_portfolio.*,DATE_FORMAT(port_tanggal,'%d %M %Y') AS tanggal FROM tbl_portfolio ORDER BY port_id DESC LIMIT $offset,$limit");
 		return $hsl;
 	}
+
+	function count_views($kode){
+        $user_ip=$_SERVER['REMOTE_ADDR'];
+        $cek_ip=$this->db->query("SELECT * FROM tbl_post_views WHERE views_ip='$user_ip' AND views_tulisan_id='$kode' AND DATE(views_tanggal)=CURDATE()");
+        if($cek_ip->num_rows() <= 0){
+            $this->db->trans_start();
+				$this->db->query("INSERT INTO tbl_post_views (views_ip,views_tulisan_id) VALUES('$user_ip','$kode')");
+				$this->db->query("UPDATE tbl_portfolio SET tulisan_views=tulisan_views+1 WHERE port_id='$kode'");
+			$this->db->trans_complete();
+			if($this->db->trans_status()==TRUE){
+				return TRUE;
+			}else{
+				return FALSE;
+			}
+        }
+    }
 }
