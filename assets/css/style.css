@@ -91,7 +91,7 @@ a img:hover{ opacity:0.6; transition: width 1s; -moz-transition: 1s; /* Firefox 
 #logo a{display:block; height:100%;}
 
 #nav{ width:100%; font-family:Georgia; font-size:12px;}
-.nav-holder{ padding-top:3px; background:url(../images/nav-top.png) repeat-x top;}
+.nav-holder{ padding-top:3px; background:url(../images/nav-top.png) repeat-x top;    margin-top: -28px;}
 .has_mega_menu{ display:none;}
 .banner-bg{ background:url(../images/main-bg.jpg) no-repeat top center; position: relative; text-align: center;}
 #banner{ margin-top:200px;}

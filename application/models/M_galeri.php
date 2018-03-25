@@ -5,6 +5,11 @@ class M_galeri extends CI_Model{
 		$hsl=$this->db->query("SELECT tbl_galeri.*,DATE_FORMAT(galeri_tanggal,'%d/%m/%Y') AS tanggal,album_nama FROM tbl_galeri join tbl_album on galeri_album_id=album_id ORDER BY galeri_id DESC");
 		return $hsl;
 	}
+
+	function get_all_video(){
+		$hsl = $this->db->query("SELECT tbl_video.*,DATE_FORMAT(video_tanggal,'%d/%m/%Y') AS tanggal FROM tbl_video ORDER BY video_id DESC");
+		return $hsl;
+	}
 	function simpan_galeri($judul,$album,$user_id,$user_nama,$gambar){
 		$this->db->trans_start();
             $this->db->query("insert into tbl_galeri(galeri_judul,galeri_album_id,galeri_pengguna_id,galeri_author,galeri_gambar) values ('$judul','$album','$user_id','$user_nama','$gambar')");
