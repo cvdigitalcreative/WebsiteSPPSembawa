@@ -44,6 +44,9 @@
             case 8:
             $cek8 = "active";
             break;
+            case 9:
+            $cek9 = "active";
+            break;
 
          }
       }
@@ -58,7 +61,7 @@
       <h1 ><a href="<?php echo base_url()?>"><img src="<?php echo base_url()?>assets/images/Logo1.png" style="width: 192px;"></a></h1>
     </section>
   	<section class="nav-holder">
-    	<section style="margin-left: 178px;">
+    	<section style="margin-left: 118px;">
     		<nav id="nav">
         <div class="navbar navbar-inverse">
           <div class="navbar-inner">
@@ -85,8 +88,7 @@
       <li class="dropdown <?php echo $cek4?>"> <a class="dropdown-toggle" href="<?php echo base_url().'Kurikulum'?>" >Kurikulum<b class="caret"></b> </a>
         <ul class="dropdown-menu">
        		<li> <a href="<?php echo base_url().'Kurikulum'?>">Kalender Pendidikan</a> </li>
-          <li> <a href="<?php echo base_url().'Kurikulum/jadwal'?>">Jadwal</a> </li>
-          <li> <a href="<?php echo base_url().'Kurikulum/jadwal_piket'?>">Jadwal Piket Kelas</a> </li>
+          <li> <a href="<?php echo base_url().'Kurikulum'?>">DAPODIK</a> </li>
         </ul>
       </li>
 				
@@ -108,7 +110,7 @@
                   <li><a href="<?php echo base_url().'Informasi/setiap_saat'?>">Setiap Saat</a></li>
                   <li><a href="<?php echo base_url().'Informasi/serta_merta'?>">Serta Merta</a></li>
                   <li><a href="<?php echo base_url().'Informasi/form_permintaan'?>">Form Permintaan Informasi Publik</a></li>
-                  <li><a href="<?php echo base_url().'Informasi/laporan_kegiatan'?>">Laporan Kegitan</a></li>
+                  <li><a href="https://kegpertanian.wordpress.com/">Laporan Kegitan</a></li>
                   </ul>
         </li>
 				
@@ -118,6 +120,7 @@
           	    	  <li><a href="<?php echo base_url().'Gallery/video'?>">Gallery Video</a></li>
                   </ul>
                 </li>
+                <li class="dropdown <?php echo $cek9?>"> <a class="dropdown-toggle" href="<?php echo base_url(). 'Informasi/sitemap'?>">Sitemap</a></li>
         <li class="dropdown <?php echo $cek8?>"> <a class="dropdown-toggle" href="<?php echo base_url(). 'Informasi/hubungi_kami'?>">Hubungi Kami</a></li>
               </ul>
             </div>

@@ -65,6 +65,57 @@ h2 span{ font-size:36px;}
 /* form defaults */
 input, select, textarea { font-family:Arial, Helvetica, sans-serif; font-size:1em; vertical-align:middle; font-weight:normal; color:#393939; margin:0; padding:0;}
 
+.mailingaddress {
+	float:left;
+	padding-left:29px;
+	background-image:url(../img/maillingicon.png);
+	background-repeat:no-repeat;
+	background-position:left 6px;
+	color:#222427;
+	padding-bottom:17px;
+	width:221px;
+}
+
+.emailaddress {
+	width:100%;
+	padding-bottom:14px;
+	float:left;
+	padding-left:29px;
+	background-image:url(../img/emailicon.png);
+	background-repeat:no-repeat;
+	background-position:left 3px;
+}
+
+.contacticon {
+	width:100%;
+	float:left;
+	padding-left:29px;
+	background-image:url(../img/contacticon.png);
+	background-repeat:no-repeat;
+	background-position:left top;
+	line-height:16px;
+	font-weight:bold;
+	color:#08387f;
+}
+
+.teleno {
+	float:left;
+	padding-left:29px;
+	background-image:url(../img/teleicon.png);
+	background-repeat:no-repeat;
+	background-position:left top;
+	color:#08387f;
+	font-weight:bold;
+	padding-bottom:19px;
+	width:221px;
+}
+
+.emailaddress a {
+	color:#222427;
+	display:inline-block;
+	width:100%;
+	padding-bottom:5px;
+}
 /* Links defaults style */
 a{text-decoration:none; outline:none;}
 a:hover, input[type="submit"]:hover{ transition: width 1s; -moz-transition: 1s; /* Firefox 4 */ -webkit-transition: 1s; /* Safari and Chrome */ -o-transition: 1s; /* Opera */ text-decoration:underline;}
@@ -84,7 +135,8 @@ a img:hover{ opacity:0.6; transition: width 1s; -moz-transition: 1s; /* Firefox 
 /*----------- End all Titles CSS -----------*/
 
 /*----------- Start Header CSS -----------*/
-#header{background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.8); width:100%; z-index:999; position:relative; padding-top:20px;  border-bottom: 6px solid rgb(156, 26, 52); border-bottom: 6px solid rgba(156, 26, 52, 0.4);}
+#header{background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.8); width:100%; z-index:999; position:relative; padding-top:20px;  border-bottom: 6px solid rgb(156, 26, 52); border-bottom: 6px solid rgba(78, 255, 83, 0.4);
+}
 #header:after{clear: both; content: ""; display: block; height: 0; visibility: hidden;}
 
 #logo{ background:url(../images/logo.png) no-repeat; margin:0 auto 35px; padding:0; text-indent: -9999px; width:340px; height:102px;}
@@ -120,7 +172,7 @@ a img:hover{ opacity:0.6; transition: width 1s; -moz-transition: 1s; /* Firefox 
 /*----------- End Header CSS -----------*/
 
 /*----------- Start Content CSS -----------*/
-.content-holder{ padding:40px 0; border-bottom:6px solid #9a1a33; color:#4a4a4a;}
+.content-holder{ padding:40px 0; border-bottom:6px solid #3a813c; color:#4a4a4a;}
 .content-holder2{ padding:40px 0; background:#191919; color:#a1a1a1;}
 .content-holder.b-none{ border:0;}
 
@@ -189,7 +241,7 @@ a.donate-btn:hover{ background:#6c0519; text-decoration:none; color:#fff;}
 .btn-bar{ background:url(../images/sep-line.jpg) repeat-x top; margin:30px 0 0; padding:30px 0 0; text-align:center;}
 .btn-bar a{padding:10px 60px; display:inline-block;   -webkit-border-radius: 0px; -moz-border-radius: 0px; border-radius: 0px; font:normal 30px/30px 'Medula One', cursive; color:#fff; margin:0 10px;}
 .btn-bar a:hover{ text-decoration:none; color:#fff;}
-.see-btn{ background:#9a1a33;}
+.see-btn{ background:#3a813c;}
 .see-btn:hover{background:#6c0519;}
 .see-btn2{ background:#151515;}
 .see-btn2:hover{background:#4a4a4a;}
@@ -459,7 +511,7 @@ a.donate-btn:hover{ background:#6c0519; text-decoration:none; color:#fff;}
 
 
 /*----------- Start Footer -----------*/
-#footer{ background:url(../images/footer-bg.jpg); border-top:1px solid #000; padding:15px 0; text-align:center; color:#fff;}
+#footer{ background:url(../images/footer-bg.jpg); border-top:1px solid #000; padding:15px 0; text-align:center; color:#fff;margin-bottom: -40px;}
 #footer p{margin:0;}
 #footer p a{color:#fff;}
 
@@ -732,7 +784,7 @@ to { -ms-transform: translateY(0%); }
 #index_2 #header{ background:rgba(0,0,0,1)}
 ul.nav li.dropdown:hover > ul.dropdown-menu{display: block;}
 ul.nav li.dropdown:hover {background:#9A1A33;}
-ul.nav li > a:hover{ background:#9A1A33 !important;}
+ul.nav li > a:hover{ background:#3d843e !important;}
 .b0{ margin-bottom:0;}
 #index_2 .heading-holder h2{ color:#4A4A4A}
 

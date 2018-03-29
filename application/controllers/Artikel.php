@@ -22,7 +22,7 @@
 	        else:
 	            $offset = $page;
 	        endif;
-	        $limit=3;
+	        $limit=4;
 	        $config['base_url'] = base_url() . 'artikel/index';
 	        $config['total_rows'] = $jum->num_rows();
 	        $config['per_page'] = $limit;

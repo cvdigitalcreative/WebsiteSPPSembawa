@@ -7,6 +7,7 @@
 			parent::__construct();
 			$this->load->model('m_tulisan');
 			$this->load->model('m_pengunjung');
+			$this->load->model('m_siswa');
 			$this->load->model('m_guru');
         	$this->m_pengunjung->count_visitor();
 		}
@@ -14,9 +15,10 @@
 		function index()
 		{
 			$y['title'] = 'Peserta Didik';
+			$x['data'] = $this->m_siswa->get_all_siswa();
 			$this->load->view('v_header',$y);
 			$this->load->view('v_sidebar',["side" => 2]);
-			$this->load->view('v_murid');
+			$this->load->view('v_murid',$x);
 			$this->load->view('v_footer');
 		}
 

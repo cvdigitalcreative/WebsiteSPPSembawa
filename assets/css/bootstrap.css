@@ -206,12 +206,12 @@ textarea {
 body {
   margin: 0;
   font:12px/18px Verdana, Geneva, sans-serif;
-  border-top:6px solid #9c1a34;
+  border-top:6px solid #3a813c;
   color: #868686;
   background-color: #faf8f6;
 }
 a {
-  color: #961a33;
+  color: #3d843e;
   text-decoration: none;
 }
 a:hover,
@@ -769,7 +769,7 @@ abbr.initialism {
 blockquote {
   padding: 0 0 0 15px;
   margin: 0 0 18px;
-  border-left: 5px solid #961a33;
+  border-left: 5px solid #3a813c;
 }
 blockquote p {
   margin-bottom: 0;
@@ -3831,7 +3831,7 @@ input[type="submit"].btn.btn-mini {
 .navbar-inverse .nav li.dropdown.open > .dropdown-toggle,
 .navbar-inverse .nav li.dropdown.active > .dropdown-toggle,
 .navbar-inverse .nav li.dropdown.open.active > .dropdown-toggle {
-  background-color: #9a1a33;
+  background-color: #3d843e;
   color: #fff;
 }
 .navbar-inverse .nav li.dropdown > a:hover .caret,
@@ -4851,7 +4851,7 @@ a.thumbnail:focus {
   color: #000;
   white-space: nowrap;
   text-align:left;
-  border-bottom:1px solid #9A1A33;
+  border-bottom:1px solid #3d843e;
 
 }
 .dropdown-menu > li:last-child > a{

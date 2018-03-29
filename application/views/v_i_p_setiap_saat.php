@@ -9,11 +9,11 @@
 
 	          <section class="row-fluid">
 
-		<h2 class="heading">  <span> Informasi Publik Setiap Saat</span> </h2>
+		<h2 class="heading">Informasi Publik Setiap Saat</h2>
 		<span class="border-line m-bottom" style="margin-top: 5px;margin-left: -19px;""></span>
 		
 	<section class="page_content">
-		<section class="span9 first">
+		<section class="span12 first">
 
 			<table class="table table-bordered" id="myTable">
               <thead>
@@ -22,7 +22,7 @@
                   <th>Nama File</th>
                   <th>Tanggal</th>
                   <th>Author</th>
-                  <th>Unduh</th>
+                  <th>Aksi</th>
                 </tr>
               </thead>
               <tbody>
@@ -43,8 +43,8 @@
           			<td><?php echo $judul?></td>
           			<td><?php echo $tanggal?></td>
           			<td><?php echo $oleh?></td>
-          			<td style="text-align: center;"><a href="<?php echo base_url().'assets/file/'.$file?>" download>
-          				<img src="<?php echo base_url().'assets/img/download.png'?>" alt="Download" style=" width:17%;">
+          			<td style="text-align: center;"><a href="<?php echo base_url().'assets/files/'.$file?>">
+          				<img src="<?php echo base_url().'assets/img/View.png'?>" alt="Download" style=" width:11%;margin-bottom: 0px;">
           			</a></td>
           		</tr>
           		<?php endforeach;?>

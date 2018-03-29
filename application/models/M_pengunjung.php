@@ -7,6 +7,17 @@ class M_pengunjung extends CI_Model{
 	}
 
 	function statistik_pengujung(){
+        $query = $this->db->query("SELECT COUNT(pengunjung_ip) AS jumlah FROM tbl_pengunjung WHERE DAY(pengunjung_tanggal)=DAY(CURDATE()) GROUP BY DATE(pengunjung_tanggal)");
+
+        if($query->num_rows() > 0){
+            foreach($query->result_array() as $data){
+                $hasil = $data['jumlah'];
+            }
+            return $hasil;
+        }
+    }
+
+    function statistik_pengujung1(){
         $query = $this->db->query("SELECT DATE_FORMAT(pengunjung_tanggal,'%d') AS tgl,COUNT(pengunjung_ip) AS jumlah FROM tbl_pengunjung WHERE MONTH(pengunjung_tanggal)=MONTH(CURDATE()) GROUP BY DATE(pengunjung_tanggal)");
          
         if($query->num_rows() > 0){
@@ -15,6 +26,11 @@ class M_pengunjung extends CI_Model{
             }
             return $hasil;
         }
+    }
+
+    function get_all_pengunjung(){
+        $query = $this->db->query("SELECT * FROM tbl_pengunjung");
+        return $query->num_rows();
     }
 
     function simpan_user_agent($user_ip,$agent){
@@ -43,6 +59,5 @@ class M_pengunjung extends CI_Model{
             $hsl=$this->db->query("INSERT INTO tbl_pengunjung (pengunjung_ip,pengunjung_perangkat) VALUES('$user_ip','$agent')");
             return $hsl;
         }
-    }
-	
+    }	
 }

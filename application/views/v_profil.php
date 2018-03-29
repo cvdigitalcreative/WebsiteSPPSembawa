@@ -8,7 +8,7 @@
 
 	          <section class="row-fluid">
 
-		<h2 class="heading">  <span> Profil</span> </h2>
+		<h2 class="heading">Profil</h2>
 		<span class="border-line m-bottom" style="margin-top: 5px;margin-left: -19px;"></span>
 
 	<section class="page_content">
@@ -35,7 +35,8 @@
 			</article>
 		</section>
 		<figure class="span3" style="width: 245px;margin-left: 44px;margin-top: 35px;">
-  			<h2 style='border-bottom: 6px solid #9a1a33;'></h2>
+			<blockquote>
+  			<h2 style='border-bottom: 6px solid #3d843e; width: 243px;margin-left: -15px;'></h2>
           <!-- Carousel -->
           <?php
           $b = $portofolio1->row_array();
@@ -59,7 +60,39 @@
         </div>
                 
             </div>
+            </blockquote>
             <!-- Carousel End -->
+
+            <blockquote>
+                 <h2 style='border-bottom: 6px solid #3a813c;width: 243px;margin-left: -15px;'></h2>
+          <!-- Carousel -->
+                        <h3 style="margin-top: -1px;">Tautan</h3>
+                        <span class="border-line m-bottom" style="margin-top: 5px;margin-left: -10px;"></span>
+                          <ul class="nav nav-list">
+                            <li><a href="http://bppsdmp.pertanian.go.id/id"><img src="<?php echo base_url().'assets/images/Kementan.png'?>" style="width: 36px;margin-right: 9px;">BPPSDMP</a></li>
+                            <li ><a href="http://www.pertanian.go.id/"><img src="<?php echo base_url().'assets/images/Kementan.png'?>" style="width: 36px;margin-right: 9px;">KEMENTAN</a></li>
+                            <li ><a href="http://cybex.pertanian.go.id/"><img src="<?php echo base_url().'assets/images/cybex.png'?>" style="width: 36px;margin-right: 9px;">Cyber Extension</a></li>
+                            <li ><a href="http://www.sumselprov.go.id/index.php?module=content&id=1"><img src="<?php echo base_url().'assets/images/sumsel.png'?>" style="width: 36px;margin-right: 9px;">Provinsi SUMSEL</a></li>
+                            <li ><a href="http://banyuasinkab.go.id/"><img src="<?php echo base_url().'assets/images/banyuasin.png'?>" style="width: 36px;margin-right: 9px;">Kabupaten Bayuasin</a></li>
+                            <li ><a href="http://www.spmabanjarbaru.sch.id/"><img src="<?php echo base_url().'assets/images/banjarbaru.png'?>" style="width: 36px;margin-right: 9px;">SMK PP N Banjar Baru</a></li>
+                          </ul>               
+            <!-- Carousel End -->
+            </blockquote>
+
+            <blockquote style="margin-top: 35px;">
+                 <h2 style='border-bottom: 6px solid #3a813c;width: 243px;margin-left: -15px;'></h2>
+          <!-- Carousel -->
+                        <h3 style="margin-top: -1px;">Pengunjung Hari Ini</h3>
+                          <ul class="a-list">
+                            <li style="margin-left: 13px;"><?php echo $visitor?></li>
+                          </ul>
+
+                        <h3 style="margin-top: 0px;">Total Pengunjung</h3>
+                          <ul class="a-list">
+                            <li style="margin-left: 13px;"><?php echo $total?></li>
+                          </ul>      
+            <!-- Carousel End -->
+            </blockquote>
             </figure>
 	</section>
    
