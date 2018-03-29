@@ -1,8 +1,8 @@
 <?php
 class M_kontak extends CI_Model{
 
-	function kirim_pesan($nama,$email,$pesan){
-		$hsl=$this->db->query("INSERT INTO tbl_inbox(inbox_nama,inbox_email,inbox_pesan) VALUES ('$nama','$email','$pesan')");
+	function kirim_pesan($nama,$email,$kontak,$pesan){
+		$hsl=$this->db->query("INSERT INTO tbl_inbox(inbox_nama,inbox_email,inbox_kontak,inbox_pesan) VALUES ('$nama','$email','$kontak','$pesan')");
 		return $hsl;
 	}
 

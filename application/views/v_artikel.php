@@ -14,10 +14,10 @@
 	
   <header id="header">
     <section class="container container-fluid">
-      <h1 id="logo"><a href="<?php echo base_url()?>"></a></h1>
+      <h1><img src="<?php echo base_url()?>assets/images/Logo1.png" style="width: 192px;"><a href="<?php echo base_url()?>"></a></h1>
     </section>
   	<section class="nav-holder">
-    	<section style="margin-left: 158px;">
+    	<section style="margin-left: 124px">
     		<nav id="nav">
         <div class="navbar navbar-inverse">
           <div class="navbar-inner">
@@ -44,8 +44,7 @@
       <li class="dropdown"> <a class="dropdown-toggle" href="<?php echo base_url().'Kurikulum'?>" >Kurikulum<b class="caret"></b> </a>
         <ul class="dropdown-menu">
        		<li> <a href="<?php echo base_url().'Kurikulum'?>">Kalender Pendidikan</a> </li>
-          <li> <a href="<?php echo base_url().'Kurikulum/jadwal'?>">Jadwal</a> </li>
-          <li> <a href="<?php echo base_url().'Kurikulum/jadwal_piket'?>">Jadwal Piket Kelas</a> </li>
+       		<li> <a href="<?php echo base_url().'Kurikulum'?>">DAPODIK</a> </li>
         </ul>
       </li>
 				
@@ -67,7 +66,7 @@
                   <li><a href="<?php echo base_url().'Informasi/setiap_saat'?>">Setiap Saat</a></li>
                   <li><a href="<?php echo base_url().'Informasi/serta_merta'?>">Serta Merta</a></li>
                   <li><a href="<?php echo base_url().'Informasi/form_permintaan'?>">Form Permintaan Informasi Publik</a></li>
-                  <li><a href="<?php echo base_url().'Informasi/laporan_kegiatan'?>">Laporan Kegitan</a></li>
+                  <li><a href="https://kegpertanian.wordpress.com/">Laporan Kegitan</a></li>
                   </ul>
         </li>
 				
@@ -77,6 +76,7 @@
           	    	  <li><a href="<?php echo base_url().'Gallery/video'?>">Gallery Video</a></li>
                   </ul>
                 </li>
+        <li class="dropdown"> <a class="dropdown-toggle" href="<?php echo base_url(). 'Informasi/sitemap'?>">Sitemap</a></li>
         <li class="dropdown"> <a class="dropdown-toggle" href="<?php echo base_url(). 'Informasi/hubungi_kami'?>">Hubungi Kami</a></li>
 
               </ul>
@@ -95,14 +95,14 @@
 	</section>
 
 	
-  <section class="content-holder b-none inner_content">
+  <section class="content-holder b-none inner_content" style="margin-top: 50px;">
   
   	<section class="container container-fluid">
 
 	          <section class="row-fluid">
 
-		<h2 class="heading"><span>Artikel</span> </h2>
-
+		<h2 class="heading">Artikel</h2>
+		<span class="border-line m-bottom" style="margin-top: 5px;margin-left: -19px;"></span>
 	<section class="page_content">
 		<section class="span9 first">
 			<?php if ($data->num_rows() > 0){?>

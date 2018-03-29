@@ -9,7 +9,7 @@
 
 	          <section class="row-fluid">
 
-		<h2 class="heading">  <span> Gallery Photo</span> </h2>
+		<h2 class="heading"> Gallery Photo</h2>
 		<span class="border-line m-bottom" style="margin-top: 5px;margin-left: -19px;"></span>
 		
 <section class="page_content">
@@ -28,16 +28,18 @@
             </div>
 
 	<?php endforeach ?>
-  			
-            
+
+
 			</section>
+
 		  </section>
-   
+ 
 	</section>
   
   </section>
    
 	</section>
- 
+    
   </section>
+
   

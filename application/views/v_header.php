@@ -22,6 +22,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <link rel="stylesheet" href="<?php echo base_url()?>assets/css/jsDatePick_ltr.css">
 <!-- Right Hand Side Text Direction -->
 <link rel="stylesheet" href="<?php echo base_url()?>assets/css/switcher.css">
+<link rel="stylesheet" href="<?php echo base_url()?>assets/css/skins/default.css">
 <script src="<?php echo base_url()?>assets/js/jquery.min.js"></script>
 <script src="<?php echo base_url()?>assets/js/jquery.dataTables.min.js"></script>
 <link rel="stylesheet" href="http://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
@@ -35,4 +36,5 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<link rel="stylesheet" href="css/ie_lt9.css">
 <![endif]-->
 <!-- jquery -->
-</head>
+
+</head>	

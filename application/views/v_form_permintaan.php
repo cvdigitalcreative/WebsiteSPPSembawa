@@ -9,7 +9,7 @@
 
 	          <section class="row-fluid">
 
-		<h2 class="heading">  <span> Form Permintaan Informasi Publik</span> </h2>
+		<h2 class="heading">Form Permintaan Informasi Publik</h2>
 		<span class="border-line m-bottom" style="margin-top: 5px;margin-left: -19px;"></span>
 
 	<section class="page_content">

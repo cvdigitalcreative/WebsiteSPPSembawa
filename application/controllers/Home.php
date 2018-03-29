@@ -19,6 +19,8 @@
 		$x['agenda'] = $this->m_tulisan->get_kategori_agenda();
 		$x['kat']=$this->m_tulisan->get_kategori_for_blog();
 		$x['portofolio']=$this->m_portfolio->get_portfolio_by_kode($kode);
+		$x['visitor'] = $this->m_pengunjung->statistik_pengujung();
+		$x['total'] = $this->m_pengunjung->get_all_pengunjung();
 		$this->load->view('v_header',$y);
 		$this->load->view('v_sidebar',["side" => 1]);
 		$this->load->view('v_home',$x);
@@ -31,6 +33,8 @@
 		$this->m_portfolio->count_views(9);
 		$x['portofolio1']=$this->m_portfolio->get_portfolio_by_kode(8);
 		$x['portofolio']=$this->m_portfolio->get_portfolio_by_kode(9);
+		$x['visitor'] = $this->m_pengunjung->statistik_pengujung();
+		$x['total'] = $this->m_pengunjung->get_all_pengunjung();
 		$this->load->view('v_header',$y);
 		$this->load->view('v_sidebar',["side" => 1]);
 		$this->load->view('v_profil',$x);

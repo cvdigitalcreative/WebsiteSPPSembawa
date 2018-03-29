@@ -9,7 +9,7 @@
 
 	          <section class="row-fluid">
 
-		<h2 class="heading">  <span> Gallery Video</span> </h2>
+		<h2 class="heading">  Gallery Video </h2>
 		<span class="border-line m-bottom" style="margin-top: 5px;margin-left: -19px;"></span>
 	<section class="page_content">
 		<!-- Dengan Database simpan nama -->
@@ -22,14 +22,16 @@
 			  <p><?php echo $row->video_judul?></p> -->
 
 			  <!-- Embeb Youtube -->
-			<article class="span4"> 
-			  <iframe src="<?php echo $row->video_nama?>" width="100%" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-			</article>
-		</article>
+				<article class="span4"> 
+				  <iframe src="<?php echo $row->video_nama?>" width="100%" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+				</article>	
 		<?php endforeach ;?>
 
 		</section>
 	</section>
+	<section class="pagination" style="margin-bottom: 34px;margin-top: -48px;margin-left: 591px; ">  
+      <?php echo $page;?> 
+    </section>
    
 	</section>
  

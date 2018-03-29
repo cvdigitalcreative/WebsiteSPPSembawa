@@ -115,17 +115,8 @@ ul.color_schemes li a:hover{
 }
 /*.styleswitch.selected { box-shadow: 0 0 0 2px #474646 inset; }*/
 
-.styleswitch#default{ background-color:#9a1a33; }
-.styleswitch#default:hover{ background-color:#871128; }
-
-.styleswitch#orange{background-color:#f7800a; }
-.styleswitch#orange:hover{background-color:#c06409; }
-
-.styleswitch#blue {background-color:#0a3b56; }
-.styleswitch#blue:hover{background-color:#0a334a; }
-
-.styleswitch#skyblue{background-color:#00a6d0; }
-.styleswitch#skyblue:hover{background-color:#016984; }
+.styleswitch#default{ background-color:#3d843e; }
+.styleswitch#default:hover{ background-color:#3d843e; }
 
 /*ul.color_schemes li a.blue   { color:#0577c5; }
 ul.color_schemes li a.golden { color:#976b2e; }
