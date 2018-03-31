@@ -129,6 +129,7 @@
           <ul class="treeview-menu">
             <li><a href="<?php echo base_url().'admin/album'?>"><i class="fa fa-clone"></i> Album</a></li>
             <li><a href="<?php echo base_url().'admin/galeri'?>"><i class="fa fa-picture-o"></i> Photos</a></li>
+            <li><a href="<?php echo base_url().'admin/video'?>"><i class="fa fa-clone"></i> Video</a></li>
           </ul>
         </li>
 

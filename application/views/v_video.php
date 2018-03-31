@@ -23,7 +23,7 @@
 
 			  <!-- Embeb Youtube -->
 				<article class="span4"> 
-				  <iframe src="<?php echo $row->video_nama?>" width="100%" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+				  <iframe src="<?php echo $row->video_link?>" width="100%" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 				</article>	
 		<?php endforeach ;?>
 

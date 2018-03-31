@@ -19,7 +19,7 @@
 	function informasi_publik_berkala()
 	{
 		$y['title'] = 'Informasi Publik Berkala';
-		$key = 'Informasi publik berkala';
+		$key = 1;
 		$x['data']=$this->m_files->get_file_by_name($key);
 		$this->load->view('v_header',$y);
 		$this->load->view('v_sidebar',["side" => 6]);
@@ -30,7 +30,7 @@
 	function informasi_publik_setiap_saat()
 	{
 		$y['title'] = 'Informasi Publik Setiap Saat';
-		$key = 'Informasi publik setiap saat';
+		$key = 2;
 		$x['data']=$this->m_files->get_file_by_name($key);
 		$this->load->view('v_header',$y);
 		$this->load->view('v_sidebar',["side" => 6]);
@@ -67,7 +67,9 @@
 
 	function form_permintaan()
 	{
+		$kode=8;
 		$y['title'] = 'Form Permintaan Informasi Publik';
+		$x['portofolio']=$this->m_portfolio->get_portfolio_by_kode($kode);
 		$x['visitor'] = $this->m_pengunjung->statistik_pengujung();
 		$x['total'] = $this->m_pengunjung->get_all_pengunjung();
 		$this->load->view('v_header',$y);
@@ -75,6 +77,22 @@
 		$this->load->view('v_form_permintaan',$x);
 		$this->load->view('v_footer');
 	}
+
+	function kirim_form_permintaan(){
+            $nama=str_replace("'", "", $this->input->post('xnama',TRUE));
+            $ktp=str_replace("'", "", $this->input->post('xnoktp',TRUE));
+            $alamat=str_replace("'", "", $this->input->post('xalamat',TRUE));
+            $email=str_replace("'", "", $this->input->post('xemail',TRUE));
+            $kontak=str_replace("'", "", $this->input->post('xkontak',TRUE));
+            $pertanyaan=str_replace("'", "", $this->input->post('xpertanyaan',TRUE));
+            $tujuan=str_replace("'", "", $this->input->post('xtujuan',TRUE));
+            $memperoleh=$this->input->post('xmemperoleh');
+            $mendapat=$this->input->post('xmendapat');
+            $mendapatkan=$this->input->post('xmendapatkan');
+                $this->m_kontak->kirim_form($nama,$ktp,$alamat,$email,$kontak,$pertanyaan,$tujuan,$memperoleh,$mendapat,$mendapatkan);
+                echo $this->session->set_flashdata('msg','<div class="alert alert-success"><p><strong> NB: </strong> Terima Kasih telah memberikan permintaan informasi publik.</p></div>');
+                redirect('Informasi/form_permintaan');
+        }
 
 	function sitemap()
 	{

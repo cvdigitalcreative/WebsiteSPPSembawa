@@ -53,7 +53,7 @@
       <figure class="span9">
    
     	 <figure class="span12" style="margin-top: -7px;margin-left: 4px;">
-        <h2 style='border-bottom: 6px solid #3a813c;'><span style="margin-left: 48px;">Jadwal</span></h2>
+        <h2 style='border-bottom: 6px solid #3a813c;margin-left: 10px;'>Jadwal</h2>
         	
         <?php foreach ($jadwal->result_array() as $i):
               $post_id=$i['tulisan_id'];
@@ -81,7 +81,7 @@
       <div class="btn-bar" style="margin-bottom: 25px;"><a href="<?php echo base_url().'Artikel/kategori/1'?>" class="see-btn">Lihat Lagi</a></div>
 
       <figure class="span12" style="margin-top: 22px;margin-left: 4px;">
-        <h2 style='border-bottom: 6px solid #3a813c;'><span style="margin-left: 48px;">Kampusku</span></h2>
+        <h2 style='border-bottom: 6px solid #3a813c;margin-left: 10px;'>Kampusku</h2>
           
         <?php foreach ($kampusku->result_array() as $i):
               $post_id=$i['tulisan_id'];
@@ -109,7 +109,7 @@
         <div class="btn-bar" style="margin-bottom: 25px;"><a href="<?php echo base_url().'Artikel/kategori/2'?>" class="see-btn">Lihat Lagi</a></div>
 
       <figure class="span12" style="margin-top: 22px;margin-left: 4px;">
-        <h2 style='border-bottom: 6px solid #3a813c;'><span style="margin-left: 48px;">Kegiatan Minggu Ini</span></h2>
+        <h2 style='border-bottom: 6px solid #3a813c;margin-left: 10px;'>Kegiatan Minggu Ini</h2>
           
         <?php foreach ($minggu->result_array() as $i):
               $post_id=$i['tulisan_id'];
@@ -137,7 +137,7 @@
         <div class="btn-bar" style="margin-bottom: 25px;"><a href="<?php echo base_url().'Artikel/kategori/3'?>" class="see-btn">Lihat Lagi</a></div>
 
       <figure class="span12" style="margin-top: 22px;margin-left: 4px;">
-        <h2 style='border-bottom: 6px solid #3a813c;'><span style="margin-left: 48px;">Kerja Sama</span></h2>
+        <h2 style='border-bottom: 6px solid #3a813c;margin-left: 10px;'>Kerja Sama</h2>
           
         <?php foreach ($kerjasama->result_array() as $i):
               $post_id=$i['tulisan_id'];
@@ -165,7 +165,7 @@
         <div class="btn-bar" style="margin-bottom: 25px;"><a href="<?php echo base_url().'Artikel/kategori/5'?>" class="see-btn">Lihat Lagi</a></div>
 
       <figure class="span12" style="margin-top: 22px;margin-left: 4px;">
-        <h2 style='border-bottom: 6px solid #3a813c;'><span style="margin-left: 48px;">Pengumuman</span></h2>
+        <h2 style='border-bottom: 6px solid #3a813c;margin-left: 10px;'>Pengumuman</h2>
           
         <?php foreach ($pengumuman->result_array() as $i):
               $post_id=$i['tulisan_id'];
@@ -193,7 +193,7 @@
         <div class="btn-bar" style="margin-bottom: 25px;"><a href="<?php echo base_url().'Artikel/kategori/7'?>" class="see-btn">Lihat Lagi</a></div>
 
         <figure class="span12" style="margin-top: 22px;margin-left: 4px;">
-        <h2 style='border-bottom: 6px solid #3a813c;'><span style="margin-left: 48px;">Agenda</span></h2>
+        <h2 style='border-bottom: 6px solid #3a813c;margin-left: 10px;'>Agenda</h2>
           
         <?php foreach ($agenda->result_array() as $i):
               $post_id=$i['tulisan_id'];
@@ -236,7 +236,7 @@
                     <div class="mini-slider">
                       <ul id="carousel" class="elastislide-list">
                             <li style="margin-right: 0px;"">
-                              <a href="#"><img src="<?php echo base_url().'assets/images/'.$image?>" alt="Ir. Mattobi'i, MP" /></a>
+                              <a href="<?php echo base_url().'Home/kataSambutan'?>"><img src="<?php echo base_url().'assets/images/'.$image?>" alt="Ir. Mattobi'i, MP" /></a>
                               <strong class="candidate-name"><?php echo $nama?></strong>
                             </li>
                         </ul>
@@ -280,6 +280,17 @@
                           <ul class="a-list">
                             <li style="margin-left: 13px;"><?php echo $total?></li>
                           </ul>      
+            <!-- Carousel End -->
+            </blockquote>
+
+            <blockquote style="margin-top: 35px;">
+                 <h2 style='border-bottom: 6px solid #3a813c;width: 243px;margin-left: -15px;'></h2>
+          <!-- Carousel -->
+                        <h3 style="margin-top: -20px;">Jejak Pendapat</h3>
+                        <p style="margin-bottom: 6px;margin-top: -1px;">Mulai Tahun 2018, SMK PP NEGERI SEMBAWA akan berubah menjadi POLITEKNIK PEMBANGUNAN PERTANIAN ?</p>
+                        <p> <?php echo $this->session->flashdata('msg');?></p>
+                        <p><a href="<?php echo base_url().'Home/kirim_pendapat'?>"><button type="button" class="btn btn-success"><i class="icon-ok icon-white" style="margin-right:6px;"></i>Submit</button></a>
+                          <a href="<?php echo base_url().'Home/lihat_hasil'?>"><button type="button" class="btn btn-info"><i class="icon-signal icon-white" style="margin-right:6px;"></i>Lihat Hasil</button></a></p>
             <!-- Carousel End -->
             </blockquote>
 </figure>

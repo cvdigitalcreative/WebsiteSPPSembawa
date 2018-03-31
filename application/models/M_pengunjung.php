@@ -1,4 +1,4 @@
-<?php
+ <?php
 class M_pengunjung extends CI_Model{
 
 	function set_pengunjung($user_ip){

@@ -6,6 +6,11 @@ class M_kontak extends CI_Model{
 		return $hsl;
 	}
 
+	function kirim_form($nama,$ktp,$alamat,$email,$kontak,$pertanyaan,$tujuan,$memperoleh,$mendapat,$mendapatkan){
+		$hsl=$this->db->query("INSERT INTO tbl_form(nama,ktp,alamat,email,kontak,pertanyaan,tujuan,memperoleh,mendapat,mendapatkan) VALUES ('$nama','$ktp','$alamat','$email','$kontak','$pertanyaan','$tujuan','$memperoleh','$mendapat','$mendapatkan')");
+		return $hsl;
+	}
+
 	function get_all_inbox(){
 		$hsl=$this->db->query("SELECT tbl_inbox.*,DATE_FORMAT(inbox_tanggal,'%d %M %Y') AS tanggal FROM tbl_inbox ORDER BY inbox_id DESC");
 		return $hsl;

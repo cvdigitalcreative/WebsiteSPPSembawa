@@ -25,8 +25,9 @@ class Galeri extends CI_Controller{
 	
 	function simpan_galeri(){
 				$config['upload_path'] = './assets/images/'; //path folder
-	            $config['allowed_types'] = 'gif|jpg|png|jpeg|bmp'; //type yang dapat diakses bisa anda sesuaikan
-	            $config['encrypt_name'] = TRUE; //nama yang terupload nantinya
+	            $config['allowed_types'] = 'gif|jpg|png|jpeg|bmp';
+	            $config['max_size']             = 0; //type yang dapat diakses bisa anda sesuaikan
+	            // 	 //nama yang terupload nantinya
 
 	            $this->upload->initialize($config);
 	            if(!empty($_FILES['filefoto']['name']))
@@ -71,8 +72,9 @@ class Galeri extends CI_Controller{
 	function update_galeri(){
 				
 	            $config['upload_path'] = './assets/images/'; //path folder
-	            $config['allowed_types'] = 'gif|jpg|png|jpeg|bmp'; //type yang dapat diakses bisa anda sesuaikan
-	            $config['encrypt_name'] = TRUE; //nama yang terupload nantinya
+	            $config['allowed_types'] = 'gif|jpg|png|jpeg|bmp';
+	            $config['max_size']             = 0; //type yang dapat diakses bisa anda sesuaikan
+	            // $config['encrypt_name'] = TRUE; //nama yang terupload nantinya
 
 	            $this->upload->initialize($config);
 	            if(!empty($_FILES['filefoto']['name']))

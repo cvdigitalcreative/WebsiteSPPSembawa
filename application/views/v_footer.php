@@ -64,6 +64,7 @@
  <script type="text/javascript" src="<?php echo base_url()?>assets/js/slider.js"></script><!-- FlexiSlider -->
  <script type="text/javascript" src="<?php echo base_url()?>assets/js/social.js"></script><!-- Social -->
  <script type="text/javascript" src="<?php echo base_url()?>assets/js/custom.js"></script><!-- Custom -->
+ <script src="<?php echo base_url().'assets/plugins/chartjs/Chart.min.js'?>"></script>
  <script type="text/javascript">
   /* <![CDATA[ */
     if ( jQuery('#calander_div').length > 0 ) {

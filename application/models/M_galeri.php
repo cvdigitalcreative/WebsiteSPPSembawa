@@ -7,7 +7,7 @@ class M_galeri extends CI_Model{
 	}
 
 	function get_all_video(){
-		$hsl = $this->db->query("SELECT tbl_video.*,DATE_FORMAT(video_tanggal,'%d/%m/%Y') AS tanggal FROM tbl_video ORDER BY video_id DESC");
+		$hsl = $this->db->query("SELECT *,DATE_FORMAT(video_tanggal,'%d/%m/%Y') AS tanggal FROM tbl_video join tbl_pengguna on author_id=pengguna_id ORDER BY video_id DESC");
 		return $hsl;
 	}
 	function simpan_galeri($judul,$album,$user_id,$user_nama,$gambar){
@@ -20,11 +20,21 @@ class M_galeri extends CI_Model{
         else
         return false;
 	}
+	function simpan_video($nama,$link,$author_id,$author){
+		
+        $hsl = $this->db->query("INSERT into tbl_video(video_judul,video_link,author_id,author) values ('$nama','$link','$author_id','$author')");
+      	return $hsl;
+	}
 	
 	function update_galeri($galeri_id,$judul,$album,$user_id,$user_nama,$gambar){
 		$hsl=$this->db->query("UPDATE tbl_galeri set galeri_judul='$judul',galeri_album_id='$album',galeri_pengguna_id='$user_id',galeri_author='$user_nama',galeri_gambar='$gambar' where galeri_id='$galeri_id'");
 		return $hsl;
 	}
+	function update_video($video_id,$nama,$link,$author_id,$author){
+		$hsl=$this->db->query("UPDATE tbl_video set video_judul='$nama',video_link='$link',author_id='$author_id', author='$author' where video_id='$video_id'");
+		return $hsl;
+	}
+
 	function update_galeri_tanpa_img($galeri_id,$judul,$album,$user_id,$user_nama){
 		$hsl=$this->db->query("UPDATE tbl_galeri set galeri_judul='$judul',galeri_album_id='$album',galeri_pengguna_id='$user_id',galeri_author='$user_nama' where galeri_id='$galeri_id'");
 		return $hsl;
@@ -38,6 +48,13 @@ class M_galeri extends CI_Model{
         return true;
         else
         return false;
+	}
+
+	function hapus_video($kode){
+		
+        $hsl = $this->db->query("DELETE from tbl_video where video_id='$kode'");
+        return $hsl;
+      
 	}
 
 	//Front-End

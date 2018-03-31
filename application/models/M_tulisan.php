@@ -88,7 +88,7 @@ class M_tulisan extends CI_Model{
 	}
 
 	function get_tulisan_by_kategori_perpage($kategori_id,$offset,$limit){
-		$hsl=$this->db->query("SELECT tbl_tulisan.*,DATE_FORMAT(tulisan_tanggal,'%d/%m/%Y') AS tanggal FROM tbl_tulisan where tulisan_kategori_id='$kategori_id' limit $offset,$limit");
+		$hsl=$this->db->query("SELECT tbl_tulisan.*,DATE_FORMAT(tulisan_tanggal,'%d/%m/%Y') AS tanggal FROM tbl_tulisan where tulisan_kategori_id='$kategori_id' ORDER BY tulisan_id DESC limit $offset,$limit ");
 		return $hsl;
 	}
 	function search_tulisan1($keyword){
