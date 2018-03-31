@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 29, 2018 at 12:44 PM
+-- Generation Time: Mar 31, 2018 at 10:07 PM
 -- Server version: 10.1.16-MariaDB
 -- PHP Version: 5.6.24
 
@@ -21,34 +21,6 @@ SET time_zone = "+00:00";
 --
 CREATE DATABASE IF NOT EXISTS `db_sembawa` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
 USE `db_sembawa`;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `tbl_agenda`
---
-
-CREATE TABLE `tbl_agenda` (
-  `agenda_id` int(11) NOT NULL,
-  `agenda_nama` varchar(200) DEFAULT NULL,
-  `agenda_tanggal` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
-  `agenda_deskripsi` text,
-  `agenda_mulai` date DEFAULT NULL,
-  `agenda_selesai` date DEFAULT NULL,
-  `agenda_tempat` varchar(90) DEFAULT NULL,
-  `agenda_waktu` varchar(30) DEFAULT NULL,
-  `agenda_keterangan` varchar(200) DEFAULT NULL,
-  `agenda_author` varchar(60) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `tbl_agenda`
---
-
-INSERT INTO `tbl_agenda` (`agenda_id`, `agenda_nama`, `agenda_tanggal`, `agenda_deskripsi`, `agenda_mulai`, `agenda_selesai`, `agenda_tempat`, `agenda_waktu`, `agenda_keterangan`, `agenda_author`) VALUES
-(1, 'Penyembelihan Hewan Kurban Idul Adha 2017', '2017-01-22 06:18:01', 'Idul Adha yang biasa disebut lebaran haji atapun lebaran kurban sangat identik dengan penyembelihan hewan kurban. M-Sekolah tahun ini juga melakukan penyembelihan hewan kurban. Yang rencananya akan dihadiri oleh guru-guru, siswa dan pengurus OSIS.', '2017-01-22', '2017-01-22', 'M-Sekolah', '08.00 - 11.00 WIB', 'Dihadiri oleh guru-guru, siswa dan pengurus OSIS', 'M Fikri Setiadi'),
-(2, 'Peluncuran Website Resmi M-Sekolah', '2017-01-22 06:26:33', 'Peluncuran website resmi  M-Sekolah, sebagai media informasi dan akademik online untuk pelayanan pendidikan yang lebih baik kepada siswa, orangtua, dan masyarakat pada umumnya semakin meningkat.', '2017-01-04', '2017-01-04', 'M-Sekolah', '07.30 - 12.00 WIB', '-', 'M Fikri Setiadi'),
-(3, 'Penerimaan Raport Semester Ganjil Tahun Ajaran 2017-2018', '2017-01-22 06:29:49', 'Berakhirnya semester ganjil tahun pelajaran 2016-2017, ditandai dengan pembagian laporan hasil belajar.', '2017-02-17', '2017-02-17', 'M-Sekolah', '07.30 - 12.00 WIB', 'Untuk kelas XI dan XII, pembagian raport dimulai pukul 07.30 WIB. Sedangkan untuk kelas X pada pukul 09.00 WIB. Raport diambil oleh orang tua/wali murid masing-masing.', 'M Fikri Setiadi');
 
 -- --------------------------------------------------------
 
@@ -96,9 +68,79 @@ CREATE TABLE `tbl_files` (
 --
 
 INSERT INTO `tbl_files` (`file_id`, `file_judul`, `file_deskripsi`, `file_tanggal`, `file_oleh`, `file_download`, `file_data`, `kategori_file_id`) VALUES
-(20, 'DIPA 2014', 'DIPA 2014', '2018-03-27 15:59:33', 'Admin', 0, 'DIPA_2014.pdf', 1),
-(21, 'DIPA 2013', 'DIPA 2013', '2018-03-27 16:00:48', 'Admin', 0, 'DIPA_2013.pdf', 1),
-(22, 'DIPA 2015', 'DIPA 2015', '2018-03-27 16:01:19', 'Admin', 0, 'DIPA_2015.pdf', 1);
+(23, 'Sarana dan Prasarana', 'sarana dan prasarana', '2018-03-31 02:41:58', 'Admin', 0, '7_SARANA_DAN_PRASARANA_SBI1.doc', 3),
+(27, 'Standar Sarana dan Prasaran', 'Standar Sarana dan Prasaran', '2018-03-31 18:51:51', 'Admin', 0, '8_STANDAR_PRASARANA_DAN_SARANA_KHUSUS.docx', 3),
+(30, 'LHKSN/LHKPN', 'LHKSN/LHKPN', '2018-03-31 19:30:31', 'Admin', 0, 'LHKPN.pdf', 1),
+(31, 'PROFIL PEJABAT', 'PROFIL PEJABAT', '2018-03-31 19:31:48', 'Admin', 0, 'Profil_Pimpinan.pdf', 1),
+(32, 'TUGAS DAN FUNGSI', 'TUGAS DAN FUNGSI', '2018-03-31 19:33:04', 'Admin', 0, 'Tujuan_dan_Fungsi_SMK_PP_Negeri_Sembawa.pdf', 1),
+(33, 'STRUKTUR ORGANISASI', 'STRUKTUR ORGANISASI', '2018-03-31 19:33:31', 'Admin', 0, 'Struktur_Organisasi_SMK_PP_Negeri_Sembawa.pdf', 1),
+(34, 'ALAMAT UNIT KERJA', 'ALAMAT UNIT KERJA', '2018-03-31 19:34:04', 'Admin', 0, 'ALAMAT_SMK_PERTANIAN_PEMBANGUNAN_NEGERI_SEMBAWA.pdf', 1),
+(35, 'LAPORAN IKM', 'LAPORAN IKM', '2018-03-31 19:34:27', 'Admin', 0, 'Laporan_IKM_2017.pdf', 1),
+(36, 'LAPORAN PPID', 'LAPORAN PPID', '2018-03-31 19:34:50', 'Admin', 0, 'LAPORAN_PPID_SMK_PP_NEGERI_SEMBAWA_2016.pdf', 1),
+(37, 'LAPORAN TAHUNAN', 'LAPORAN TAHUNAN', '2018-03-31 19:35:34', 'Admin', 0, 'Laporan_Tahunan_SMK_PP_Negeri_Sembawa.rar', 1),
+(38, 'DIPA 2013', 'DIPA 2013', '2018-03-31 19:36:04', 'Admin', 0, 'DIPA_20131.pdf', 1),
+(39, 'DIPA 2014', 'DIPA 2014', '2018-03-31 19:36:46', 'Admin', 0, 'DIPA_2014.pdf', 1),
+(40, 'DIPA 2015', 'DIPA 2015', '2018-03-31 19:37:03', 'Admin', 0, 'DIPA_2015.pdf', 1),
+(41, 'DIPA 2016', 'DIPA 2016', '2018-03-31 19:37:18', 'Admin', 0, 'DIPA_2016.pdf', 1),
+(42, 'DIPA 2017', 'DIPA 2017', '2018-03-31 19:37:38', 'Admin', 0, 'DIPA_2017.pdf', 1),
+(43, 'INFORMASI LAYANAN PUBLIK', 'INFORMASI LAYANAN PUBLIK', '2018-03-31 19:40:06', 'Admin', 0, 'DAFTAR_INFORMASI_PUBLIK_2016.pdf', 1),
+(44, 'REALISASI ANGGARAN 2015', 'REALISASI ANGGARAN 2015', '2018-03-31 19:40:32', 'Admin', 0, 'Realisasi_Anggaran_Desember_2015.pdf', 1),
+(45, 'REALISASI ANGGARAN 2016', 'REALISASI ANGGARAN 2016', '2018-03-31 19:41:01', 'Admin', 0, 'Realisasi_Anggaran_Desember_2016.pdf', 1),
+(46, 'REALISASI ANGGARAN 2017', 'REALISASI ANGGARAN 2017', '2018-03-31 19:41:27', 'Admin', 0, 'Realisasi_Anggaran_Desember_2017.pdf', 1),
+(47, 'NERACA KEUANGAN 2016', 'NERACA KEUANGAN 2016', '2018-03-31 19:42:05', 'Admin', 0, 'Neraca_Keuangan_Desember_2016.pdf', 1),
+(48, 'NERACA KEUANGAN 2017', 'NERACA KEUANGAN 2017', '2018-03-31 19:42:23', 'Admin', 0, 'Neraca_Keuangan_Desember_2017.pdf', 1),
+(49, 'DAFTAR ASET', 'DAFTAR ASET', '2018-03-31 19:43:02', 'Admin', 0, 'Daftar_Aset_SMK_PP_Negeri_Sembawa.pdf', 1),
+(50, 'RKAKL 2013', 'RKAKL 2013', '2018-03-31 19:49:25', 'Admin', 0, 'RKAKL-2013.xps', 1),
+(51, 'RKAKL 2014', 'RKAKL 2014', '2018-03-31 19:49:45', 'Admin', 0, 'RKAKL-2014.xps', 1),
+(52, 'RKAKL 2015', 'RKAKL 2015', '2018-03-31 19:50:03', 'Admin', 0, 'RKAKL-2015.oxps', 1),
+(53, 'RKAKL 2016', 'RKAKL 2016', '2018-03-31 19:50:26', 'Admin', 0, 'DIPA_20161.pdf', 1),
+(54, 'RKAKL 2017', 'RKAKL 2017', '2018-03-31 19:50:44', 'Admin', 0, 'RKAKL-2017.oxps', 1),
+(55, 'INFORMASI HAK MEMPEROLEH INFORMASI PUBLIK', 'INFORMASI HAK MEMPEROLEH INFORMASI PUBLIK', '2018-03-31 19:52:38', 'Admin', 0, 'DAFTAR_INFORMASI_PUBLIK_20161.pdf', 1),
+(56, 'PENGADAAN BARANG DAN JASA (PAGAR)', 'PENGADAAN BARANG DAN JASA (PAGAR)', '2018-03-31 19:53:05', 'Admin', 0, 'Pengadaan_Barang_dan_Jasa_(Pagar).pdf', 1),
+(57, 'PENGADAAN BAHAN DAN JASA (BAHAN MAKAN)', 'PENGADAAN BAHAN DAN JASA (BAHAN MAKAN)', '2018-03-31 19:53:23', 'Admin', 0, 'Pengadaan_Barang_dan_Jasa_(Bahan_Makan).pdf', 1),
+(58, 'TATA TERTIB ASRAMA', 'TATA TERTIB ASRAMA', '2018-03-31 19:53:47', 'Admin', 0, 'TATA_TERTIB_Asrama_Sadewa_20172018_Final.pdf', 1),
+(59, 'DAFTAR INFORMASI PUBLIK', 'DAFTAR INFORMASI PUBLIK', '2018-03-31 19:54:15', 'Admin', 0, 'DAFTAR_INFORMASI_PUBLIK_20162.pdf', 1),
+(60, 'UU PELAYANAN PUBLIK', 'UU PELAYANAN PUBLIK', '2018-03-31 19:54:53', 'Admin', 0, 'undang-undang_nomor_25_tahun_2009.pdf', 1),
+(61, 'PEDOMAN UJI KONSEKUENSI INFORMASI PUBLIK', 'PEDOMAN UJI KONSEKUENSI INFORMASI PUBLIK', '2018-03-31 19:55:40', 'Admin', 0, 'Peraturan_Menteri_Pertanian_No_41_Tahun_2012.pdf', 1),
+(62, 'PENGELOLAAN DAN PELAYANAN INFORMASI PUBLIK', 'PENGELOLAAN DAN PELAYANAN INFORMASI PUBLIK', '2018-03-31 19:56:28', 'Admin', 0, 'permentan-32-2011.pdf', 1),
+(63, 'SCHOOL DEVELOPMENT PLAN', 'SCHOOL DEVELOPMENT PLAN', '2018-03-31 19:56:58', 'Admin', 0, 'SDP_SMKPP_Negeri_Sembawa.rar', 1),
+(64, 'SK PPID', 'SK PPID', '2018-03-31 19:57:21', 'Admin', 0, 'SK_PPID_SMK_PP_Negeri_Sembawa.pdf', 1),
+(65, 'PRESTASI SISWA (halaman 1)', 'PRESTASI SISWA (halaman 1)', '2018-03-31 19:59:48', 'Admin', 0, 'Prestasi_Siswa_Hal_1.pdf', 2),
+(66, 'PRESTASI SISWA (halaman 2 )', 'PRESTASI SISWA (halaman 2 )', '2018-03-31 20:00:14', 'Admin', 0, 'Prestasi_Siswa_Hal_2.pdf', 2),
+(67, 'PROSEDUR MEMPEROLEH INFORMASI PUBLIK', 'PROSEDUR MEMPEROLEH INFORMASI PUBLIK', '2018-03-31 20:00:42', 'Admin', 0, 'Tata_Cara_Permohonan_Informasi.jpg', 2),
+(68, 'TATA CARA PENGAJUAN KEBERATAN LAYANAN INFORMASI PUBLIK', 'TATA CARA PENGAJUAN KEBERATAN LAYANAN INFORMASI PUBLIK', '2018-03-31 20:01:14', 'Admin', 0, 'mekanisme-keberatan.jpg', 2),
+(69, 'Inventaris', 'Inventaris', '2018-03-31 20:02:35', 'Admin', 0, '9.Inventaris.doc', 3),
+(70, 'Data Sarana dan prasarana', 'Data Sarana dan prasarana', '2018-03-31 20:03:16', 'Admin', 0, 'Data_Sarana_dan_Prasarana.xlsx', 3),
+(71, 'Inventaris Barang Baru', 'Inventaris Barang Baru', '2018-03-31 20:03:42', 'Admin', 0, 'INV_BARANG_BARU.docx', 3),
+(72, 'Laporan Barang Milik Negara', 'Laporan Barang Milik Negara', '2018-03-31 20:04:01', 'Admin', 0, 'LAPORAN_BARANG_MILIK_NEGARA.xlsx', 3);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_form`
+--
+
+CREATE TABLE `tbl_form` (
+  `form_id` int(11) NOT NULL,
+  `nama` varchar(60) DEFAULT NULL,
+  `ktp` varchar(40) DEFAULT NULL,
+  `alamat` varchar(60) DEFAULT NULL,
+  `email` varchar(60) DEFAULT NULL,
+  `kontak` varchar(40) DEFAULT NULL,
+  `pertanyaan` varchar(60) DEFAULT NULL,
+  `tujuan` varchar(60) DEFAULT NULL,
+  `memperoleh` varchar(40) DEFAULT NULL,
+  `mendapat` varchar(40) DEFAULT NULL,
+  `mendapatkan` varchar(40) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tbl_form`
+--
+
+INSERT INTO `tbl_form` (`form_id`, `nama`, `ktp`, `alamat`, `email`, `kontak`, `pertanyaan`, `tujuan`, `memperoleh`, `mendapat`, `mendapatkan`) VALUES
+(1, 'asd', 'asd', 'asd', 'asd', 'asd', 'sad', 'ad', '', '', ''),
+(2, 'sad', 'asd', 'asd', 'sad', 'sad', 'sad', 'sad', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -173,12 +215,25 @@ CREATE TABLE `tbl_inbox` (
   `inbox_status` int(11) DEFAULT '1' COMMENT '1=Belum dilihat, 0=Telah dilihat'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+-- --------------------------------------------------------
+
 --
--- Dumping data for table `tbl_inbox`
+-- Table structure for table `tbl_jejak_pendapat`
 --
 
-INSERT INTO `tbl_inbox` (`inbox_id`, `inbox_nama`, `inbox_email`, `inbox_kontak`, `inbox_pesan`, `inbox_tanggal`, `inbox_status`) VALUES
-(1, 'M.Puji Lesmana', 'muhammadpuji63@gmail.com', '123131', 'dsadada', '2018-03-29 07:11:57', 0);
+CREATE TABLE `tbl_jejak_pendapat` (
+  `jejak_pendapat_id` int(11) NOT NULL,
+  `tanggal` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  `vote` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tbl_jejak_pendapat`
+--
+
+INSERT INTO `tbl_jejak_pendapat` (`jejak_pendapat_id`, `tanggal`, `vote`) VALUES
+(3, '2018-03-31 06:47:09', 1),
+(4, '2018-03-31 18:07:16', 1);
 
 -- --------------------------------------------------------
 
@@ -222,10 +277,7 @@ CREATE TABLE `tbl_kategori_files` (
 INSERT INTO `tbl_kategori_files` (`kategori_f_id`, `kategori_nama`) VALUES
 (1, 'Informasi publik berkala'),
 (2, 'Informasi publik setiap saat'),
-(3, 'Sarana Prasarana'),
-(4, 'TUK'),
-(5, 'Gedung'),
-(6, 'Laboratorium');
+(3, 'Sapras Sekolah');
 
 -- --------------------------------------------------------
 
@@ -306,22 +358,6 @@ INSERT INTO `tbl_komentar` (`komentar_id`, `komentar_nama`, `komentar_email`, `k
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbl_log_aktivitas`
---
-
-CREATE TABLE `tbl_log_aktivitas` (
-  `log_id` int(11) NOT NULL,
-  `log_nama` text,
-  `log_tanggal` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
-  `log_ip` varchar(20) DEFAULT NULL,
-  `log_pengguna_id` int(11) DEFAULT NULL,
-  `log_icon` blob,
-  `log_jenis_icon` varchar(50) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `tbl_pengguna`
 --
 
@@ -374,7 +410,10 @@ INSERT INTO `tbl_pengunjung` (`pengunjung_id`, `pengunjung_tanggal`, `pengunjung
 (954, '2018-03-26 23:24:14', '::1', 'Chrome'),
 (955, '2018-03-28 01:40:38', '::1', 'Chrome'),
 (956, '2018-03-29 01:48:11', '::1', 'Chrome'),
-(957, '2018-03-29 01:48:11', '::1', 'Chrome');
+(957, '2018-03-29 01:48:11', '::1', 'Chrome'),
+(958, '2018-03-30 01:26:41', '::1', 'Firefox'),
+(959, '2018-03-31 02:05:58', '::1', 'Chrome'),
+(960, '2018-03-31 17:47:04', '::1', 'Chrome');
 
 -- --------------------------------------------------------
 
@@ -398,8 +437,8 @@ CREATE TABLE `tbl_portfolio` (
 --
 
 INSERT INTO `tbl_portfolio` (`port_id`, `port_nama`, `port_judul`, `port_deskripsi`, `tulisan_views`, `port_tanggal`, `port_author`, `port_image`) VALUES
-(8, 'Ir. Mattobi''i, MP', 'Sambutan Kepala Sekolah', '<p>Assalamualaikum Warahmatullahi Wabarakatuh</p>\r\n\r\n<p>Alhamdulillah, syukur kehadirat Tuhan Yang Maha Esa, dengan rahmat dan karunia-Nya akhirnya website sekolah ini telah selesai diperbaharui. Kami mengucapkan selamat datang di website  Sekolah Menengah Kejuruan Pertanian Pembangunan (SMK PP) Negeri Sembawa, Sumatera Selatan. Di era global  yang ditandai dengan makin pesatnya Teknologi Informasi, tidak dipungkiri bahwa keberadaan sebuah website untuk suatu  instansi menjadi sebuah keharusan. Website tersebut dapat digunakan sebagai  sarana informasi dan komunikasi pihak sekolah dengan siswa, alumni, dan stake holder secara luas.</p>\r\n\r\n<p>Selanjutnya, website sekolah ini harus dapat berfungsi sebagai media untuk mendukung proses pembelajaran di sekolah. Guru dapat menuliskan  materi  pembelajaran  sekaligus memberikan Tugas-Tugas Mandiri kepada peserta didik, sehingga akan menunjang kegiatan pembelajaran berbasis Teknologi Informasi. Selain itu juga website juga dapat menjadi sarana promosi sekolah yang cukup efektif. Kami menyadari sepenuhnya,  bahwa website sekolah kami masih terdapat banyak kekurangan, oleh karena itu kepada seluruh civitas akademika dan masyarakat umum dapat memberikan saran dan kritik yang membangun demi kemajuan website ini lebih lanjut.</p>\r\n\r\n<p>Mari kita bekerja dan berkarya untuk kemajuan SMK PP Negeri Sembawa yang Religius, Disiplin, dan Mandiri.</p>\r\n\r\n<p>Wassalamualaikum Warahmatullohi Wabarokatuh.</p>', 2, '2018-03-25 05:15:29', 'Puji', 'mattobi.jpg'),
-(9, NULL, 'Profil', 'M-TECHNO\r\nToggle navigation\r\n0\r\nAdministrator\r\nMenu Utama\r\n Dashboard\r\n Post\r\n Add New\r\n Post Lists\r\n Kategori\r\n Portfolio\r\n Pengguna\r\n Gallery\r\n Komentar 2\r\n Inbox 0\r\n Sign Out\r\nPost \r\n Home Post Add New\r\nJudul\r\n\r\nJudul berita atau artikel\r\nPost\r\n\r\n<p><strong>S</strong>ekolah Menengah Kejuruan Pertanian Pembangunan (SMK PP) Negeri Sembawa Palembang adalah Unit Pelaksana Teknis Kementerian Pertanian di bawah koordinasi Pusat Pendidikan, Standardisasi dan Sertifikasi Profesi&nbsp;<strong>(Pusdikdarkasi)</strong>&nbsp;&nbsp;Pertanian, Badan Penyuluhan dan Pengembangan Sumberdaya Manusia Pertanian.</p>\r\n\r\n<p>SMK PP Negeri Sembawa didirikan sesuai dengan Peraturan Menteri Pertanian No.4/55 tanggal 25 April 1955&nbsp; tentang Peraturan Bagi Sekolah-Sekolah Pertanian Menengah Atas Negeri dengan nama Sekolah Pertanian Menengah Atas (SPMA) yang berlokasi di Desa Sembawa Kabupaten Banyuasin Provinsi Sumatera Selatan. Pada tahun 1975 sampai dengan 1983/1984 nama SPMA diubah menjadi Sekolah Pertanian Pembangunan. Sekolah Pertanian Menengah Atas (SPP-SPMA) Polivalen.</p>\r\n\r\n<p>Pada tahun 1985 sampai dengan 2009 SPP-SPMA berubah nama menjadi Sekolah Pertanian Pembangunan (SPP).&nbsp; Pada tahun 2010, sesuai dengan Peraturan Menteri Pertanian No.10 tahun 2009 maka nama SPP Negeri Sembawa berubah nama menjadi SMK SPP Negeri Sembawa. Tahun 2013 sampai sekarang, SMK SPP Negeri Sembawa berubah nama menjadi SMK PP Negeri Sembawa.</p>\r\n\r\n<p>Pada tahun 2009, SMK PP Negeri Sembawa Palembang memperoleh Sertifikat ISO 9001: 2008 yang diregistrasi oleh VEDCA-IQS untuk ruang lingkup Sistem Manajemen Mutu bagi Jasa Pedidikan dan Pelatihan Kejuruan</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Visi</strong></p>\r\n\r\n<p>Terwujudnya lulusan yang berakhlak mulia, cerdas, terampil, berjiwa&nbsp; wirausaha dan peduli lingkungan</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Misi</strong></p>\r\n\r\n<ul>\r\n	<li>Melaksanakan pembinaan IMTAQ dan pendidikan karakter</li>\r\n	<li>Mengembangkan profesionalisme pendidik dan tenaga kependidikan</li>\r\n	<li>Mengembangkan program pembelajaran untuk menghasilkan lulusan yang kompeten, berdaya saing dan berkarakter</li>\r\n	<li>Meningkatkan sarana dan prasarana pendidikan</li>\r\n	<li>Mengembangkan kerjasama dengan instansi terkait, masyarakat dan dunia usaha/dunia industri baik di dalam maupun luar negeri</li>\r\n	<li>Mengembangkan unit-unit usaha pertanian yang berwawasan lingkungan sebagai&nbsp;<em>teaching farm</em></li>\r\n	<li>Menjadikan sekolah sebagai pusat sumber belajar</li>\r\n</ul>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Struktur Organisasi</strong></p>\r\n\r\n<p><strong><img alt="" src="https://smkppnsembawa.sch.id/media_library/posts/page-image-1510455488412.png" style="height:416px; width:763px" /></strong></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n', 5, '2018-03-25 08:02:01', 'puji', NULL);
+(8, 'Ir. Mattobi''i, MP', 'Sambutan Kepala Sekolah', '<p>Assalamualaikum Warahmatullahi Wabarakatuh</p>\r\n\r\n<p>Alhamdulillah, syukur kehadirat Tuhan Yang Maha Esa, dengan rahmat dan karunia-Nya akhirnya website sekolah ini telah selesai diperbaharui. Kami mengucapkan selamat datang di website  Sekolah Menengah Kejuruan Pertanian Pembangunan (SMK PP) Negeri Sembawa, Sumatera Selatan. Di era global  yang ditandai dengan makin pesatnya Teknologi Informasi, tidak dipungkiri bahwa keberadaan sebuah website untuk suatu  instansi menjadi sebuah keharusan. Website tersebut dapat digunakan sebagai  sarana informasi dan komunikasi pihak sekolah dengan siswa, alumni, dan stake holder secara luas.</p>\r\n\r\n<p>Selanjutnya, website sekolah ini harus dapat berfungsi sebagai media untuk mendukung proses pembelajaran di sekolah. Guru dapat menuliskan  materi  pembelajaran  sekaligus memberikan Tugas-Tugas Mandiri kepada peserta didik, sehingga akan menunjang kegiatan pembelajaran berbasis Teknologi Informasi. Selain itu juga website juga dapat menjadi sarana promosi sekolah yang cukup efektif. Kami menyadari sepenuhnya,  bahwa website sekolah kami masih terdapat banyak kekurangan, oleh karena itu kepada seluruh civitas akademika dan masyarakat umum dapat memberikan saran dan kritik yang membangun demi kemajuan website ini lebih lanjut.</p>\r\n\r\n<p>Mari kita bekerja dan berkarya untuk kemajuan SMK PP Negeri Sembawa yang Religius, Disiplin, dan Mandiri.</p>\r\n\r\n<p>Wassalamualaikum Warahmatullohi Wabarokatuh.</p>', 5, '2018-03-25 05:15:29', 'Puji', 'mattobi.jpg'),
+(9, NULL, 'Profil', '<p><strong>S</strong>ekolah Menengah Kejuruan Pertanian Pembangunan (SMK PP) Negeri Sembawa Palembang adalah Unit Pelaksana Teknis Kementerian Pertanian di bawah koordinasi Pusat Pendidikan, Standardisasi dan Sertifikasi Profesi&nbsp;<strong>(Pusdikdarkasi)</strong>&nbsp;&nbsp;Pertanian, Badan Penyuluhan dan Pengembangan Sumberdaya Manusia Pertanian.</p>\r\n\r\n<p>SMK PP Negeri Sembawa didirikan sesuai dengan Peraturan Menteri Pertanian No.4/55 tanggal 25 April 1955&nbsp; tentang Peraturan Bagi Sekolah-Sekolah Pertanian Menengah Atas Negeri dengan nama Sekolah Pertanian Menengah Atas (SPMA) yang berlokasi di Desa Sembawa Kabupaten Banyuasin Provinsi Sumatera Selatan. Pada tahun 1975 sampai dengan 1983/1984 nama SPMA diubah menjadi Sekolah Pertanian Pembangunan. Sekolah Pertanian Menengah Atas (SPP-SPMA) Polivalen.</p>\r\n\r\n<p>Pada tahun 1985 sampai dengan 2009 SPP-SPMA berubah nama menjadi Sekolah Pertanian Pembangunan (SPP).&nbsp; Pada tahun 2010, sesuai dengan Peraturan Menteri Pertanian No.10 tahun 2009 maka nama SPP Negeri Sembawa berubah nama menjadi SMK SPP Negeri Sembawa. Tahun 2013 sampai sekarang, SMK SPP Negeri Sembawa berubah nama menjadi SMK PP Negeri Sembawa.</p>\r\n\r\n<p>Pada tahun 2009, SMK PP Negeri Sembawa Palembang memperoleh Sertifikat ISO 9001: 2008 yang diregistrasi oleh VEDCA-IQS untuk ruang lingkup Sistem Manajemen Mutu bagi Jasa Pedidikan dan Pelatihan Kejuruan</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Visi</strong></p>\r\n\r\n<p>Terwujudnya lulusan yang berakhlak mulia, cerdas, terampil, berjiwa&nbsp; wirausaha dan peduli lingkungan</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Misi</strong></p>\r\n\r\n<ul>\r\n	<li>Melaksanakan pembinaan IMTAQ dan pendidikan karakter</li>\r\n	<li>Mengembangkan profesionalisme pendidik dan tenaga kependidikan</li>\r\n	<li>Mengembangkan program pembelajaran untuk menghasilkan lulusan yang kompeten, berdaya saing dan berkarakter</li>\r\n	<li>Meningkatkan sarana dan prasarana pendidikan</li>\r\n	<li>Mengembangkan kerjasama dengan instansi terkait, masyarakat dan dunia usaha/dunia industri baik di dalam maupun luar negeri</li>\r\n	<li>Mengembangkan unit-unit usaha pertanian yang berwawasan lingkungan sebagai&nbsp;<em>teaching farm</em></li>\r\n	<li>Menjadikan sekolah sebagai pusat sumber belajar</li>\r\n</ul>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Struktur Organisasi</strong></p>\r\n\r\n<p><strong><img alt="" src="https://smkppnsembawa.sch.id/media_library/posts/page-image-1510455488412.png" style="height:416px; width:763px" /></strong></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n', 8, '2018-03-25 08:02:01', 'puji', NULL);
 
 -- --------------------------------------------------------
 
@@ -536,7 +575,16 @@ INSERT INTO `tbl_post_views` (`views_id`, `views_tanggal`, `views_ip`, `views_tu
 (88, '2018-03-28 02:20:32', '::1', 9),
 (89, '2018-03-28 02:24:36', '::1', 47),
 (90, '2018-03-29 01:57:14', '::1', 36),
-(91, '2018-03-29 04:19:45', '::1', 9);
+(91, '2018-03-29 04:19:45', '::1', 9),
+(92, '2018-03-30 09:01:16', '::1', 47),
+(93, '2018-03-30 11:20:44', '::1', 43),
+(94, '2018-03-30 11:20:54', '::1', 40),
+(95, '2018-03-30 13:29:59', '::1', 9),
+(96, '2018-03-30 13:37:53', '::1', 8),
+(97, '2018-03-31 02:44:54', '::1', 9),
+(98, '2018-03-31 16:00:15', '::1', 8),
+(99, '2018-03-31 18:15:38', '::1', 9),
+(100, '2018-03-31 18:16:34', '::1', 8);
 
 -- --------------------------------------------------------
 
@@ -552,23 +600,6 @@ CREATE TABLE `tbl_siswa` (
   `siswa_kelas_id` int(11) DEFAULT NULL,
   `siswa_photo` varchar(60) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `tbl_siswa`
---
-
-INSERT INTO `tbl_siswa` (`siswa_id`, `siswa_nis`, `siswa_nama`, `siswa_jenkel`, `siswa_kelas_id`, `siswa_photo`) VALUES
-(1, '9287482', 'Alvaro Sanchez', 'L', 8, '083d547659a2d4bb15c0322d15955da5.png'),
-(2, '9287483', 'Ririn Cantika', 'P', 8, '74eec6ad37550cc12fe8fa83d46878af.jpg'),
-(3, '123083', 'Ari Hidayat', 'L', 1, 'e371e67618ad53c99de380782c373023.png'),
-(4, '123084', 'Irma Chaiyo', 'P', 1, '1e148b42c71562841ba3018fc97b748a.png'),
-(5, '123085', 'Nadila Ginting', 'P', 1, '8125da21f903803b6992214967239ab3.png'),
-(6, '123086', 'Anna Marina', 'P', 1, '33eaf3e3faf28a0fe31670c022f641f1.png'),
-(7, '123089', 'Dhea Lubis', 'P', 1, '03e651410e969c3c26e8e0d35380470d.png'),
-(8, '123087', 'Nadia Ginting', 'P', 1, 'd7823f8d98d376c085aa284a54d63264.png'),
-(9, '123088', 'Mita Febrina', 'P', 1, 'eca0280a4a57c911ee68b8318d1e517f.png'),
-(10, '123095', 'Elizabeth', 'P', 1, 'ec1232a08d650bc8c3197c9db95a7fc8.png'),
-(11, '123090', 'Della Guswono', 'P', 1, '6c82fce13bb3eff1fd2e897b2c3cfeeb.png');
 
 -- --------------------------------------------------------
 
@@ -597,9 +628,6 @@ CREATE TABLE `tbl_tulisan` (
 --
 
 INSERT INTO `tbl_tulisan` (`tulisan_id`, `tulisan_judul`, `tulisan_isi`, `tulisan_tanggal`, `tulisan_kategori_id`, `tulisan_kategori_nama`, `tulisan_views`, `tulisan_gambar`, `tulisan_pengguna_id`, `tulisan_author`, `tulisan_img_slider`, `tulisan_slug`, `tulisan_rating`) VALUES
-(29, 'WannaCry Hero Dibebankan Dengan Menciptakan $ 7000 Malware Perbankan', '<p>Dalam sebuah peristiwa yang mengherankan, orang yang menghentikan penyebaran uang tebusan WannaCry awal tahun ini telah ditangkap dan dikenai tuduhan menciptakan malware perbankan yang dikenal dengan Kronos.</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel. Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n', '2017-08-07 02:36:39', 2, 'Kampusku', 6, 'bf687360506b89dea045e2545f35ac4f.jpg', 1, 'Administrator', 0, 'wannacry-hero-dibebankan-dengan-menciptakan--7000-malware-perbankan.html', 1),
-(30, 'Kebocoran iPhone 8 Baru Mengungkapkan Fitur yang Lebih Mengecewakan', '<p><em>Apple CEO Tim Cook delivers the opening keynote address the 2017 Apple</em></p>\r\n\r\n<p>Sudah lama sekali sejak Apple mampu menyimpan kejutan nyata dari beledu digital dan mengungkapkan &#39;satu hal&#39; yang sebenarnya selama sebuah keynote. Fase desain dan prototyping yang panjang, ditambah dengan rantai pasokan yang diperluas, telah menghasilkan garis manufaktur yang bocor.</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel. Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n', '2017-08-07 02:46:11', 2, 'Kampusku', 11, '53243c24166c53ec24ac84b8f4c56940.jpg', 1, 'Administrator', 0, 'kebocoran-iphone-8-baru-mengungkapkan-fitur-yang-lebih-mengecewakan.html', 1),
-(31, 'Facebook Meluas Melawan Berita Fake Dengan Artikel Otomatis', '<p>Setelah pemilihan Presiden, ketika Facebook FB -0.23% menghadapi pengawasan karena memungkinkan penyebaran berita politik palsu, jaringan sosial terus mengambil langkah baru untuk memberantas informasi palsu di seluruh aplikasinya.<br />\r\n<!--[if !supportLineBreakNewLine]--><br />\r\n<!--[endif]-->Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel. Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel Ini adalah sampel artikel.</p>\r\n\r\n<p>&nbsp;</p>\r\n', '2017-08-07 02:51:02', 2, 'Kampusku', 14, '054646a61adf67fbc074f23415a96531.jpg', 1, 'Administrator', 0, 'facebook-meluas-melawan-berita-fake-dengan-artikel-otomatis.html', 3),
 (32, 'SMK PP NEGERI SEMBAWA MERAIH PRESTASI DALAM LOMBA KOMPETENSI SISWA (LKS) BIDANG AGRONOMI TINGKAT PROVINSI SUMSEL TAHUN 2017', '<p>SMK PP Negeri Sembawa menjadi salah satu utusan kontingen/ peserta SMK dari Banyuasin dalam kegiatan  Lomba Kompetensi Siswa (LKS) SMK Tingkat Provinsi Sumatera Selatan Tahun 2017, yang dilaksanakan pada empat tempat yakni di Hotel Horison Ultima, SMKN 2 Palembang, SMK 6 Palembang, dan SMK Sumsel pada tanggal 17-20 Oktober 2017.\r\n\r\nLomba Kompetensi Siswa (LKS) bidang agronomi merupakan kegiatan pengujian ( pembuktian) kompetensi siswa SMK pada program Keahlian Agribisnis Pembenihan Tanaman yang menekankan pada aspek Produksi Benih dengan mengacu pada makna/definisi benih dalam UU No. 12, tahun 1992; tentang Sistem Budidaya Tanaman, dengan menerapkan metode assesmen praktik, dan presentasi dengan suasana arena lomba yang bersifat demonstratif atau dapat dilihat oleh khalayak masyarakat umum dan industry (entertainment).\r\n\r\nPada kegiatan LKS tahun ini diadakan dengan berbagai macam bidang perlombaan sesuai bidang kompetensi yang ada di SMK seluruh Sumatera Selatan. Kegiatan ini diikuti oleh 175 siswa dan guru pembimbing, serta 65 orang juri. SMK PP Negeri Sembawa ikut serta mewakili  pada bidang lomba Agronomi dengan tema “Produksi Benih Tanaman Pangan dan Hortikultura Bersertifikat Berbasis Entrepreneurship “\r\n\r\nSMK PP Negeri Sembawa diwakili oleh salah satu siswa kelas XII Agribisnis Tanaman Pangan dan Hortikultura Satu (ATPH 1) atas nama  Zulmy  Junia Widosari pada bidang agronomi mendapatkan Juara 2. Pencapaian ini dirasakan sudah maksimal mengingat singkatnya waktu yang digunakan untuk persiapan mengikuti lomba tersebut.\r\n\r\n Dengan adanya perlombaan seperti ini siswa SMK bisa meningkatkan kompetensi diri dan intropeksi kompetensi pada bidang kompetensi yang ada agar bisa ditingkatkan lagi dan menjadi pembelajaran serta pengalaman supaya bisa menghasilkan generasi muda yang mampu bersaing di dunia global.(humas)</p>', '2018-03-21 02:32:50', 1, 'Jadwal', 5, '5851dc6f6c1e891e20457a6f90800a76.jpg', 1, 'Administrator', 0, 'smk-pp-negeri-sembawa-meraih-prestasi-dalam-lomba-kompetensi-siswa-lks-bidang-agronomi-tingkat-provinsi-sumsel-tahun-2017.html', 1),
 (33, 'SMK PP NEGERI SEMBAWA BAGIKAN RATUSAN PIALA PEKAN LOMBA', '<p>Kegiatan Pekan Lomba telah dilaksanakan dengan baik dari tanggal 6 s.d. 11 Februari 2017. Sabtu, 11 Februari 2017 dilaksanakan acara penutupan sekaligus pembagian piala, sertifikat penghargaan, dan uang pembinaan. Juara umum&nbsp; Pekan Lomba SMK-PP Negeri Sembawa Tahun 2017 tingkat SMP/MTs diperoleh SMP Negeri 1 Sembawa, sedangkan untuk tingkat SMA/SMK/MA diperoleh SMA PLUS Negeri 2 BA III.</p>\r\n\r\n<p>Dalam upacara penutupan, Kepala SMK PP Negeri Sembawa, Ir. Mattobi&rsquo;i, M.P. menyampaikan selamat kepada para pemenang dan menghimbau kepada seluruh peserta lomba agar&nbsp; terus meningkatkan prestasinya. Tak lupa disampaikan ucapan terima kasih kepada semua yang telah berpartisipasi pada kegiatan tersebut dan semoga pelaksanaan kegiatan berikutnya menjadi lebih baik lagi. Pada kesempatan itu juga disampaikan, siswa SMP sederajat yang mempunyai minat pada dunia pertanian dapat melanjutkan sekolah di SMK PP Negeri Sembawa.</p>\r\n\r\n<p>Adapun daftar pemenang pekan lomba di SMK PP Negeri Sembawa tahun 2017 adalah sebagai berikut :</p>\r\n\r\n<table border="1" cellpadding="0" cellspacing="0">\r\n	<tbody>\r\n		<tr>\r\n			<td>\r\n			<p><strong>No</strong></p>\r\n			</td>\r\n			<td>\r\n			<p><strong>Jenis Lomba</strong></p>\r\n			</td>\r\n			<td>\r\n			<p><strong>Pemenang</strong></p>\r\n			</td>\r\n			<td>\r\n			<p><strong>Ket</strong></p>\r\n			</td>\r\n		</tr>\r\n		<tr>\r\n			<td>\r\n			<p>1.</p>\r\n			</td>\r\n			<td>\r\n			<p>Sepak Bola</p>\r\n			</td>\r\n			<td>\r\n			<p><strong>SMP</strong></p>\r\n\r\n			<p>Juara I (SMP N 1 Sembawa)<br />\r\n			Juara II (SMP N 2 Sembawa)<br />\r\n			Juara III (SMP N 1 Talang Kelapa)</p>\r\n\r\n			<p><strong>&nbsp;SMA</strong></p>\r\n\r\n			<p>Juara I (SMK N 1 BA III)<br />\r\n			Juara II (SMK-PP N Sembawa)<br />\r\n			Juara III (SMA N 1 BA III)<br />\r\n			Juara IV (SMA N 5 Palembang)</p>\r\n			</td>\r\n			<td>\r\n			<p>&nbsp;</p>\r\n			</td>\r\n		</tr>\r\n		<tr>\r\n			<td>\r\n			<p>2.</p>\r\n			</td>\r\n			<td>\r\n			<p>Bola Voli</p>\r\n			</td>\r\n			<td>\r\n			<p><strong>SMA (Putra)</strong></p>\r\n\r\n			<ol>\r\n				<li>SMA N 1 Sembawa</li>\r\n				<li>SMK B1 3 PLG</li>\r\n				<li>SMA N 1 Talang Kelapa</li>\r\n			</ol>\r\n\r\n			<p><strong>SMA (Putri)</strong></p>\r\n\r\n			<ol>\r\n				<li>SMA N 1 Talang Kelapa</li>\r\n				<li>MAN PABA</li>\r\n				<li>SMA N 3 BA III</li>\r\n			</ol>\r\n\r\n			<p><strong>SMP (Putra)</strong></p>\r\n\r\n			<ol>\r\n				<li>SMP N 1 Sembawa</li>\r\n				<li>SMP TBM 7 Mangga Raya Tanjung Lago</li>\r\n				<li>SMP N 2 BA III</li>\r\n			</ol>\r\n\r\n			<p><strong>SMP (Putri)</strong></p>\r\n\r\n			<ol>\r\n				<li>SMPN 1 Sembawa</li>\r\n				<li>MTs. MU</li>\r\n				<li>SMP N 1 Talang Kelapa</li>\r\n			</ol>\r\n			</td>\r\n			<td>\r\n			<p>&nbsp;</p>\r\n			</td>\r\n		</tr>\r\n		<tr>\r\n			<td>\r\n			<p>3.</p>\r\n			</td>\r\n			<td>\r\n			<p>Futsal</p>\r\n			</td>\r\n			<td>\r\n			<p><strong>SMP</strong></p>\r\n\r\n			<ol>\r\n				<li>SMP N 2 Sembawa</li>\r\n				<li>SMP N 1 Sembawa</li>\r\n				<li>SMPN 1 Talang Kelapa</li>\r\n				<li>SMPN 1 Talang Kelapa</li>\r\n			</ol>\r\n\r\n			<p><strong>SMA</strong></p>\r\n\r\n			<ol>\r\n				<li>SMA PLUS N2 BA III</li>\r\n				<li>SMK-PPN Sembawa</li>\r\n				<li>SMA N 2 Sembawa</li>\r\n				<li>SMA N 1 Talang Kelapa</li>\r\n			</ol>\r\n			</td>\r\n			<td>\r\n			<p>&nbsp;</p>\r\n			</td>\r\n		</tr>\r\n		<tr>\r\n			<td>\r\n			<p>4.</p>\r\n			</td>\r\n			<td>\r\n			<p>Basket</p>\r\n			</td>\r\n			<td>\r\n			<p><strong>SMP (Putra)</strong></p>\r\n\r\n			<ol>\r\n				<li>SMP&nbsp; 1 Banyuasin III</li>\r\n				<li>SMP&nbsp; 1 Banyuasin III</li>\r\n				<li>SMP 2 Sembawa</li>\r\n				<li>SMP 2 Sembawa</li>\r\n			</ol>\r\n\r\n			<p><strong>SMP (Putri)</strong></p>\r\n\r\n			<ol>\r\n				<li>SMP 1 Banyuasin III</li>\r\n				<li>SMP 2 Sembawa</li>\r\n				<li>SMP Sembawa</li>\r\n				<li>SMP 1 Banyuasin III</li>\r\n			</ol>\r\n\r\n			<p><strong>SMA (Putra)</strong></p>\r\n\r\n			<ol>\r\n				<li>SMA N 3 Banyuasin III</li>\r\n				<li>SMAN 2 Sembawa</li>\r\n				<li>MAN PABA</li>\r\n				<li>SMAN 1 Talang Kelapa</li>\r\n			</ol>\r\n\r\n			<p><strong>SMA (Putri)</strong></p>\r\n\r\n			<ol>\r\n				<li>Sman 3 Banyuasin III</li>\r\n				<li>MAN PABA</li>\r\n				<li>SMAN 1 Banyuasin III</li>\r\n				<li>SMK PPN Sembawa</li>\r\n			</ol>\r\n			</td>\r\n			<td>\r\n			<p>&nbsp;</p>\r\n			</td>\r\n		</tr>\r\n		<tr>\r\n			<td>\r\n			<p>5.</p>\r\n			</td>\r\n			<td>\r\n			<p>Seni Tari</p>\r\n			</td>\r\n			<td>\r\n			<p><strong>SENI TUNGGAL PUTRA</strong></p>\r\n\r\n			<ul>\r\n				<li>Adela Destrianti (SMP N 1 SEMBAWA)</li>\r\n				<li>Anggun R ( SMP 1 Tungkal Ilir )</li>\r\n			</ul>\r\n\r\n			<p>&nbsp;</p>\r\n\r\n			<p><strong>SENI TUNGGAL PUTRA</strong></p>\r\n\r\n			<ul>\r\n				<li>M. Fadli (SMP N1 Sembawa)</li>\r\n				<li>Ikmi (SMP N 1 Talang Kelapa)</li>\r\n			</ul>\r\n\r\n			<p>&nbsp;</p>\r\n\r\n			<p><strong>TARI DAERAH</strong></p>\r\n\r\n			<p>Juara Pertama : SMPN 1 BA III</p>\r\n\r\n			<p>Juara Kedua : SMP N II Sembawa</p>\r\n\r\n			<p>Juara Ketiga : SMA Muhamadiyah 06 Plg</p>\r\n\r\n			<p>&nbsp;</p>\r\n			</td>\r\n			<td>\r\n			<p>&nbsp;</p>\r\n			</td>\r\n		</tr>\r\n		<tr>\r\n			<td>\r\n			<p>6.</p>\r\n			</td>\r\n			<td>\r\n			<p>Pencak Silat</p>\r\n			</td>\r\n			<td>\r\n			<p><strong>Finger Putra</strong></p>\r\n\r\n			<p><strong>Kelas A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :</strong></p>\r\n\r\n			<ol>\r\n				<li>Zakaria (SMP 3 Talang Kelapa)</li>\r\n				<li>Ade Rizki (SMP PURI)</li>\r\n				<li>Hanip ( SMP N 1 PABA)</li>\r\n			</ol>\r\n\r\n			<p><strong>Kelas B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :</strong></p>\r\n\r\n			<ol>\r\n				<li>M. Ilham (SMP 4 Talang Kelapa)</li>\r\n				<li>Iksan ( SMP PURI)</li>\r\n				<li>Bima (SMP 1 PABA)</li>\r\n			</ol>\r\n\r\n			<p><strong>Kelas C &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :</strong></p>\r\n\r\n			<ol>\r\n				<li>Angga (SMP 1 PABA)</li>\r\n				<li>Ikmi (SMP 41 Talang Kelapa)</li>\r\n				<li>Agung (SMP Mandiri)</li>\r\n			</ol>\r\n\r\n			<p>&nbsp;</p>\r\n\r\n			<p><strong>Finghter Putri</strong></p>\r\n\r\n			<p><strong>Kelas A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :</strong></p>\r\n\r\n			<ol>\r\n				<li>Najwa (SMP N 41 Talang Kelapa)</li>\r\n				<li>Anggi Nadiya (SMP N 3 Talang Kelapa )</li>\r\n				<li>Adelia (SMP N 1 PABA)</li>\r\n			</ol>\r\n\r\n			<p><strong>Kelas B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :</strong></p>\r\n\r\n			<ol>\r\n				<li>Hamiyah (MTs Daruhikmah)</li>\r\n				<li>Jean (SMP 41 Talang Kelapa)</li>\r\n				<li>Sonia (SMP 3 Talang Kelapa)</li>\r\n			</ol>\r\n\r\n			<p><strong>Kelas C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :</strong></p>\r\n\r\n			<ol>\r\n				<li>Anggun (SMP Mandiri)</li>\r\n				<li>Fitria (SMP 3 Talang Kelapa)</li>\r\n				<li>Juliani (SMP 11 Palembang)</li>\r\n			</ol>\r\n\r\n			<p>&nbsp;</p>\r\n			</td>\r\n			<td>\r\n			<p>&nbsp;</p>\r\n			</td>\r\n		</tr>\r\n		<tr>\r\n			<td>\r\n			<p>7.</p>\r\n			</td>\r\n			<td>\r\n			<p>English Competition</p>\r\n			</td>\r\n			<td>\r\n			<p><strong>SPEECH</strong></p>\r\n\r\n			<p>&nbsp;Juara I&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : Nurul Umita (SMP N 1 Sembawa)<br />\r\n			Juara II : M. Thomi Arjhan (SMP LTI IGM, Plg)<br />\r\n			Juara III : &nbsp;Naswa Salsabila (SMP N 1 Sembawa)</p>\r\n\r\n			<p><strong>STORY TELLING</strong></p>\r\n\r\n			<p>Juara I : Orin Riesha W (SMP IGM)<br />\r\n			Juara II : Atika (SMP N 1 Sembawa)<br />\r\n			Juara III : Tia Ashifa Maharani (SMP IGM)</p>\r\n\r\n			<p><strong>BE NUMBER ONE</strong></p>\r\n\r\n			<ol>\r\n				<li>M. Thomi Ashan (SMP LTI IGM, Plg)</li>\r\n				<li>Lathifa Hasna Ariqoh (SMP N2 Sembawa)</li>\r\n				<li>Feby Setia Ningsih (SMP N1 Sembawa)</li>\r\n			</ol>\r\n\r\n			<p>&nbsp;</p>\r\n			</td>\r\n			<td>\r\n			<p>&nbsp;</p>\r\n			</td>\r\n		</tr>\r\n		<tr>\r\n			<td>\r\n			<p>8</p>\r\n			</td>\r\n			<td>\r\n			<p>Pengibaran Bendera</p>\r\n			</td>\r\n			<td>\r\n			<p>Juara I&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : SMK SUTA</p>\r\n\r\n			<p>Juara II&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : SMA PLUS N2 BA III</p>\r\n\r\n			<p>Juara III&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : SMA 1 T.K</p>\r\n\r\n			<p>Juara IV&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : SMA N 1 Sembawa</p>\r\n\r\n			<p>&nbsp;</p>\r\n\r\n			<p>Komandan&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : SMA PLUS N2 BA III<br />\r\n			Baki Terbaik&nbsp;&nbsp;&nbsp; : SMA N 1 BA III</p>\r\n\r\n			<p>&nbsp;</p>\r\n			</td>\r\n			<td>\r\n			<p>&nbsp;</p>\r\n			</td>\r\n		</tr>\r\n		<tr>\r\n			<td>\r\n			<p>9</p>\r\n			</td>\r\n			<td>\r\n			<p>MTQ</p>\r\n			</td>\r\n			<td>\r\n			<p><strong>SMP / MTs</strong></p>\r\n\r\n			<ol>\r\n				<li>Ahmad Nazar Fakri&nbsp; (MTS Darul Muttaqin)</li>\r\n				<li>Muhammad Sebastian (SMPN 1 Sembawa)</li>\r\n				<li>Ivan (SMP Muhammadiyah PABA)\\</li>\r\n			</ol>\r\n\r\n			<p>&nbsp;</p>\r\n\r\n			<p><strong>SMA/SMK</strong></p>\r\n\r\n			<ol>\r\n				<li>Andre Brilian Hidayatullah (SMA PLUS N 2 BA III)</li>\r\n				<li>Rifatul Fadhilah (SMA PLUS N2 BA III)</li>\r\n				<li>Jodi Jordan (SMA N 1 Sembawa)</li>\r\n			</ol>\r\n			</td>\r\n			<td>\r\n			<p>&nbsp;</p>\r\n			</td>\r\n		</tr>\r\n	</tbody>\r\n</table>\r\n', '2018-03-25 14:43:39', 1, 'Jadwal', 0, '41cf5dbf55ff62d38aa5461b0a42033e.jpg', 1, 'Administrator', 0, 'smk-pp-negeri-sembawa-bagikan-ratusan-piala pekan-lomba.html', 0),
 (34, 'UJI KOMPETENSI KEAHLIAN SMK PP NEGERI SEMBAWA TAHUN 2017', '<p>Uji Kompetensi Kejuruan (UKK) adalah salah satu rangkaian kegiatan ujian yang harus dikuti oleh siswa SMK kelas XII sebagai salah satu syarat kelulusan. Pada tanggal 22 Februari 2017, diadakan UKK di SMK PP Negeri untuk 2 (dua) Paket Keahlian yaitu Agribisnis Tanaman Perkebunan (ATP) dan Agribisnis Tanaman Pangan dan Hortikultura (ATPH). Sebelumnya, dilaksanakan kegiatan coaching untuk ATPH tanggal 15 Februari 2017 dan ATP tanggal 16 Februari 2017. Pelaksanaan UKK di SMK PP Negeri Sembawa bekerjasama dengan Dunia Usaha Dunia Industri (DUDI) yang sesuai dengan kompetensi keahlian di sekolah. Untuk ATP bekerjasama dengan Balai Penelitian Sembawa dan ATPH bekerjasama dengan Balai Penelitian dan Pengembangan Provinsi Sumatera Selatan. Tujuan pelaksanaan UKK adalah 1) mengukur pencapaian kompetensi siswa SMK yang telah menyelesaikan proses pembelajaran sesuai kompetensi keahlian yang ditempuh; 2) Memfasilitasi siswa SMK yang akan menyelesaikan pendidikannya untuk mendapatkan sertifikat kompetensi; 3) Mengoptimalkan pelaksanaan sertifikasi kompetensi yang berorientasi pada capaian kompetensi lulusan SMK sesuai kerangka kualifikasi nasional dan 4) Memfasilitasi kerjasama SMK dengan dunia usaha/industri dalam rangka pelaksanaan Uji Kompetensi sesuai kebutuhan dunia usaha dan dunia industri (DUDI) Materi UKK untuk Paket Keahlian Agribisnis Tanaman Perkebunan (ATP) adalah penanaman tanaman perkebunan berupa tanaman karet, sedangkan untuk Agribisnis Tanaman Pangan Hortikultura (ATPH) tentang penanaman bawang merah mulai dari pengujian daya kecambah, persiapan lahan penanaman bawang merah serta penanaman umbi bawang merah.</p>\r\n', '2018-03-25 14:43:39', 1, 'Jadwal', 1, '72146eae6cbc18c5644b074342809e5f.jpg', 1, 'Administrator', 0, 'uji-kompetensi-keahlian-smk-pp-negeri-sembawa-tahun-2017.html', 0),
@@ -608,15 +636,14 @@ INSERT INTO `tbl_tulisan` (`tulisan_id`, `tulisan_judul`, `tulisan_isi`, `tulisa
 (37, 'Kunjungan Edukasi SD Methodist 2 Palembang', '<p>Pada hari kamis tanggal 2 Maret 2017 sebanyak 39 siswa SD Methodist 2 Palembang beserta 8 guru melaksanakan kunjungan ke SMK PP Negeri Sembawa dalam rangka&nbsp;<em>field trip</em>&nbsp;(kunjungan lapangan) sebagai upaya untuk menambah wawasan anak anak Sekolah Dasar dalam bidang pertanian secara umum.</p>\r\n\r\n<p>Narasumber terdiri dari tenaga pendidik dan tenaga kependidikan SMK PP Negeri Sembawa yang berjumlah 14 orang. Dalam kegiatan&nbsp;<em>field trip</em>&nbsp;siswa menambah wawasan dalam bidang pertanian seperti tanaman sayuran, tanaman buah-buahan, tanaman hias dan tanaman perkebunan serta aneka ternak yang ada di SMK PP Negeri Sembawa.</p>\r\n\r\n<p>Kegiatan ini diharapkan dapat meningkatkan rasa peduli siswa terhadap lingkungan sejak dini serta dapat menambah wawasan siswa dalam bidang pertanian. (humas)</p>\r\n', '2018-03-25 15:12:45', 2, 'Kampusku', 0, 'b8205cfbfa0d8be6e31f778f45670803.jpg', 1, 'Administrator', 0, 'kunjungan-edukasi-sd-methodist-2-palembang.html', 0),
 (38, 'Rekrutmen PT Pratama Nusantara Sakti di SMK PP Negeri Sembawa', '<p>Pada tanggal 4 April 2017, PT Pratama Nusantara Sakti melakukan rekrutmen karyawan di SMK PP Negeri Sembawa. PT. Pratama Nusantara Sakti (PT. PNS) merupakan perusahaan gabungan dari 3 group perusahaan besar yang ada di Indonesia, yaitu Djarum Group, Wings Group, dan Central Proteina Prima. Perusahaan ini bergerak di bidang perkebunan tebu yang berlokasi di OKI, Sumatera Selatan. Visi yang ingin dicapai dari Pratama Nusantara Sakti adalah untuk menjadikan perusahaan ini sebagai perusahaan gula dataran rendah dan atau rawa pertama dan terbesar di Indonesia yang menjadi prioritas untuk membantu pemerintah dalam mewujudkan swasembada gula. Kegiatan rekrutmen ini dilakukan untuk menjaring peserta didik terbaik kelas XII prodi Perkebunan dan Pertanian untuk dapat berkarir di PT PNS setelah lulus nantinya. Kegiatan ini diikuti oleh 45 siswa kelas XII dan alumni. Serangkaian kegiatan yang dilakukan antara lain presentasi profil perusahaan yang dilanjutkan dengan tes psikotes. Berikutnya, bagi peserta yang lolos tahapan tersebut masih harus mengikuti tes wawancara dan kesehatan.</p>\r\n', '2018-03-25 15:15:27', 2, 'Kampusku', 1, '7f9c39096ec8a047f36efe05bac15dbf.jpg', 1, 'Administrator', 0, 'rekrutmen-pt-pratama-nusantara-sakti-di-smk-pp-negeri-sembawa.html', 0),
 (39, 'SMK PP NEGERI SEMBAWA MEWAKILI PROPINSI SUMATERA SELATAN PADA LOMBA KOMPETENSI SISWA (LKS) SMK TINGKAT NASIONAL TAHUN 2017 DI SOLO, JAWA TENGAH', '<p>SMK PP Negeri Sembawa menjadi salah satu utusan kontingen SMK dari Propinsi Sumatera Selatan dalam kegiatan Lomba Kompetensi Siswa (LKS) yang diadakan di Solo, Jawa Tengah pada tanggal 4 sampai dengan 20 Mei 2017. Pada Kegiatan LKS tahun ini di adakan sebanyak 53 bidang lomba sesuai bidang kompetensi yang ada di SMK seluruh Indonesia, dan di ikuti oleh &nbsp;1.114 siswa SMK dari seluruh provinsi di Indonesia. SMK PP Negeri Sembawa ikut serta mewakili pada bidang lomba Agronomi dengan tema &ldquo;Produksi Benih Tanaman Pangan dan Hortikultura Bersertifikat Berbasis&nbsp;<em>Entrepreneurship</em>&rdquo;.</p>\r\n\r\n<p>Lomba Kompetensi Siswa (LKS) bidang agronomi merupakan kegiatan pengujian (pembuktian) kompetensi siswa SMK pada Program Keahlian Agribisnis&nbsp; Pembenihan Tanaman yang menekankan pada aspek produksi benih dengan mengacu pada makna/definisi benih dalam UU No. 12 tahun 1992; tentang sistem budidaya tanaman, dengan menerapkan metode&nbsp;<em>assesmen</em>&nbsp;praktik dan presentasi dengan suasana arena lomba yang bersifat demonstrative/dapat dilihat oleh khalayak masyarakat umum dan industri, yang meliputi keterampilan dalam : perencanaan dan penentuan faktor resiko usaha tani, seleksi fisik benih,&nbsp;<em>rouging</em>&nbsp;dan vigor kecambah, pengendalian hama dan penyakit tanaman, polinasi, panen, pasca panen, pengemasan benih dan produk pertanian serta&nbsp; melakukan demontrasi&nbsp;<em>continuous imperovement.</em></p>\r\n\r\n<p>Tujuan dari kegiatan ini yaitu meningkatkan apresiasi, membuka wawasan, meningkatkan kemampuan dalam pemahaman kompetensi produksi benih tanaman pangan dan hortikultura bersertifikat dan secara tidak langsung bertujuan untuk mempromosikan keterampilan serta membangun jiwa&nbsp;<em>entrepreneurship</em>&nbsp;siswa SMK dalam hal produksi dan pengujian mutu pada dunia usaha dan industri serta masyarakat pada umumnya.</p>\r\n\r\n<p>Keikut sertaan SMK PP Negeri Sembawa di wakili oleh salah satu siswa kelas XII ATPH 2 yang bernama Uci Sapitri pada bidang lomba agronomi. Keberhasilan menuju lomba tingkat nasional ini adalah berkat keberhasilannya dalam menjuarai kegiatan LKS tingkat Propinsi Sumatera Selatan yang diadakan pada tanggal 2 sampai 5 Nopember 2016 di SMK Negeri Sumsel.&nbsp; Perjuangan SMK PP Sembawa yang diwakili oleh Uci Sapitri hanya memperoleh peringkat ke 6 dari 30 peserta lomba. Namun pencapaian ini&nbsp; dirasakan sudah maksimal mengingat singkatnya waktu yang digunakan untuk persiapan, karena kegiatan lomba ini hampir bersamaan dengan pelaksanaan Ujian Nasional kelas XII.(humas)</p>\r\n', '2018-03-25 15:19:42', 2, 'Kampusku', 1, '1898c69b0d89de4dd1aab6fdb6a19c40.jpg', 1, 'Administrator', 0, 'smk-pp-negeri-sembawa-mewakili-propinsi-sumatera-selatan-pada-lomba-kompetensi-siswa-lks-smk-tingkat-nasional-tahun-2017-di-solo-jawa-tengah.html', 0),
-(40, 'SMK PP Negeri Sembawa Raih Adiwiyata tingkat Provinsi Tahun 2017', '<p>&nbsp;Pada hari selasa tanggal 15 Mei 2017 telah dilaksanakan verifikasi oleh Badan Lingkungan Hidup Provinsi Sumatera Selatan sebagai calon sekolah Adiwiyata tingkat propinsi tahun 2017 yang dihadiri oleh ibu Leni Kurniati, M.E dan Bapak Suryadi.</p>\r\n\r\n<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Akhirnya SMK PP Negeri Sembawa meraih Adiwiyata tingkat provinsi tahun 2017 yang diberikan kepada Kepala SMK PP Negeri Sembawa diwakili oleh Kasubag Tata Usaha SMK PP Negeri Sembawa pada tanggal 12 Juli 2017 di GOR Jakabaring Palembang.</p>\r\n\r\n<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Penilaian untuk Adiwiyata tehadap 33 capaian SMK PP Negeri Sembawa dari 4 komponen diantaranya 1) Kebijakan berwawasan lingkungan, 2) Pelaksanaan kurikulum berbasis lingkungan, 3) Kegiatan lingkungan berbasis partisifatif 4) Pengelolaan sarana pendukung ramah lingkungan. Diharapkan SMK PP Negeri Sembawa dapat meningkatkan prestasi untuk dapat meraih Adiwiyata tingkat Nasional ditahun yang akan datang, untuk itu kerja keras civitas akademika harus tetap ditingkatkan. (humas)</p>', '2018-03-25 15:19:42', 2, 'Kampusku', 1, '1dae462c23208dfbb7cbe4f343eef7fc.jpg', 1, 'Administrator', 0, 'smk-pp-negeri-sembawa-raih-adiwiyata-tingkat-provinsi-tahun-2017.html', 0),
+(40, 'SMK PP Negeri Sembawa Raih Adiwiyata tingkat Provinsi Tahun 2017', '<p>&nbsp;Pada hari selasa tanggal 15 Mei 2017 telah dilaksanakan verifikasi oleh Badan Lingkungan Hidup Provinsi Sumatera Selatan sebagai calon sekolah Adiwiyata tingkat propinsi tahun 2017 yang dihadiri oleh ibu Leni Kurniati, M.E dan Bapak Suryadi.</p>\r\n\r\n<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Akhirnya SMK PP Negeri Sembawa meraih Adiwiyata tingkat provinsi tahun 2017 yang diberikan kepada Kepala SMK PP Negeri Sembawa diwakili oleh Kasubag Tata Usaha SMK PP Negeri Sembawa pada tanggal 12 Juli 2017 di GOR Jakabaring Palembang.</p>\r\n\r\n<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Penilaian untuk Adiwiyata tehadap 33 capaian SMK PP Negeri Sembawa dari 4 komponen diantaranya 1) Kebijakan berwawasan lingkungan, 2) Pelaksanaan kurikulum berbasis lingkungan, 3) Kegiatan lingkungan berbasis partisifatif 4) Pengelolaan sarana pendukung ramah lingkungan. Diharapkan SMK PP Negeri Sembawa dapat meningkatkan prestasi untuk dapat meraih Adiwiyata tingkat Nasional ditahun yang akan datang, untuk itu kerja keras civitas akademika harus tetap ditingkatkan. (humas)</p>', '2018-03-25 15:19:42', 2, 'Kampusku', 2, '1dae462c23208dfbb7cbe4f343eef7fc.jpg', 1, 'Administrator', 0, 'smk-pp-negeri-sembawa-raih-adiwiyata-tingkat-provinsi-tahun-2017.html', 0),
 (41, 'PERINGATAN TAHUN BARU ISLAM 1439 H', 'b68e0cc3baf700a74a6f481aeff5377b.jpg', '2018-03-25 15:29:59', 3, 'Kegiatan_Mingguan', 0, 'b68e0cc3baf700a74a6f481aeff5377b.jpg', 1, 'Administrator', 0, 'peringata-tahun-baru-islam-1439-h.html', 0),
 (42, 'Sosialisasi Wawasan Kebangsaan dan Pencegahan Terorisme di SMK PP Negeri Sembawa', '<p>Pada hari Jum&rsquo;at 6 0ktober 2017 bertempat di aula SMK PP Negeri Sembawa dilaksanakan kegiatan Sosialisasi Wawasan Kebangsaan&nbsp; dan Pencegahan Terorisme oleh Yon Zikon /KJ yang diikuti oleh kurang lebih 400 siswa tingkat XI dan XII. Berkesempatan hadir Wakil Komandan Batalion Mayor CZI Sunandar Parius Sudarmono, pemateri Yon Zikon / KJ Lettu CZI Asep Kurnia (Pasi Intel). Kepala SMK PP Negeri&nbsp; Sembawa Ir. Mattobi&rsquo;i, MP mengatakan kegiatan ini merupakan program dari kementerian pertanian dimana UPT dibawah naungan Kementan dapat melakukan sosialisasi wawasan kebangsaan, pencegahan terorisme dan pengaruh radikalisme, harapannya dengan kegiatan ini dapat menambah rasa nasionalisme siswa SMK PP N Sembawa. Wakil Komandan Batalion Mayor CZI Sunandar Parius Sudarmano memberikan motivasi kepada siswa SMK PP Negeri Sembawa yang ingin berkarier di TNI agar mempersiapkan diri dengan latihan dan belajar yang rajin. Materi disampaikan oleh Lettu CZI Asep Kurnia kurang lebih selama dua jam mengenai pencegahan terorosme, wawasan kebangsaan dan anti radikalisme. Selain itu dijelaskan tentang toleransi sesama warga negara Indonesia dan pentingnya menjaga Kesatuan Negara Kesatuan Republik Indonesia tercinta ini. (Humas)</p>\r\n', '2018-03-25 15:33:44', 3, 'Kegiatan_Mingguan', 1, 'e6725f11e8eb0a6749b6bf11392731fb.jpg', 1, 'Administrator', 0, 'sosialisasi-wawasan-kebangsaan-dan-pencegahan-terorisme-di-smk-pp-negeri-sembawa.html', 0),
-(43, 'CAPAIAN PRESTASI SMK PP NEGERI SEMBAWA DALAM ACARA DIES NATALIS FAKULTAS PERTANIAN UNIVERSITAS SRIWIJAYA', '<p>Keikutsertaan SMK PP N SEMBAWA dalam DIES NATALIS FAKULTAS PERTANIAN UNIVERSITAS SRIWIJAYA ini dilaksankan pada hari Rabu, 20 september 2017 di fakultas pertanian Universitas sriwijawa, Indralaya, Kabupaten Ogan Ilir , Sumatera Selatan. Kegiatan itu meliputi beberapa lomba yaitu:</p>\r\n\r\n<ol>\r\n	<li>Lomba cepat tepat</li>\r\n	<li>Lomba poster</li>\r\n	<li>Story telling bahasa inggris</li>\r\n	<li>Fotografi pertanian</li>\r\n</ol>\r\n\r\n<p>Tujuan dari diadakannya acara tersebut adalah untuk memperingati hari jadi unsri yang ke 54 dan juga bertujuan untuk mengembangkan minat dan bakat peserta didik dalam bidang pertanian melihat kebutuhan akan pangan di dunia semakin meningkat, maka dari itu UNIVERSITAS SRIWIJAYA juga ingin ikut berperan aktif dalam hal pemajuan sektor pertanian di Indonesia, mengingat bahwa Indonesia merupakan Negara agraris yang memiliki potensi yang jika dikembangkan dengan baik dapat menguntungkan Negara Indonesia dan Negara Indonesia sudah siap untuk bersaing dalam hal penyediaan pangan dunia.</p>\r\n\r\n<p>Adapun beberapa yang dapat ditorehkan siswa SMK PP NEGERI SEMBAWA adalah:</p>\r\n\r\n<ol>\r\n	<li>Juara I lomba cepat tepat atas nama AJI SUPRANOTO, M. RAVI AL QIFARY, SIYAM TRIYANI</li>\r\n	<li>Juara III lomba poster pertanian atas nama PIANTO RAMADHAN, ZULMY JUNIAWIDOSARI</li>\r\n	<li>Juara harapan I lomba cepat tepat atas nama AVIAD REZQIANO, RIYAN KUSUMA, ZERIKA REGINA</li>\r\n	<li>Juara harapan II lomba poster pertanian atas nama ARDIANSYAH, ASEP JUNAIDI</li>\r\n</ol>\r\n\r\n<p>Dari pencapaian siswa SMK PP N SEMBAWA tersebut sejumlah hadiah dan penghargaantelah diraih oleh siswa SMK PP N SEMBAWA yang menjadi pemenang dalam ajang lomba tersebut. Adapun hadiah tersebut adalah sebagai berikut :</p>\r\n\r\n<ul>\r\n	<li>Juara I lomba cepat tepat mendapatkan piala, piagam penghargaan,&nbsp; tabungan dari bank jabar Banten dan uang Pembina dari pihak UNIVERSITAS SRIWIJAYA sendiri.</li>\r\n	<li>Juara III lomba poster pertanian mendapatkan piala, piagam penghargaan, dan uang pembinaan.</li>\r\n	<li>Juara harapan I lomba cepat tepat mendapatkan piala, piagam penghargaan, dan uang pembinaan.</li>\r\n	<li>Juara harapan III lomba poster pertanian mendapatkan piala, piagam penghargaan, dan uang pembinaan.</li>\r\n</ul>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Puncak acara DIES NATALIS FAKULTAS PERTANIAN UNIVERSITAS SRIWIJAYA diadakan di unsri bukit, Palembang, sumatera selatan. Acara tersebut dilaksanakan dengan sangat meriah dengan dihadirinya rektor unsri, dekan fakultas pertanian unsri, wakil dekan, dan juga perwakilan dari kementrian pertanian RI yang pada saat itu dihadiri oleh kepala dinas pertanian provinsi sumatera selatan. Acara ini berlangsung dengan bahagia karena pada saat itu juga hadir para alumni UNIVERSITAS SRIWIJAYA yang ikut memeriahkan acara tersebut dengan menyumbangkan hadiah yang dapat diperoleh semua orang yang hadir pada acara tersebut. Jumlah total hadiah yang diberikan mencapai lebih dari 100 unit hadiah dengan door prize kulkas, mesin cuci dan masih banyak yang lainya.</p>\r\n\r\n<p>semoga apa yang telah dicapai oleh para siswa dapat dipertahankan dan menjadi motivasi bagi siswa-siswi lainnya demi membentuk manusia pertanian yang kreatif, berjiwa wirausaha, dan mandiri supaya dapat mencapai Indonesia yang maju, mandiri, dan sejahtera.</p>\r\n', '2018-03-25 15:33:44', 3, 'Kegiatan_Mingguan', 1, 'c095234fc7aeece33dc87cf02801ea91.jpg', 1, 'Administrator', 0, 'capaian-prestasi-smk-pp-negeri-sembawa-dalam-acara-dies-natalis-fakultas-pertanian-universitas-sriwijaya.html', 0),
-(44, 'STUDI BANDING PEGAWAI SMK PP NEGERI SEMBAWA KE POLITANI PAYAKUMBUH', '<p>Pada tanggal 20-24 September 2017, pegawai SMK PP Negeri Sembawa berkesempatan untuk mengunjungi Politeknik Pertanian Negeri Payakumbuh dalam rangka menambah wawasan dan pengetahuan untuk mewujudkan program-program prioritas yang sudah di canangkan oleh SMK PP Negeri Sembawa untuk kedepannya menjadi Politeknik Pertanian Pembangunan (Polbangtan).</p>\r\n\r\n<p>Untuk meningkatkan pengetahuan dan keterampilan Tenaga Kependidikan dalam pelayanan maka ada beberapa bidang yang dipelajari di POLITANI Payakumbuh seperti kegiatan Kepegawaian, akademik,&nbsp; kemahasiswaan, Perpustakaan, Praktik lapangan.</p>\r\n\r\n<p>Kegiatan seperti ini tentunya sangat bagus bagi perkembangan suatu kebutuhan yang diharapkan sebagaimana mestinya. Dalam kegiatan ini, Pegawai SMK PP Negeri Sembawa langsung disambut oleh Wakil Direktur I&nbsp; dan para beberapa civitas academica POLTANI Payakumbuh. Pengetahuan-pengetahuan postif dari POLITANI Payakumbuh dapat dicontoh kedepannya dalam Pembentukan POLBANGTAN Sembawa. (Humas)</p>\r\n', '2018-03-25 15:36:24', 3, 'Kegiatan_Mingguan', 1, '739189eee692ca0f53392070b1e4ca46.jpg', 1, 'Administrator', 0, 'studi-banding-pegawai-smk-pp-negeri-sembawa-ke-politani-payakumbuh.html', 0);
-INSERT INTO `tbl_tulisan` (`tulisan_id`, `tulisan_judul`, `tulisan_isi`, `tulisan_tanggal`, `tulisan_kategori_id`, `tulisan_kategori_nama`, `tulisan_views`, `tulisan_gambar`, `tulisan_pengguna_id`, `tulisan_author`, `tulisan_img_slider`, `tulisan_slug`, `tulisan_rating`) VALUES
+(43, 'CAPAIAN PRESTASI SMK PP NEGERI SEMBAWA DALAM ACARA DIES NATALIS FAKULTAS PERTANIAN UNIVERSITAS SRIWIJAYA', '<p>Keikutsertaan SMK PP N SEMBAWA dalam DIES NATALIS FAKULTAS PERTANIAN UNIVERSITAS SRIWIJAYA ini dilaksankan pada hari Rabu, 20 september 2017 di fakultas pertanian Universitas sriwijawa, Indralaya, Kabupaten Ogan Ilir , Sumatera Selatan. Kegiatan itu meliputi beberapa lomba yaitu:</p>\r\n\r\n<ol>\r\n	<li>Lomba cepat tepat</li>\r\n	<li>Lomba poster</li>\r\n	<li>Story telling bahasa inggris</li>\r\n	<li>Fotografi pertanian</li>\r\n</ol>\r\n\r\n<p>Tujuan dari diadakannya acara tersebut adalah untuk memperingati hari jadi unsri yang ke 54 dan juga bertujuan untuk mengembangkan minat dan bakat peserta didik dalam bidang pertanian melihat kebutuhan akan pangan di dunia semakin meningkat, maka dari itu UNIVERSITAS SRIWIJAYA juga ingin ikut berperan aktif dalam hal pemajuan sektor pertanian di Indonesia, mengingat bahwa Indonesia merupakan Negara agraris yang memiliki potensi yang jika dikembangkan dengan baik dapat menguntungkan Negara Indonesia dan Negara Indonesia sudah siap untuk bersaing dalam hal penyediaan pangan dunia.</p>\r\n\r\n<p>Adapun beberapa yang dapat ditorehkan siswa SMK PP NEGERI SEMBAWA adalah:</p>\r\n\r\n<ol>\r\n	<li>Juara I lomba cepat tepat atas nama AJI SUPRANOTO, M. RAVI AL QIFARY, SIYAM TRIYANI</li>\r\n	<li>Juara III lomba poster pertanian atas nama PIANTO RAMADHAN, ZULMY JUNIAWIDOSARI</li>\r\n	<li>Juara harapan I lomba cepat tepat atas nama AVIAD REZQIANO, RIYAN KUSUMA, ZERIKA REGINA</li>\r\n	<li>Juara harapan II lomba poster pertanian atas nama ARDIANSYAH, ASEP JUNAIDI</li>\r\n</ol>\r\n\r\n<p>Dari pencapaian siswa SMK PP N SEMBAWA tersebut sejumlah hadiah dan penghargaantelah diraih oleh siswa SMK PP N SEMBAWA yang menjadi pemenang dalam ajang lomba tersebut. Adapun hadiah tersebut adalah sebagai berikut :</p>\r\n\r\n<ul>\r\n	<li>Juara I lomba cepat tepat mendapatkan piala, piagam penghargaan,&nbsp; tabungan dari bank jabar Banten dan uang Pembina dari pihak UNIVERSITAS SRIWIJAYA sendiri.</li>\r\n	<li>Juara III lomba poster pertanian mendapatkan piala, piagam penghargaan, dan uang pembinaan.</li>\r\n	<li>Juara harapan I lomba cepat tepat mendapatkan piala, piagam penghargaan, dan uang pembinaan.</li>\r\n	<li>Juara harapan III lomba poster pertanian mendapatkan piala, piagam penghargaan, dan uang pembinaan.</li>\r\n</ul>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Puncak acara DIES NATALIS FAKULTAS PERTANIAN UNIVERSITAS SRIWIJAYA diadakan di unsri bukit, Palembang, sumatera selatan. Acara tersebut dilaksanakan dengan sangat meriah dengan dihadirinya rektor unsri, dekan fakultas pertanian unsri, wakil dekan, dan juga perwakilan dari kementrian pertanian RI yang pada saat itu dihadiri oleh kepala dinas pertanian provinsi sumatera selatan. Acara ini berlangsung dengan bahagia karena pada saat itu juga hadir para alumni UNIVERSITAS SRIWIJAYA yang ikut memeriahkan acara tersebut dengan menyumbangkan hadiah yang dapat diperoleh semua orang yang hadir pada acara tersebut. Jumlah total hadiah yang diberikan mencapai lebih dari 100 unit hadiah dengan door prize kulkas, mesin cuci dan masih banyak yang lainya.</p>\r\n\r\n<p>semoga apa yang telah dicapai oleh para siswa dapat dipertahankan dan menjadi motivasi bagi siswa-siswi lainnya demi membentuk manusia pertanian yang kreatif, berjiwa wirausaha, dan mandiri supaya dapat mencapai Indonesia yang maju, mandiri, dan sejahtera.</p>\r\n', '2018-03-25 15:33:44', 3, 'Kegiatan_Mingguan', 2, 'c095234fc7aeece33dc87cf02801ea91.jpg', 1, 'Administrator', 0, 'capaian-prestasi-smk-pp-negeri-sembawa-dalam-acara-dies-natalis-fakultas-pertanian-universitas-sriwijaya.html', 0),
+(44, 'STUDI BANDING PEGAWAI SMK PP NEGERI SEMBAWA KE POLITANI PAYAKUMBUH', '<p>Pada tanggal 20-24 September 2017, pegawai SMK PP Negeri Sembawa berkesempatan untuk mengunjungi Politeknik Pertanian Negeri Payakumbuh dalam rangka menambah wawasan dan pengetahuan untuk mewujudkan program-program prioritas yang sudah di canangkan oleh SMK PP Negeri Sembawa untuk kedepannya menjadi Politeknik Pertanian Pembangunan (Polbangtan).</p>\r\n\r\n<p>Untuk meningkatkan pengetahuan dan keterampilan Tenaga Kependidikan dalam pelayanan maka ada beberapa bidang yang dipelajari di POLITANI Payakumbuh seperti kegiatan Kepegawaian, akademik,&nbsp; kemahasiswaan, Perpustakaan, Praktik lapangan.</p>\r\n\r\n<p>Kegiatan seperti ini tentunya sangat bagus bagi perkembangan suatu kebutuhan yang diharapkan sebagaimana mestinya. Dalam kegiatan ini, Pegawai SMK PP Negeri Sembawa langsung disambut oleh Wakil Direktur I&nbsp; dan para beberapa civitas academica POLTANI Payakumbuh. Pengetahuan-pengetahuan postif dari POLITANI Payakumbuh dapat dicontoh kedepannya dalam Pembentukan POLBANGTAN Sembawa. (Humas)</p>\r\n', '2018-03-25 15:36:24', 3, 'Kegiatan_Mingguan', 1, '739189eee692ca0f53392070b1e4ca46.jpg', 1, 'Administrator', 0, 'studi-banding-pegawai-smk-pp-negeri-sembawa-ke-politani-payakumbuh.html', 0),
 (45, 'Panen Jagung di Desa Banyu Urip Kerja sama Desa Mitra SMK PP Negeri Sembawa', '<p>SMK PP Negeri sembawa sebagai salah satu UPT Badan Penyuluhan Pengembangan Sumber Daya manusia Pertanian mendukung program kementerian pertanian &nbsp;dalam rangka ketahanan pangan dengan salah satu programnya adalah Pengembangan Desa Mitra sebagai upaya regenerasi petani. SMK PP Negeri Sembawa memiliki lima kelompok tani binaan dalam program Desa Mitra tahun 2017, salah satunya adalah Kelompok tani Sumber Jaya yang terletak di Desa Banyu Urip Kecamatan Tanjung Lago, Kabupaten Banyuasin.</p>\r\n\r\n<p>Salah satu kegiatan yang dilakukan di kelompok tani Sumber Jaya adalah&nbsp; budidaya tanaman jagung varietas BISI 18 yang dilaksanakan setelah panen padi. Hal ini dikarenakan Desa Banyu Urip adalah daerah pasang surut sehingga memungkinkan untuk melakukan budidaya tanaman jagung pada musim kemarau. Setiap anggota kelompok tani rata-rata memiliki luas lahan 2 hektar pada budidaya jagung ini, kegiatan budidaya ini sendiri dimulai pada bulan Juni 2017. Proses yang dilakukan &nbsp;pada budidaya jagung di kelompok tani Sumber Jaya dalah &nbsp;penyiapan lahan, penanaman benih jagung, pemupukan, pemeliharaan, pemberantasan hama dan penyakit tanaman, panen dan pasca panen.</p>\r\n\r\n<p>Sebagai Tindak lanjut kerjasama desa mitra pada tanggal 16 September 2017, dari pukul 08.00 WIB - 13.00 WIB dilaksanakan praktik siswa SMK PP Negeri Sembawa , sebanyak 59 siswa SMK PP Negeri Sembawa tingkat XI melaksanakan panen Jagung di Kelompok Tani Sumber Jaya, Hal ini bertujuan untuk menambah pengetahuan siswa SMK PP Negeri SMK PP Negeri Sembawa tentang budidaya tanaman jagung, membandingkan pengetahuan yang didapat di sekolah dan dunia nyata.</p>\r\n\r\n<p>Panen jagung di kelompok tani Sumber Jaya dilaksanakan dengan konvensional mesin pipil dan menggunakan teknologi corn combine harvester. Pada kesempatan ini, siswa SMK PP Negeri Sembawa melihat dan melaksanakan panen dengan kedua cara ini. Serta menganalisa usaha tani pada proses panen pada kelompok tani Sumber Jaya dengan perbandingan 1 : 1,4 untuk panen dengan konvensional mesin pipil berbanding dengan menggunakan alat corn combine harvester. Modernisasi pertanian berupa penggunaan alat-alat mesin pertanian di era sekarang ini sudah tidak terelakan lagi. Selain bertujuan untuk melakukan efisiensi didalam pembiayaan usaha tani, juga sebagai jawaban atas kelangkaan tenaga kerja pertanian. Penggunaan alat upaya menekan susut hasil (<em>losses</em>), mempertahankan kualitas hasil serta meningkatkan nilai tambah dan daya saing, yang pada akhirnya akan meningkatan pendapatan petani, sehingga bisa mengurangi angka kemiskinan</p>\r\n\r\n<p>Ketua Kelompok Tani Sumber jaya bapak Pariyem mengatakan, saat ini sudah banyak pemuda-pemuda di Desa Banyu Urip yang berminat di dunia pertanian, dunia pertanian sekarang bisa dikatakan dapat mensejahterakan serta dengan bantuan teknologi pertanian dapat mempermudah dan mengefiensikan waktu dan tenaga. Untuk pemasaran hasil panen jagung kelompok tani Sumber Jaya sudah bekerja sama dengan pemborong secara kolektif.</p>\r\n\r\n<p>Ketua Pelaksana kegiatan Pengembangan Desa Mitra Dr. Zulkipli, M.Si mengharapkan dengan kegiatan desa mitra ini dapat menjawab kegalauan menteri pertanian yang menyatakan bahwa sekarang ini banyak anak muda tidak mau jadi petani, dengan melihat bahwa petani bisa sejahtera dan sukses diharapkan banyak anak muda yang mau jadi petani.</p>\r\n', '2018-03-25 15:44:34', 5, 'Kerja_Sama', 0, 'aae2c84d5a66b9fd663fc3c5c93e3bc3.png', 1, 'Administrator', 0, 'panen-jagung-di-desa-banyu-uri-kerja-sama-desa-mitra-smk-pp-negeri-sembawa.html', 0),
 (46, 'LOWONGAN KERJA PT PNS', NULL, '2018-03-25 15:44:34', 7, 'Pengumuman', 2, '385cc49d1ab13746a540aec8687fedaf (1).jpg', 1, 'Administrator', 0, 'lowongan-kerja-pt-pns.html', 0),
-(47, 'RECRUITMENT PT SEBANGUN BUMI ANDALAS (SBA)', '<p>Informasi untuk alumni SMK-PPN SEMBAWA, bahwa PT SEBANGUN BUMI ANDALAS (SBA) yang bergerak di bidang Hutan Tanaman Industri akan melakukan perekrutan calon karyawan. sehubungan dengan hal itu, kami mengajak alumni khususnya pria untuk bergabung mengikuti pelaksanaan recruitment tersebut pada: Hari/Tanggal : Senin/21 Agustus 2017 Waktu : 09.00 wib s/d selesai Tempat : SMK- PP Negeri Sembawa Demikian informasi dari pihak humas. semoga dapat membantu para alumni yang sedang mencari pekerjaan. Terima kasih</p>\r\n', '2018-03-25 15:46:23', 7, 'Pengumuman', 2, 'c34ea18d1e8930b177b89bb7ab2ff870.png', 1, 'Administrator', 0, 'recruitment-pt-sebangun-bumi-andalas-sba.html', 1);
+(47, 'RECRUITMENT PT SEBANGUN BUMI ANDALAS (SBA)', '<p>Informasi untuk alumni SMK-PPN SEMBAWA, bahwa PT SEBANGUN BUMI ANDALAS (SBA) yang bergerak di bidang Hutan Tanaman Industri akan melakukan perekrutan calon karyawan. sehubungan dengan hal itu, kami mengajak alumni khususnya pria untuk bergabung mengikuti pelaksanaan recruitment tersebut pada: Hari/Tanggal : Senin/21 Agustus 2017 Waktu : 09.00 wib s/d selesai Tempat : SMK- PP Negeri Sembawa Demikian informasi dari pihak humas. semoga dapat membantu para alumni yang sedang mencari pekerjaan. Terima kasih</p>\r\n', '2018-03-25 15:46:23', 7, 'Pengumuman', 3, 'c34ea18d1e8930b177b89bb7ab2ff870.png', 1, 'Administrator', 0, 'recruitment-pt-sebangun-bumi-andalas-sba.html', 1);
 
 -- --------------------------------------------------------
 
@@ -627,8 +654,9 @@ INSERT INTO `tbl_tulisan` (`tulisan_id`, `tulisan_judul`, `tulisan_isi`, `tulisa
 CREATE TABLE `tbl_video` (
   `video_id` int(11) NOT NULL,
   `video_tanggal` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  `video_nama` varchar(200) DEFAULT NULL,
-  `pengguna_id` int(11) DEFAULT NULL,
+  `video_judul` varchar(40) DEFAULT NULL,
+  `video_link` varchar(200) DEFAULT NULL,
+  `author_id` int(11) DEFAULT NULL,
   `author` varchar(60) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -636,19 +664,13 @@ CREATE TABLE `tbl_video` (
 -- Dumping data for table `tbl_video`
 --
 
-INSERT INTO `tbl_video` (`video_id`, `video_tanggal`, `video_nama`, `pengguna_id`, `author`) VALUES
-(4, '2018-03-25 04:48:03', 'https://www.youtube.com/embed/ztiC2YwTqog', 1, 'puji'),
-(5, '2018-03-25 04:48:03', 'https://www.youtube.com/embed/w_5pJtymY6I', 1, 'puji');
+INSERT INTO `tbl_video` (`video_id`, `video_tanggal`, `video_judul`, `video_link`, `author_id`, `author`) VALUES
+(4, '2018-03-25 04:48:03', NULL, 'https://www.youtube.com/embed/ztiC2YwTqog', 1, 'puji'),
+(5, '2018-03-30 08:53:32', 'puji', 'https://www.youtube.com/embed/w_5pJtymY6I', 1, 'Administrator');
 
 --
 -- Indexes for dumped tables
 --
-
---
--- Indexes for table `tbl_agenda`
---
-ALTER TABLE `tbl_agenda`
-  ADD PRIMARY KEY (`agenda_id`);
 
 --
 -- Indexes for table `tbl_album`
@@ -662,6 +684,12 @@ ALTER TABLE `tbl_album`
 --
 ALTER TABLE `tbl_files`
   ADD PRIMARY KEY (`file_id`);
+
+--
+-- Indexes for table `tbl_form`
+--
+ALTER TABLE `tbl_form`
+  ADD PRIMARY KEY (`form_id`);
 
 --
 -- Indexes for table `tbl_galeri`
@@ -682,6 +710,12 @@ ALTER TABLE `tbl_guru`
 --
 ALTER TABLE `tbl_inbox`
   ADD PRIMARY KEY (`inbox_id`);
+
+--
+-- Indexes for table `tbl_jejak_pendapat`
+--
+ALTER TABLE `tbl_jejak_pendapat`
+  ADD PRIMARY KEY (`jejak_pendapat_id`);
 
 --
 -- Indexes for table `tbl_kategori`
@@ -707,13 +741,6 @@ ALTER TABLE `tbl_kelas`
 ALTER TABLE `tbl_komentar`
   ADD PRIMARY KEY (`komentar_id`),
   ADD KEY `komentar_tulisan_id` (`komentar_tulisan_id`);
-
---
--- Indexes for table `tbl_log_aktivitas`
---
-ALTER TABLE `tbl_log_aktivitas`
-  ADD PRIMARY KEY (`log_id`),
-  ADD KEY `log_pengguna_id` (`log_pengguna_id`);
 
 --
 -- Indexes for table `tbl_pengguna`
@@ -770,11 +797,6 @@ ALTER TABLE `tbl_video`
 --
 
 --
--- AUTO_INCREMENT for table `tbl_agenda`
---
-ALTER TABLE `tbl_agenda`
-  MODIFY `agenda_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
---
 -- AUTO_INCREMENT for table `tbl_album`
 --
 ALTER TABLE `tbl_album`
@@ -783,7 +805,12 @@ ALTER TABLE `tbl_album`
 -- AUTO_INCREMENT for table `tbl_files`
 --
 ALTER TABLE `tbl_files`
-  MODIFY `file_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `file_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=73;
+--
+-- AUTO_INCREMENT for table `tbl_form`
+--
+ALTER TABLE `tbl_form`
+  MODIFY `form_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT for table `tbl_galeri`
 --
@@ -798,7 +825,12 @@ ALTER TABLE `tbl_guru`
 -- AUTO_INCREMENT for table `tbl_inbox`
 --
 ALTER TABLE `tbl_inbox`
-  MODIFY `inbox_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `inbox_id` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `tbl_jejak_pendapat`
+--
+ALTER TABLE `tbl_jejak_pendapat`
+  MODIFY `jejak_pendapat_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT for table `tbl_kategori`
 --
@@ -808,7 +840,7 @@ ALTER TABLE `tbl_kategori`
 -- AUTO_INCREMENT for table `tbl_kategori_files`
 --
 ALTER TABLE `tbl_kategori_files`
-  MODIFY `kategori_f_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `kategori_f_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT for table `tbl_kelas`
 --
@@ -820,11 +852,6 @@ ALTER TABLE `tbl_kelas`
 ALTER TABLE `tbl_komentar`
   MODIFY `komentar_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 --
--- AUTO_INCREMENT for table `tbl_log_aktivitas`
---
-ALTER TABLE `tbl_log_aktivitas`
-  MODIFY `log_id` int(11) NOT NULL AUTO_INCREMENT;
---
 -- AUTO_INCREMENT for table `tbl_pengguna`
 --
 ALTER TABLE `tbl_pengguna`
@@ -833,7 +860,7 @@ ALTER TABLE `tbl_pengguna`
 -- AUTO_INCREMENT for table `tbl_pengunjung`
 --
 ALTER TABLE `tbl_pengunjung`
-  MODIFY `pengunjung_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=958;
+  MODIFY `pengunjung_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=961;
 --
 -- AUTO_INCREMENT for table `tbl_portfolio`
 --
@@ -848,12 +875,12 @@ ALTER TABLE `tbl_post_rating`
 -- AUTO_INCREMENT for table `tbl_post_views`
 --
 ALTER TABLE `tbl_post_views`
-  MODIFY `views_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=92;
+  MODIFY `views_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=101;
 --
 -- AUTO_INCREMENT for table `tbl_siswa`
 --
 ALTER TABLE `tbl_siswa`
-  MODIFY `siswa_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `siswa_id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `tbl_tulisan`
 --

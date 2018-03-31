@@ -5,6 +5,7 @@
 		$this->load->model('m_tulisan');
 		$this->load->model('m_pengunjung');
 		$this->load->model('m_portfolio');
+		$this->load->model('m_jejak_pendapat');
         $this->m_pengunjung->count_visitor();
 	}
 	function index(){
@@ -29,7 +30,7 @@
 
 	function profil()
 	{
-		$y['title'] = 'SMK Negeri SPP Palembang';
+		$y['title'] = 'SMK Negeri SPP Palembang | Profil';
 		$this->m_portfolio->count_views(9);
 		$x['portofolio1']=$this->m_portfolio->get_portfolio_by_kode(8);
 		$x['portofolio']=$this->m_portfolio->get_portfolio_by_kode(9);
@@ -39,5 +40,36 @@
 		$this->load->view('v_sidebar',["side" => 1]);
 		$this->load->view('v_profil',$x);
 		$this->load->view('v_footer');
+	}
+
+	function kataSambutan()
+	{
+		$y['title'] = 'SMK Negeri SPP Palembang | Kata Sambutan';
+		$this->m_portfolio->count_views(8);
+		$x['portofolio']=$this->m_portfolio->get_portfolio_by_kode(8);
+		$x['visitor'] = $this->m_pengunjung->statistik_pengujung();
+		$x['total'] = $this->m_pengunjung->get_all_pengunjung();
+		$this->load->view('v_header',$y);
+		$this->load->view('v_sidebar',["side" => 1]);
+		$this->load->view('v_katasambutan',$x);
+		$this->load->view('v_footer');
+	}
+
+	function kirim_pendapat()
+	{
+		$this->m_jejak_pendapat->kirim_pendapat();
+		echo $this->session->set_flashdata('msg','<div class="alert alert-success"><p><strong> NB: </strong> Terima Kasih telah memberikan pendapat.</p></div>');
+		redirect('Home');
+	}
+
+	function lihat_hasil(){
+		$x['visitor1'] = $this->m_jejak_pendapat->get_pendapat_perhari();
+		$x['portofolio']=$this->m_portfolio->get_portfolio_by_kode(8);
+		$x['visitor'] = $this->m_pengunjung->statistik_pengujung();
+		$x['total'] = $this->m_pengunjung->get_all_pengunjung();
+		$y['title'] = 'SMK Negeri PP Sembawa | Lihat Hasil ';
+		$this->load->view('v_header',$y);
+		$this->load->view('v_sidebar',["side" => 1]);
+		$this->load->view('v_lihat_hasil',$x);
 	}
 }

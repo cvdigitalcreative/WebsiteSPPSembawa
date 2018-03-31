@@ -77,7 +77,7 @@
                     <div class="mini-slider">
                       <ul id="carousel" class="elastislide-list">
                             <li style="margin-right: 0px;"">
-                              <a href="#"><img src="<?php echo base_url().'assets/images/'.$image?>" alt="Ir. Mattobi'i, MP" /></a>
+                              <a href="<?php echo base_url().'Home/kataSambutan'?>"><img src="<?php echo base_url().'assets/images/'.$image?>" alt="Ir. Mattobi'i, MP" /></a>
                               <strong class="candidate-name"><?php echo $nama?></strong>
                             </li>
                         </ul>
@@ -93,7 +93,7 @@
             <blockquote>
                  <h2 style='border-bottom: 6px solid #3a813c;width: 243px;margin-left: -15px;'></h2>
           <!-- Carousel -->
-                        <h3 style="margin-top: -1px;">Tautan</h3>
+                        <h3 style="margin-top: -20px;">Tautan</h3>
                         <span class="border-line m-bottom" style="margin-top: 5px;margin-left: -10px;"></span>
                           <ul class="nav nav-list">
                             <li><a href="http://bppsdmp.pertanian.go.id/id"><img src="<?php echo base_url().'assets/images/Kementan.png'?>" style="width: 36px;margin-right: 9px;">BPPSDMP</a></li>
@@ -109,7 +109,7 @@
             <blockquote style="margin-top: 35px;">
                  <h2 style='border-bottom: 6px solid #3a813c;width: 243px;margin-left: -15px;'></h2>
           <!-- Carousel -->
-                        <h3 style="margin-top: -1px;">Pengunjung Hari Ini</h3>
+                        <h3 style="margin-top: -20px;">Pengunjung Hari Ini</h3>
                           <ul class="a-list">
                             <li style="margin-left: 13px;"><?php echo $visitor?></li>
                           </ul>
@@ -118,6 +118,16 @@
                           <ul class="a-list">
                             <li style="margin-left: 13px;"><?php echo $total?></li>
                           </ul>      
+            <!-- Carousel End -->
+            </blockquote>
+            <blockquote style="margin-top: 35px;">
+                 <h2 style='border-bottom: 6px solid #3a813c;width: 243px;margin-left: -15px;'></h2>
+          <!-- Carousel -->
+                         <h3 style="margin-top: -20px;">Jejak Pendapat</h3>
+                        <p style="margin-bottom: 6px;margin-top: -1px;">Mulai Tahun 2018, SMK PP NEGERI SEMBAWA akan berubah menjadi POLITEKNIK PEMBANGUNAN PERTANIAN ?</p>
+                        <p> <?php echo $this->session->flashdata('msg');?></p>
+                        <p><a href="<?php echo base_url().'Home/kirim_pendapat'?>"><button type="button" class="btn btn-success"><i class="icon-ok icon-white" style="margin-right:6px;"></i>Submit</button></a>
+                          <a href="<?php echo base_url().'Home/lihat_hasil'?>"><button type="button" class="btn btn-info"><i class="icon-signal icon-white" style="margin-right:6px;"></i>Lihat Hasil</button></a></p>
             <!-- Carousel End -->
             </blockquote>
             <!-- Carousel End -->

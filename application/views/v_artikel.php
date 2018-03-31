@@ -44,7 +44,7 @@
       <li class="dropdown"> <a class="dropdown-toggle" href="<?php echo base_url().'Kurikulum'?>" >Kurikulum<b class="caret"></b> </a>
         <ul class="dropdown-menu">
        		<li> <a href="<?php echo base_url().'Kurikulum'?>">Kalender Pendidikan</a> </li>
-       		<li> <a href="<?php echo base_url().'Kurikulum'?>">DAPODIK</a> </li>
+       		<li> <a href="<?php echo base_url().'Kurikulum/Dapodik'?>">DAPODIK</a> </li>
         </ul>
       </li>
 				

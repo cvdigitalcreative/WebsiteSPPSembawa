@@ -37,8 +37,9 @@ class Files extends CI_Controller{
 	}
 	
 	function simpan_file(){
-				$config['upload_path'] = './assets/files/'; //path folder
-	            $config['allowed_types'] = 'pdf|doc|docx|ppt|pptx|zip'; //type yang dapat diakses bisa anda sesuaikan
+				$config['upload_path'] 	 = './assets/files/'; //path folder
+	            $config['allowed_types'] = '*';
+	            $config['max_size'] = 0; //type yang dapat diakses bisa anda sesuaikan
 	            // $config['encrypt_name'] = TRUE; //nama yang terupload nantinya
 
 	            $this->upload->initialize($config);
@@ -52,7 +53,6 @@ class Files extends CI_Controller{
 							$deskripsi=$this->input->post('xdeskripsi');
 							$oleh=strip_tags($this->input->post('xoleh'));
 							$kategori=$this->input->post('xkategori');
-
 	
 							$this->m_files->simpan_file($judul,$deskripsi,$oleh,$kategori,$file);
 							echo $this->session->set_flashdata('msg','success');
@@ -71,7 +71,8 @@ class Files extends CI_Controller{
 	function update_file(){
 				
 	            $config['upload_path'] = './assets/files/'; //path folder
-	            $config['allowed_types'] = 'pdf|doc|docx|ppt|pptx|zip'; //type yang dapat diakses bisa anda sesuaikan
+	            $config['allowed_types'] = '*';
+	            $config['max_size'] = 0; 	 	  //type yang dapat diakses bisa anda sesuaikan
 	            // $config['encrypt_name'] = TRUE; //nama yang terupload nantinya
 
 	            $this->upload->initialize($config);

@@ -29,7 +29,7 @@ class M_files extends CI_Model{
 	}
 
 	function get_file_by_name($keyword){
-		$hsl=$this->db->query("SELECT *,DATE_FORMAT(file_tanggal,'%d/%m/%Y') AS tanggal FROM tbl_files join tbl_kategori_files on kategori_file_id=kategori_f_id WHERE kategori_nama LIKE '%$keyword%' ");
+		$hsl=$this->db->query("SELECT *,DATE_FORMAT(file_tanggal,'%d/%m/%Y') AS tanggal FROM tbl_files join tbl_kategori_files on kategori_file_id=kategori_f_id WHERE kategori_f_id = $keyword");
 		return $hsl;
 	}
 	function get_file_byid($id){

@@ -73,6 +73,7 @@
 			<li class="dropdown <?php echo $cek1?>"> <a class="dropdown-toggle" href="<?php echo base_url()?>" >Home<b class="caret"></b> </a>
                   <ul class="dropdown-menu">
                   	<li><a href="<?php echo base_url(). 'Home/profil'?>">Profil</a></li>
+                    <li><a href="<?php echo base_url(). 'Home/kataSambutan'?>">Kata Sambutan</a></li>
                   </ul>
                 </li>
 				<li class="dropdown <?php echo $cek2?>"> <a class="dropdown-toggle" href="<?php echo base_url().'Civitas'?>">Civitas<b class="caret"></b> </a>
@@ -88,7 +89,7 @@
       <li class="dropdown <?php echo $cek4?>"> <a class="dropdown-toggle" href="<?php echo base_url().'Kurikulum'?>" >Kurikulum<b class="caret"></b> </a>
         <ul class="dropdown-menu">
        		<li> <a href="<?php echo base_url().'Kurikulum'?>">Kalender Pendidikan</a> </li>
-          <li> <a href="<?php echo base_url().'Kurikulum'?>">DAPODIK</a> </li>
+          <li> <a href="<?php echo base_url().'Kurikulum/Dapodik'?>">DAPODIK</a> </li>
         </ul>
       </li>
 				

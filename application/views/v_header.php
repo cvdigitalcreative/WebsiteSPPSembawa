@@ -8,6 +8,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <meta name="description" content="Place your description here">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="shorcut icon" type="text/css" href="<?php echo base_url().'assets/images/Kementan.png'?>">
 <link rel="stylesheet" href="<?php echo base_url()?>assets/css/style.css" type="text/css" media="all">
 <link rel="stylesheet" href="<?php echo base_url()?>assets/css/update-responsive.css" type="text/css" media="all">
 <!-- Slider -->

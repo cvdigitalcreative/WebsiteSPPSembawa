@@ -12,7 +12,7 @@ class M_portfolio extends CI_Model{
 	}
 
 	function get_portfolio_by_kode($kode){
-		$hsl=$this->db->query("SELECT * FROM tbl_portfolio WHERE port_id='$kode'");
+		$hsl=$this->db->query("SELECT *,DATE_FORMAT(port_tanggal,'%d %M %Y') AS tanggal FROM tbl_portfolio WHERE port_id='$kode'");
 		return $hsl;
 	}
 
