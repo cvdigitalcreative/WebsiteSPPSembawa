@@ -35,7 +35,7 @@
       		<li> <a href="<?php echo base_url().'Kurikulum'?>" >KURIKULUM</b> </a>
 		        <ul class="dropdown-menu">
 		       		<li> <a href="<?php echo base_url().'Kurikulum'?>">KALENDER AKADEMIK</a> </li>
-		       		li> <a href="<?php echo base_url().'Kurikulum/Dapodik'?>">DAPODIK</a> </li>
+		       		li> <a href="http://dapo.dikdasmen.kemdikbud.go.id/sekolah/964D53F4E9937D2E5327">DAPODIK</a> </li>
 		        </ul>
 		    </li>
 			&nbsp;	
