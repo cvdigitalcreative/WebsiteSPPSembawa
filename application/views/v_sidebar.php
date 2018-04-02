@@ -89,17 +89,17 @@
       <li class="dropdown <?php echo $cek4?>"> <a class="dropdown-toggle" href="<?php echo base_url().'Kurikulum'?>" >Kurikulum<b class="caret"></b> </a>
         <ul class="dropdown-menu">
        		<li> <a href="<?php echo base_url().'Kurikulum'?>">Kalender Pendidikan</a> </li>
-          <li> <a href="<?php echo base_url().'Kurikulum/Dapodik'?>">DAPODIK</a> </li>
+          <li> <a href="http://dapo.dikdasmen.kemdikbud.go.id/sekolah/964D53F4E9937D2E5327">DAPODIK</a> </li>
         </ul>
       </li>
 				
 				<li class="dropdown <?php echo $cek5?>"> <a class="dropdown-toggle" href="<?php echo base_url().'Sarana'?>" >Sarana Prasarana<b class="caret"></b> </a>
                   <ul class="dropdown-menu">
-                  	<li><a href="<?php echo base_url().'Sarana'?>">Sapras Sekolah</a></li>
-          	    	<li><a href="<?php echo base_url().'Sarana/tuk'?>">TUK</a></li>
-                	<li><a href="<?php echo base_url().'Sarana/gedung'?>">Gedung</a></li>
-                  <li><a href="<?php echo base_url().'Sarana/laboratorium'?>">Laboratorium</a></li>
-                  <li><a href="<?php echo base_url().'Sarana/lahan_praktikum'?>">Lahan Praktikum</a></li>
+                  	<li><a href="<?php echo base_url().'Sarana/kategori/9'?>">Sapras Sekolah</a></li>
+                  <li><a href="<?php echo base_url().'Sarana/kategori/10'?>">TUK</a></li>
+                  <li><a href="<?php echo base_url().'Sarana/kategori/11'?>">Gedung</a></li>
+                  <li><a href="<?php echo base_url().'Sarana/kategori/12'?>">Laboratorium</a></li>
+                  <li><a href="<?php echo base_url().'Sarana/kategori/13'?>">Lahan Praktikum</a></li>
                   </ul>
         </li>
 				

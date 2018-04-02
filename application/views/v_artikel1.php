@@ -48,17 +48,17 @@
         </ul>
       </li>
 				
-				<li class="dropdown "> <a class="dropdown-toggle" href="<?php echo base_url().'Sarana'?>" >Sarana Prasarana<b class="caret"></b> </a>
+				<li class="dropdown active"> <a class="dropdown-toggle" href="<?php echo base_url().'Sarana'?>" >Sarana Prasarana<b class="caret"></b> </a>
                   <ul class="dropdown-menu">
-                  	<li><a href="<?php echo base_url().'Sarana'?>">Sapras Sekolah</a></li>
-          	    	<li><a href="<?php echo base_url().'Sarana/tuk'?>">TUK</a></li>
-                	<li><a href="<?php echo base_url().'Sarana/gedung'?>">Gedung</a></li>
-                  <li><a href="<?php echo base_url().'Sarana/laboratorium'?>">Laboratorium</a></li>
-                  <li><a href="<?php echo base_url().'Sarana/lahan_praktikum'?>">Lahan Praktikum</a></li>
+                  	<li><a href="<?php echo base_url().'Sarana/kategori/9'?>">Sapras Sekolah</a></li>
+          	    	<li><a href="<?php echo base_url().'Sarana/kategori/10'?>">TUK</a></li>
+                	<li><a href="<?php echo base_url().'Sarana/kategori/11'?>">Gedung</a></li>
+                  <li><a href="<?php echo base_url().'Sarana/kategori/12'?>">Laboratorium</a></li>
+                  <li><a href="<?php echo base_url().'Sarana/kategori/13'?>">Lahan Praktikum</a></li>
                   </ul>
         </li>
 				
-				<li class="dropdown active"> <a class="dropdown-toggle" href="<?php echo base_url().'Artikel/'?>">Informasi Publik <b class="caret"></b> </a>
+				<li class="dropdown"> <a class="dropdown-toggle" href="<?php echo base_url().'Artikel/'?>">Informasi Publik <b class="caret"></b> </a>
                   <ul class="dropdown-menu">
                   	<li><a href="<?php echo base_url().'Artikel/'?>">Berita</a></li>
                   	<li><a href="<?php echo base_url().'Informasi/informasi_publik_berkala'?>">Informasi Publik Berkala</a></li>
@@ -117,13 +117,13 @@
 					$post_slug=$j['tulisan_slug'];
 			 ?>
 				<article class="blog_listing_wrapper">
-					<figure class="post_title"> <h2> <a href="<?php echo base_url().'Artikel/'.$post_slug;?>"> <span> <?php echo $post_tglpost ?> </span> <?php echo $post_judul ?> </h2>	</a> </figure>
+					<figure class="post_title"> <h2> <a href="<?php echo base_url().'Sarana/detail/'.$post_slug;?>"> <span> <?php echo $post_tglpost ?> </span> <?php echo $post_judul ?> </h2>	</a> </figure>
 					<figure class="post_featured_image"> <img src="<?php echo base_url().'assets/images/'.$post_image;?>" alt="" /> </figure>
 					<figure class="post_meta"> 
 					<span> Posted by: <?php echo $post_author ?> </span> 
 					</figure>
 					<figure class="post_description">	<p> <?php echo limit_words($post_isi,30).'...';?></p>	</figure>
-					<figure class="post_readmore"> <a href="<?php echo base_url().'Artikel/'.$post_slug;?>"> &rarr; Read More </a></figure>
+					<figure class="post_readmore"> <a href="<?php echo base_url().'Sarana/detail/'.$post_slug;?>"> &rarr; Read More </a></figure>
 				</article>
 			<?php endforeach;?>
 			<?php
@@ -133,7 +133,6 @@
 			 	<section class="content-holder b-none inner_content">
   					<section class="container container-fluid">
 	          			<section class="row-fluid">
-							<span class="border-line m-bottom" style="margin-top: -79px;margin-left: -49px;"></span>
 	
 				<article class="page_content">
           			<p>No results were found for the requested archive. Perhaps searching will help finding you related post.</p>
