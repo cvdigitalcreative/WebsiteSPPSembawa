@@ -94,6 +94,17 @@
                           </ul>      
             <!-- Carousel End -->
             </blockquote>
+            <blockquote style="margin-top: 35px;">
+              <h2 style='border-bottom: 6px solid #3a813c;width: 243px;margin-left: -15px;'></h2>
+                      <script type="text/javascript">
+                        $(function() {
+                          $("#datepicker1").datepicker({
+                            numberOfMonths:1
+                          }); 
+                        });
+                      </script>
+                      <div id="datepicker1"></div>
+            </blockquote>
 
            <blockquote style="margin-top: 35px;">
                  <h2 style='border-bottom: 6px solid #3a813c;width: 243px;margin-left: -15px;'></h2>

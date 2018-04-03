@@ -14,6 +14,7 @@
               $post_tglpost=$i['tanggal'];
               $post_slug=$i['tulisan_slug'];
      ?>
+
   <li>
     <div class="home_slider_caption"> 
       <div class="slider_content">
@@ -281,6 +282,17 @@
                             <li style="margin-left: 13px;"><?php echo $total?></li>
                           </ul>      
             <!-- Carousel End -->
+            </blockquote>
+            <blockquote style="margin-top: 35px;">
+              <h2 style='border-bottom: 6px solid #3a813c;width: 243px;margin-left: -15px;'></h2>
+                      <script type="text/javascript">
+                        $(function() {
+                          $("#datepicker1").datepicker({
+                            numberOfMonths:1
+                          }); 
+                        });
+                      </script>
+                      <div id="datepicker1"></div>
             </blockquote>
 
             <blockquote style="margin-top: 35px;">

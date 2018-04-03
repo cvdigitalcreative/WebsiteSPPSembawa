@@ -21,10 +21,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <link rel="stylesheet" href="<?php echo base_url()?>assets/css/lightbox.min.css">
 <!-- Style Switcher Box -->
 <link rel="stylesheet" href="<?php echo base_url()?>assets/css/jsDatePick_ltr.css">
+<link rel="stylesheet" href="<?php echo base_url()?>assets/jquery-ui/jquery-ui.css">
+<script src="<?php echo base_url()?>assets/js/jquery-1.12.4.js"></script>
+<script src="<?php echo base_url()?>assets/jquery-ui/jquery-ui.js"></script>
 <!-- Right Hand Side Text Direction -->
 <link rel="stylesheet" href="<?php echo base_url()?>assets/css/switcher.css">
 <link rel="stylesheet" href="<?php echo base_url()?>assets/css/skins/default.css">
-<script src="<?php echo base_url()?>assets/js/jquery.min.js"></script>
+<!-- <script src="<?php echo base_url()?>assets/js/jquery.min.js"></script> -->
 <script src="<?php echo base_url()?>assets/js/jquery.dataTables.min.js"></script>
 <link rel="stylesheet" href="http://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
 <!-- skins -->
