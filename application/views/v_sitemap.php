@@ -33,9 +33,9 @@
       		<li class="dropdown <?php echo $cek3?>"> <a class="dropdown-toggle" href="<?php echo base_url().'Ppdb'?>">PPDB</a></li>
 			&nbsp;
       		<li> <a href="<?php echo base_url().'Kurikulum'?>" >KURIKULUM</b> </a>
-		        <ul class="dropdown-menu">
+		        <ul>
 		       		<li> <a href="<?php echo base_url().'Kurikulum'?>">KALENDER AKADEMIK</a> </li>
-		       		li> <a href="http://dapo.dikdasmen.kemdikbud.go.id/sekolah/964D53F4E9937D2E5327">DAPODIK</a> </li>
+		       		<li> <a href="http://dapo.dikdasmen.kemdikbud.go.id/sekolah/964D53F4E9937D2E5327">DAPODIK</a> </li>
 		        </ul>
 		    </li>
 			&nbsp;	
@@ -133,9 +133,20 @@
             <!-- Carousel End -->
             </blockquote>
             <blockquote style="margin-top: 35px;">
+              <h2 style='border-bottom: 6px solid #3a813c;width: 243px;margin-left: -15px;'></h2>
+                      <script type="text/javascript">
+                        $(function() {
+                          $("#datepicker1").datepicker({
+                            numberOfMonths:1
+                          }); 
+                        });
+                      </script>
+                      <div id="datepicker1"></div>
+            </blockquote>
+            <blockquote style="margin-top: 35px;">
                  <h2 style='border-bottom: 6px solid #3a813c;width: 243px;margin-left: -15px;'></h2>
           <!-- Carousel -->
-                        <h3 style="margin-top: -20px;">Jejak Pendapat</h3>
+                        <h3 style="margin-top: -7px;">Jejak Pendapat</h3>
                         <p style="margin-bottom: 6px;margin-top: -1px;">Mulai Tahun 2018, SMK PP NEGERI SEMBAWA akan berubah menjadi POLITEKNIK PEMBANGUNAN PERTANIAN ?</p>
                         <p> <?php echo $this->session->flashdata('msg');?></p>
                         <p><a href="<?php echo base_url().'Home/kirim_pendapat'?>"><button type="button" class="btn btn-success"><i class="icon-ok icon-white" style="margin-right:6px;"></i>Submit</button></a>
