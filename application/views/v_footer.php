@@ -1,7 +1,7 @@
  <!-- footer -->
   <section class="footer-top">
-  	<section class="container container-fluid" style="margin-left: 183px;">
-    	<figure class="span3" style="margin-right: 70px;">
+  	<section class="container2-fluid">
+    	<figure class="span3" style="margin-right: 50px;">
         	<h2>Tautan</h2>
             <ul class="a-list">
                 <li><a href="http://bppsdmp.pertanian.go.id/id">BPPSDMP</a></li>
@@ -12,7 +12,7 @@
                 <li><a href="http://www.spmabanjarbaru.sch.id/">SMK PP Negeri Banjar Baru</a></li>
             </ul>
         </figure>
-        <figure class="span3" style="margin-right: 70px;">
+        <figure class="span3" style="margin-right: 50px;">
         	<h2>Kategori</h2>
             <ul class="a-list">
                 <li><a href="<?php echo base_url().'Artikel/kategori/1'?>">Jadwal</a></li>
@@ -23,7 +23,7 @@
                 <li><a href="<?php echo base_url().'Artikel/kategori/8'?>">Agenda</a></li>
             </ul>
         </figure>
-        <figure class="span3" style="margin-right: 70px;">
+        <figure class="span3" style="margin-right: 92px;">
         	<h2>Hubungi Kami</h2>
             <ul class="a-list">
                 <li style="margin-right: 10px;"><i class="icon-home icon-white"></i>Jl. Palembang - Jambi KM.29, 19 Ilir, Palembang, Kota Palembang, Sumatera Selatan 30010</li>
@@ -32,8 +32,8 @@
                 <li style="margin-right: 10px;"><i class="icon-envelope icon-white"></i>sppnsembawa@yahoo.com</li>
             </ul>
         </figure>
-        <figure class="span3" style="margin-right: 70px;width: 82px;">
-          <h3> Follow Us </h3>
+        <figure class="span2">
+          <h2> Follow Us </h2>
           
                 <div id="socialicons" class="hidden-phone">
                 <a id="social_facebook" class="social_active" href="https://www.facebook.com/SMK-PP-Negeri-Sembawa-141728806448588/" title="Visit Facebook page"><span></span></a>  

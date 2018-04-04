@@ -17,7 +17,7 @@
       <h1><img src="<?php echo base_url()?>assets/images/Logo1.png" style="width: 192px;"><a href="<?php echo base_url()?>"></a></h1>
     </section>
   	<section class="nav-holder">
-    	<section style="margin-left: 124px">
+    	<section class="containernav-fluid">
     		<nav id="nav">
         <div class="navbar navbar-inverse">
           <div class="navbar-inner">
@@ -48,13 +48,13 @@
         </ul>
       </li>
 				
-				<li class="dropdown "> <a class="dropdown-toggle" href="<?php echo base_url().'Sarana'?>" >Sarana Prasarana<b class="caret"></b> </a>
+				<li class="dropdown "> <a class="dropdown-toggle" href="<?php echo base_url().'Sarana/kategori/9'?>" >Sarana Prasarana<b class="caret"></b> </a>
                   <ul class="dropdown-menu">
-                  	<li><a href="<?php echo base_url().'Sarana'?>">Sapras Sekolah</a></li>
-          	    	<li><a href="<?php echo base_url().'Sarana/tuk'?>">TUK</a></li>
-                	<li><a href="<?php echo base_url().'Sarana/gedung'?>">Gedung</a></li>
-                  <li><a href="<?php echo base_url().'Sarana/laboratorium'?>">Laboratorium</a></li>
-                  <li><a href="<?php echo base_url().'Sarana/lahan_praktikum'?>">Lahan Praktikum</a></li>
+                  	<li><a href="<?php echo base_url().'Sarana/kategori/9'?>">Sapras Sekolah</a></li>
+                  <li><a href="<?php echo base_url().'Sarana/kategori/10'?>">TUK</a></li>
+                  <li><a href="<?php echo base_url().'Sarana/kategori/11'?>">Gedung</a></li>
+                  <li><a href="<?php echo base_url().'Sarana/kategori/12'?>">Laboratorium</a></li>
+                  <li><a href="<?php echo base_url().'Sarana/kategori/13'?>">Lahan Praktikum</a></li>
                   </ul>
         </li>
 				

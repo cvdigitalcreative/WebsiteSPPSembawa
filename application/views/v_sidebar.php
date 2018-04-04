@@ -61,7 +61,7 @@
       <h1 ><a href="<?php echo base_url()?>"><img src="<?php echo base_url()?>assets/images/Logo1.png" style="width: 192px;"></a></h1>
     </section>
   	<section class="nav-holder">
-    	<section style="margin-left: 118px;">
+    	<section class="containernav-fluid">
     		<nav id="nav">
         <div class="navbar navbar-inverse">
           <div class="navbar-inner">
@@ -93,7 +93,7 @@
         </ul>
       </li>
 				
-				<li class="dropdown <?php echo $cek5?>"> <a class="dropdown-toggle" href="<?php echo base_url().'Sarana'?>" >Sarana Prasarana<b class="caret"></b> </a>
+				<li class="dropdown <?php echo $cek5?>"> <a class="dropdown-toggle" href="<?php echo base_url().'Sarana/kategori/9'?>" >Sarana Prasarana<b class="caret"></b> </a>
                   <ul class="dropdown-menu">
                   	<li><a href="<?php echo base_url().'Sarana/kategori/9'?>">Sapras Sekolah</a></li>
                   <li><a href="<?php echo base_url().'Sarana/kategori/10'?>">TUK</a></li>

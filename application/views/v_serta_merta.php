@@ -4,7 +4,7 @@
   
   <section class="content-holder b-none inner_content" style="margin-top: 50px;">
   
-    <section >
+    <section class="container-fluid">
 
             <section class="row-fluid">
 
@@ -93,7 +93,7 @@
             <blockquote>
                  <h2 style='border-bottom: 6px solid #3a813c;width: 243px;margin-left: -15px;'></h2>
           <!-- Carousel -->
-                        <h3 style="margin-top: -20px;">Tautan</h3>
+                        <h3 style="margin-top: -7px;">Tautan</h3>
                         <span class="border-line m-bottom" style="margin-top: 5px;margin-left: -10px;"></span>
                           <ul class="nav nav-list">
                             <li><a href="http://bppsdmp.pertanian.go.id/id"><img src="<?php echo base_url().'assets/images/Kementan.png'?>" style="width: 36px;margin-right: 9px;">BPPSDMP</a></li>
@@ -109,7 +109,7 @@
             <blockquote style="margin-top: 35px;">
                  <h2 style='border-bottom: 6px solid #3a813c;width: 243px;margin-left: -15px;'></h2>
           <!-- Carousel -->
-                        <h3 style="margin-top: -20px;">Pengunjung Hari Ini</h3>
+                        <h3 style="margin-top: -7px;">Pengunjung Hari Ini</h3>
                           <ul class="a-list">
                             <li style="margin-left: 13px;"><?php echo $visitor?></li>
                           </ul>

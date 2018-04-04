@@ -789,7 +789,7 @@ ul.nav li > a:hover{ background:#3d843e !important;}
 #index_2 .heading-holder h2{ color:#4A4A4A}
 
 /* # Social Icons # */
-#socialicons{ position:relative; text-align:right;  display:inline-block; }
+#socialicons{ width: 82px;position:relative; text-align:right;  display:inline-block; }
 #socialicons>a{ margin-left:5px; margin-right:0; display:inline-block; width:36px; height:36px; float:right; overflow:hidden; position:relative;}
 #socialicons>a span { width:36px; height:36px; overflow:hidden; position:absolute; display:none; }
 #socialicons>a span.da-animate { -webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out;}

@@ -17,7 +17,7 @@
       <h1><img src="<?php echo base_url()?>assets/images/Logo1.png" style="width: 192px;"><a href="<?php echo base_url()?>"></a></h1>
     </section>
   	<section class="nav-holder">
-    	<section style="margin-left: 124px">
+    	<section class="containernav-fluid">
     		<nav id="nav">
         <div class="navbar navbar-inverse">
           <div class="navbar-inner">
@@ -48,7 +48,7 @@
         </ul>
       </li>
 				
-				<li class="dropdown active"> <a class="dropdown-toggle" href="<?php echo base_url().'Sarana'?>" >Sarana Prasarana<b class="caret"></b> </a>
+				<li class="dropdown active"> <a class="dropdown-toggle" href="<?php echo base_url().'Sarana/kategori/9'?>" >Sarana Prasarana<b class="caret"></b> </a>
                   <ul class="dropdown-menu">
                   	<li><a href="<?php echo base_url().'Sarana/kategori/9'?>">Sapras Sekolah</a></li>
           	    	<li><a href="<?php echo base_url().'Sarana/kategori/10'?>">TUK</a></li>
@@ -101,9 +101,9 @@
 
 	          <section class="row-fluid">
 
-		<h2 class="heading">Artikel</h2>
+<!-- 		<h2 class="heading">Sarana dan Prasarana</h2>
 		<span class="border-line m-bottom" style="margin-top: 5px;margin-left: -19px;"></span>
-	<section class="page_content">
+ -->	<section class="page_content">
 		<section class="span9 first">
 			<?php if ($data->num_rows() > 0){?>
 
