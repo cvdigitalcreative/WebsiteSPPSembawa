@@ -68,7 +68,7 @@
       <h1><img src="<?php echo base_url()?>assets/images/Logo1.png" style="width: 192px;"><a href="<?php echo base_url()?>"></a></h1>
     </section>
   	<section class="nav-holder">
-    	<section style="margin-left: 124px;">
+    	<section class="containernav-fluid">
     		<nav id="nav">
         <div class="navbar navbar-inverse">
           <div class="navbar-inner">
@@ -99,13 +99,13 @@
         </ul>
       </li>
 				
-				<li class="dropdown <?php echo $cek5?>"> <a class="dropdown-toggle" href="<?php echo base_url().'Sarana'?>" >Sarana Prasarana<b class="caret"></b> </a>
+				<li class="dropdown <?php echo $cek5?>"> <a class="dropdown-toggle" href="<?php echo base_url().'Sarana/kategori/9'?>" >Sarana Prasarana<b class="caret"></b> </a>
                   <ul class="dropdown-menu">
-                  	<li><a href="<?php echo base_url().'Sarana'?>">Sapras Sekolah</a></li>
-          	    	<li><a href="<?php echo base_url().'Sarana/tuk'?>">TUK</a></li>
-                	<li><a href="<?php echo base_url().'Sarana/gedung'?>">Gedung</a></li>
-                  <li><a href="<?php echo base_url().'Sarana/laboratorium'?>">Laboratorium</a></li>
-                  <li><a href="<?php echo base_url().'Sarana/lahan_praktikum'?>">Lahan Praktikum</a></li>
+                  	<li><a href="<?php echo base_url().'Sarana/kategori/9'?>">Sapras Sekolah</a></li>
+                  <li><a href="<?php echo base_url().'Sarana/kategori/10'?>">TUK</a></li>
+                  <li><a href="<?php echo base_url().'Sarana/kategori/11'?>">Gedung</a></li>
+                  <li><a href="<?php echo base_url().'Sarana/kategori/12'?>">Laboratorium</a></li>
+                  <li><a href="<?php echo base_url().'Sarana/kategori/13'?>">Lahan Praktikum</a></li>
                   </ul>
         </li>
 				
@@ -259,7 +259,55 @@
  
   </section>
   
- 
+ <!-- footer -->
+  <section class="footer-top">
+  	<section class="container2-fluid">
+    	<figure class="span3" style="margin-right: 50px;">
+        	<h2>Tautan</h2>
+            <ul class="a-list">
+                <li><a href="http://bppsdmp.pertanian.go.id/id">BPPSDMP</a></li>
+                <li><a href="http://www.pertanian.go.id/">KEMENTAN</a></li>
+                <li><a href="http://cybex.pertanian.go.id/">Cyber Extension</a></li>
+                <li><a href="http://www.sumselprov.go.id/index.php?module=content&id=1">Provinsi Sumatera Selatan</a></li>
+                <li><a href="http://banyuasinkab.go.id/">Kabupaten Banyuasin</a></li>
+                <li><a href="http://www.spmabanjarbaru.sch.id/">SMK PP Negeri Banjar Baru</a></li>
+            </ul>
+        </figure>
+        <figure class="span3" style="margin-right: 50px;">
+        	<h2>Kategori</h2>
+            <ul class="a-list">
+                <li><a href="<?php echo base_url().'Artikel/kategori/1'?>">Jadwal</a></li>
+                <li><a href="<?php echo base_url().'Artikel/kategori/2'?>">KampusKu</a></li>
+                <li><a href="<?php echo base_url().'Artikel/kategori/3'?>">Kegiatan Minggu Ini</a></li>
+                <li><a href="<?php echo base_url().'Artikel/kategori/5'?>">Kerja Sama</a></li>
+                <li><a href="<?php echo base_url().'Artikel/kategori/7'?>">Pengumuman</a></li>
+                <li><a href="<?php echo base_url().'Artikel/kategori/8'?>">Agenda</a></li>
+            </ul>
+        </figure>
+        <figure class="span3" style="margin-right: 92px;">
+        	<h2>Hubungi Kami</h2>
+            <ul class="a-list">
+                <li style="margin-right: 10px;"><i class="icon-home icon-white"></i>Jl. Palembang - Jambi KM.29, 19 Ilir, Palembang, Kota Palembang, Sumatera Selatan 30010</li>
+                <li style="margin-right: 10px;"><i class="icon-headphones icon-white"></i><(0711) 365553</li>
+                <li style=""><i class="icon-bookmark icon-white"></i><a href="https://www.smkppnsembawa.sch.id/">smkppnsembawa.sch.id</a> </li>
+                <li style="margin-right: 10px;"><i class="icon-envelope icon-white"></i>sppnsembawa@yahoo.com</li>
+            </ul>
+        </figure>
+        <figure class="span2">
+          <h2> Follow Us </h2>
+          
+                <div id="socialicons" class="hidden-phone">
+                <a id="social_facebook" class="social_active" href="https://www.facebook.com/SMK-PP-Negeri-Sembawa-141728806448588/" title="Visit Facebook page"><span></span></a>  
+                <a id="social_twitter" class="social_active" href="https://twitter.com/SMKPPN_SEMBAWA" title="Visit Twitter page"><span></span></a> 
+                <a id="social_google_plus" class="social_active" href="#" title="Visit Google Plus page"><span></span></a>
+                <a id="social_linkedin" class="social_active" href="https://www.linkedin.com/title/staff-at-kementan" title="Visit LinkedIn page"><span></span></a>
+                <a id="social_youtube" class="social_active" href="https://www.youtube.com/channel/UCN9haidWqsrmRqp5BAhUNGw?view_as=subscriber" title="Visit Youtube page"><span></span></a>
+                <a id="social_instagram" class="social_active" href="https://www.instagram.com/smkppn_sembawa/" title="Visit Instagram page"><span></span></a>      
+                </div>
+        </figure>
+    </section>
+  </section>
+  <!-- footer -->
   <!-- footer -->
   <footer id="footer">
     <p style="color:white;">Copyright © 2018 Designed by: <a style="color:#387f3a;" href="http://digitalcreative.web.id">Digital Creative</a></p>

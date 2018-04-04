@@ -13,7 +13,7 @@
 		<span class="border-line m-bottom" style="margin-top: 5px;margin-left: -19px;"></span>
 		
 	<section class="page_content">
-		<section class="span9 first">
+		<section class="span12 first">
 
 			<table class="table table-bordered" id="myTable">
               <thead>

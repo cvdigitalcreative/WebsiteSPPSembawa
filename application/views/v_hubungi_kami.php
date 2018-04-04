@@ -59,7 +59,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       <h1 ><a href="<?php echo base_url()?>"><img src="<?php echo base_url()?>assets/images/Logo1.png" style="width: 192px;"></a></h1>
     </section>
   	<section class="nav-holder">
-    	<section style="margin-left: 118px;">
+    	<section class="containernav-fluid">
     		<nav id="nav">
         <div class="navbar navbar-inverse">
           <div class="navbar-inner">

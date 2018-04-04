@@ -5,7 +5,7 @@
 	
   <section class="content-holder b-none inner_content" style="margin-top: 50px;">
   
-  	<section >
+  	<section class="container-fluid">
 
 	          <section class="row-fluid">
 
