@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 31, 2018 at 10:07 PM
+-- Generation Time: Apr 04, 2018 at 05:05 PM
 -- Server version: 10.1.16-MariaDB
 -- PHP Version: 5.6.24
 
@@ -233,7 +233,9 @@ CREATE TABLE `tbl_jejak_pendapat` (
 
 INSERT INTO `tbl_jejak_pendapat` (`jejak_pendapat_id`, `tanggal`, `vote`) VALUES
 (3, '2018-03-31 06:47:09', 1),
-(4, '2018-03-31 18:07:16', 1);
+(4, '2018-03-31 18:07:16', 1),
+(5, '2018-04-01 12:28:02', 1),
+(6, '2018-04-03 05:45:26', 1);
 
 -- --------------------------------------------------------
 
@@ -257,7 +259,12 @@ INSERT INTO `tbl_kategori` (`kategori_id`, `kategori_nama`, `kategori_tanggal`) 
 (3, 'Kegiatan_Mingguan', '2016-09-06 05:59:39'),
 (5, 'Kerja_Sama', '2016-09-06 06:19:26'),
 (7, 'Pengumuman', '2018-03-21 01:23:31'),
-(8, 'agenda', '2018-03-21 01:23:46');
+(8, 'agenda', '2018-03-21 01:23:46'),
+(9, 'Sapras Sekolah', '2018-04-02 05:45:03'),
+(10, 'TUK', '2018-04-02 05:45:20'),
+(11, 'Gedung', '2018-04-02 05:45:31'),
+(12, 'Laboratorium', '2018-04-02 05:45:52'),
+(13, 'Lahan Praktikum', '2018-04-02 05:46:01');
 
 -- --------------------------------------------------------
 
@@ -413,7 +420,11 @@ INSERT INTO `tbl_pengunjung` (`pengunjung_id`, `pengunjung_tanggal`, `pengunjung
 (957, '2018-03-29 01:48:11', '::1', 'Chrome'),
 (958, '2018-03-30 01:26:41', '::1', 'Firefox'),
 (959, '2018-03-31 02:05:58', '::1', 'Chrome'),
-(960, '2018-03-31 17:47:04', '::1', 'Chrome');
+(960, '2018-03-31 17:47:04', '::1', 'Chrome'),
+(961, '2018-04-02 04:54:10', '::1', 'Chrome'),
+(962, '2018-04-03 05:37:51', '::1', 'Chrome'),
+(963, '2018-04-04 13:48:35', '::1', 'Chrome'),
+(964, '2018-04-04 13:48:35', '::1', 'Chrome');
 
 -- --------------------------------------------------------
 
@@ -437,8 +448,8 @@ CREATE TABLE `tbl_portfolio` (
 --
 
 INSERT INTO `tbl_portfolio` (`port_id`, `port_nama`, `port_judul`, `port_deskripsi`, `tulisan_views`, `port_tanggal`, `port_author`, `port_image`) VALUES
-(8, 'Ir. Mattobi''i, MP', 'Sambutan Kepala Sekolah', '<p>Assalamualaikum Warahmatullahi Wabarakatuh</p>\r\n\r\n<p>Alhamdulillah, syukur kehadirat Tuhan Yang Maha Esa, dengan rahmat dan karunia-Nya akhirnya website sekolah ini telah selesai diperbaharui. Kami mengucapkan selamat datang di website  Sekolah Menengah Kejuruan Pertanian Pembangunan (SMK PP) Negeri Sembawa, Sumatera Selatan. Di era global  yang ditandai dengan makin pesatnya Teknologi Informasi, tidak dipungkiri bahwa keberadaan sebuah website untuk suatu  instansi menjadi sebuah keharusan. Website tersebut dapat digunakan sebagai  sarana informasi dan komunikasi pihak sekolah dengan siswa, alumni, dan stake holder secara luas.</p>\r\n\r\n<p>Selanjutnya, website sekolah ini harus dapat berfungsi sebagai media untuk mendukung proses pembelajaran di sekolah. Guru dapat menuliskan  materi  pembelajaran  sekaligus memberikan Tugas-Tugas Mandiri kepada peserta didik, sehingga akan menunjang kegiatan pembelajaran berbasis Teknologi Informasi. Selain itu juga website juga dapat menjadi sarana promosi sekolah yang cukup efektif. Kami menyadari sepenuhnya,  bahwa website sekolah kami masih terdapat banyak kekurangan, oleh karena itu kepada seluruh civitas akademika dan masyarakat umum dapat memberikan saran dan kritik yang membangun demi kemajuan website ini lebih lanjut.</p>\r\n\r\n<p>Mari kita bekerja dan berkarya untuk kemajuan SMK PP Negeri Sembawa yang Religius, Disiplin, dan Mandiri.</p>\r\n\r\n<p>Wassalamualaikum Warahmatullohi Wabarokatuh.</p>', 5, '2018-03-25 05:15:29', 'Puji', 'mattobi.jpg'),
-(9, NULL, 'Profil', '<p><strong>S</strong>ekolah Menengah Kejuruan Pertanian Pembangunan (SMK PP) Negeri Sembawa Palembang adalah Unit Pelaksana Teknis Kementerian Pertanian di bawah koordinasi Pusat Pendidikan, Standardisasi dan Sertifikasi Profesi&nbsp;<strong>(Pusdikdarkasi)</strong>&nbsp;&nbsp;Pertanian, Badan Penyuluhan dan Pengembangan Sumberdaya Manusia Pertanian.</p>\r\n\r\n<p>SMK PP Negeri Sembawa didirikan sesuai dengan Peraturan Menteri Pertanian No.4/55 tanggal 25 April 1955&nbsp; tentang Peraturan Bagi Sekolah-Sekolah Pertanian Menengah Atas Negeri dengan nama Sekolah Pertanian Menengah Atas (SPMA) yang berlokasi di Desa Sembawa Kabupaten Banyuasin Provinsi Sumatera Selatan. Pada tahun 1975 sampai dengan 1983/1984 nama SPMA diubah menjadi Sekolah Pertanian Pembangunan. Sekolah Pertanian Menengah Atas (SPP-SPMA) Polivalen.</p>\r\n\r\n<p>Pada tahun 1985 sampai dengan 2009 SPP-SPMA berubah nama menjadi Sekolah Pertanian Pembangunan (SPP).&nbsp; Pada tahun 2010, sesuai dengan Peraturan Menteri Pertanian No.10 tahun 2009 maka nama SPP Negeri Sembawa berubah nama menjadi SMK SPP Negeri Sembawa. Tahun 2013 sampai sekarang, SMK SPP Negeri Sembawa berubah nama menjadi SMK PP Negeri Sembawa.</p>\r\n\r\n<p>Pada tahun 2009, SMK PP Negeri Sembawa Palembang memperoleh Sertifikat ISO 9001: 2008 yang diregistrasi oleh VEDCA-IQS untuk ruang lingkup Sistem Manajemen Mutu bagi Jasa Pedidikan dan Pelatihan Kejuruan</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Visi</strong></p>\r\n\r\n<p>Terwujudnya lulusan yang berakhlak mulia, cerdas, terampil, berjiwa&nbsp; wirausaha dan peduli lingkungan</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Misi</strong></p>\r\n\r\n<ul>\r\n	<li>Melaksanakan pembinaan IMTAQ dan pendidikan karakter</li>\r\n	<li>Mengembangkan profesionalisme pendidik dan tenaga kependidikan</li>\r\n	<li>Mengembangkan program pembelajaran untuk menghasilkan lulusan yang kompeten, berdaya saing dan berkarakter</li>\r\n	<li>Meningkatkan sarana dan prasarana pendidikan</li>\r\n	<li>Mengembangkan kerjasama dengan instansi terkait, masyarakat dan dunia usaha/dunia industri baik di dalam maupun luar negeri</li>\r\n	<li>Mengembangkan unit-unit usaha pertanian yang berwawasan lingkungan sebagai&nbsp;<em>teaching farm</em></li>\r\n	<li>Menjadikan sekolah sebagai pusat sumber belajar</li>\r\n</ul>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Struktur Organisasi</strong></p>\r\n\r\n<p><strong><img alt="" src="https://smkppnsembawa.sch.id/media_library/posts/page-image-1510455488412.png" style="height:416px; width:763px" /></strong></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n', 8, '2018-03-25 08:02:01', 'puji', NULL);
+(8, 'Ir. Mattobi''i, MP', 'Sambutan Kepala Sekolah', '<p>Assalamualaikum Warahmatullahi Wabarakatuh</p>\r\n\r\n<p>Alhamdulillah, syukur kehadirat Tuhan Yang Maha Esa, dengan rahmat dan karunia-Nya akhirnya website sekolah ini telah selesai diperbaharui. Kami mengucapkan selamat datang di website  Sekolah Menengah Kejuruan Pertanian Pembangunan (SMK PP) Negeri Sembawa, Sumatera Selatan. Di era global  yang ditandai dengan makin pesatnya Teknologi Informasi, tidak dipungkiri bahwa keberadaan sebuah website untuk suatu  instansi menjadi sebuah keharusan. Website tersebut dapat digunakan sebagai  sarana informasi dan komunikasi pihak sekolah dengan siswa, alumni, dan stake holder secara luas.</p>\r\n\r\n<p>Selanjutnya, website sekolah ini harus dapat berfungsi sebagai media untuk mendukung proses pembelajaran di sekolah. Guru dapat menuliskan  materi  pembelajaran  sekaligus memberikan Tugas-Tugas Mandiri kepada peserta didik, sehingga akan menunjang kegiatan pembelajaran berbasis Teknologi Informasi. Selain itu juga website juga dapat menjadi sarana promosi sekolah yang cukup efektif. Kami menyadari sepenuhnya,  bahwa website sekolah kami masih terdapat banyak kekurangan, oleh karena itu kepada seluruh civitas akademika dan masyarakat umum dapat memberikan saran dan kritik yang membangun demi kemajuan website ini lebih lanjut.</p>\r\n\r\n<p>Mari kita bekerja dan berkarya untuk kemajuan SMK PP Negeri Sembawa yang Religius, Disiplin, dan Mandiri.</p>\r\n\r\n<p>Wassalamualaikum Warahmatullohi Wabarokatuh.</p>', 6, '2018-03-25 05:15:29', 'Puji', 'mattobi.jpg'),
+(9, NULL, 'Profil', '<p><strong>S</strong>ekolah Menengah Kejuruan Pertanian Pembangunan (SMK PP) Negeri Sembawa Palembang adalah Unit Pelaksana Teknis Kementerian Pertanian di bawah koordinasi Pusat Pendidikan, Standardisasi dan Sertifikasi Profesi&nbsp;<strong>(Pusdikdarkasi)</strong>&nbsp;&nbsp;Pertanian, Badan Penyuluhan dan Pengembangan Sumberdaya Manusia Pertanian.</p>\r\n\r\n<p>SMK PP Negeri Sembawa didirikan sesuai dengan Peraturan Menteri Pertanian No.4/55 tanggal 25 April 1955&nbsp; tentang Peraturan Bagi Sekolah-Sekolah Pertanian Menengah Atas Negeri dengan nama Sekolah Pertanian Menengah Atas (SPMA) yang berlokasi di Desa Sembawa Kabupaten Banyuasin Provinsi Sumatera Selatan. Pada tahun 1975 sampai dengan 1983/1984 nama SPMA diubah menjadi Sekolah Pertanian Pembangunan. Sekolah Pertanian Menengah Atas (SPP-SPMA) Polivalen.</p>\r\n\r\n<p>Pada tahun 1985 sampai dengan 2009 SPP-SPMA berubah nama menjadi Sekolah Pertanian Pembangunan (SPP).&nbsp; Pada tahun 2010, sesuai dengan Peraturan Menteri Pertanian No.10 tahun 2009 maka nama SPP Negeri Sembawa berubah nama menjadi SMK SPP Negeri Sembawa. Tahun 2013 sampai sekarang, SMK SPP Negeri Sembawa berubah nama menjadi SMK PP Negeri Sembawa.</p>\r\n\r\n<p>Pada tahun 2009, SMK PP Negeri Sembawa Palembang memperoleh Sertifikat ISO 9001: 2008 yang diregistrasi oleh VEDCA-IQS untuk ruang lingkup Sistem Manajemen Mutu bagi Jasa Pedidikan dan Pelatihan Kejuruan</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Visi</strong></p>\r\n\r\n<p>Terwujudnya lulusan yang berakhlak mulia, cerdas, terampil, berjiwa&nbsp; wirausaha dan peduli lingkungan</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Misi</strong></p>\r\n\r\n<ul>\r\n	<li>Melaksanakan pembinaan IMTAQ dan pendidikan karakter</li>\r\n	<li>Mengembangkan profesionalisme pendidik dan tenaga kependidikan</li>\r\n	<li>Mengembangkan program pembelajaran untuk menghasilkan lulusan yang kompeten, berdaya saing dan berkarakter</li>\r\n	<li>Meningkatkan sarana dan prasarana pendidikan</li>\r\n	<li>Mengembangkan kerjasama dengan instansi terkait, masyarakat dan dunia usaha/dunia industri baik di dalam maupun luar negeri</li>\r\n	<li>Mengembangkan unit-unit usaha pertanian yang berwawasan lingkungan sebagai&nbsp;<em>teaching farm</em></li>\r\n	<li>Menjadikan sekolah sebagai pusat sumber belajar</li>\r\n</ul>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Struktur Organisasi</strong></p>\r\n\r\n<p><strong><img alt="" src="https://smkppnsembawa.sch.id/media_library/posts/page-image-1510455488412.png" style="height:416px; width:763px" /></strong></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n', 9, '2018-03-25 08:02:01', 'puji', NULL);
 
 -- --------------------------------------------------------
 
@@ -584,7 +595,10 @@ INSERT INTO `tbl_post_views` (`views_id`, `views_tanggal`, `views_ip`, `views_tu
 (97, '2018-03-31 02:44:54', '::1', 9),
 (98, '2018-03-31 16:00:15', '::1', 8),
 (99, '2018-03-31 18:15:38', '::1', 9),
-(100, '2018-03-31 18:16:34', '::1', 8);
+(100, '2018-03-31 18:16:34', '::1', 8),
+(101, '2018-04-02 14:48:35', '::1', 47),
+(102, '2018-04-03 13:21:17', '::1', 9),
+(103, '2018-04-03 13:21:52', '::1', 8);
 
 -- --------------------------------------------------------
 
@@ -643,7 +657,7 @@ INSERT INTO `tbl_tulisan` (`tulisan_id`, `tulisan_judul`, `tulisan_isi`, `tulisa
 (44, 'STUDI BANDING PEGAWAI SMK PP NEGERI SEMBAWA KE POLITANI PAYAKUMBUH', '<p>Pada tanggal 20-24 September 2017, pegawai SMK PP Negeri Sembawa berkesempatan untuk mengunjungi Politeknik Pertanian Negeri Payakumbuh dalam rangka menambah wawasan dan pengetahuan untuk mewujudkan program-program prioritas yang sudah di canangkan oleh SMK PP Negeri Sembawa untuk kedepannya menjadi Politeknik Pertanian Pembangunan (Polbangtan).</p>\r\n\r\n<p>Untuk meningkatkan pengetahuan dan keterampilan Tenaga Kependidikan dalam pelayanan maka ada beberapa bidang yang dipelajari di POLITANI Payakumbuh seperti kegiatan Kepegawaian, akademik,&nbsp; kemahasiswaan, Perpustakaan, Praktik lapangan.</p>\r\n\r\n<p>Kegiatan seperti ini tentunya sangat bagus bagi perkembangan suatu kebutuhan yang diharapkan sebagaimana mestinya. Dalam kegiatan ini, Pegawai SMK PP Negeri Sembawa langsung disambut oleh Wakil Direktur I&nbsp; dan para beberapa civitas academica POLTANI Payakumbuh. Pengetahuan-pengetahuan postif dari POLITANI Payakumbuh dapat dicontoh kedepannya dalam Pembentukan POLBANGTAN Sembawa. (Humas)</p>\r\n', '2018-03-25 15:36:24', 3, 'Kegiatan_Mingguan', 1, '739189eee692ca0f53392070b1e4ca46.jpg', 1, 'Administrator', 0, 'studi-banding-pegawai-smk-pp-negeri-sembawa-ke-politani-payakumbuh.html', 0),
 (45, 'Panen Jagung di Desa Banyu Urip Kerja sama Desa Mitra SMK PP Negeri Sembawa', '<p>SMK PP Negeri sembawa sebagai salah satu UPT Badan Penyuluhan Pengembangan Sumber Daya manusia Pertanian mendukung program kementerian pertanian &nbsp;dalam rangka ketahanan pangan dengan salah satu programnya adalah Pengembangan Desa Mitra sebagai upaya regenerasi petani. SMK PP Negeri Sembawa memiliki lima kelompok tani binaan dalam program Desa Mitra tahun 2017, salah satunya adalah Kelompok tani Sumber Jaya yang terletak di Desa Banyu Urip Kecamatan Tanjung Lago, Kabupaten Banyuasin.</p>\r\n\r\n<p>Salah satu kegiatan yang dilakukan di kelompok tani Sumber Jaya adalah&nbsp; budidaya tanaman jagung varietas BISI 18 yang dilaksanakan setelah panen padi. Hal ini dikarenakan Desa Banyu Urip adalah daerah pasang surut sehingga memungkinkan untuk melakukan budidaya tanaman jagung pada musim kemarau. Setiap anggota kelompok tani rata-rata memiliki luas lahan 2 hektar pada budidaya jagung ini, kegiatan budidaya ini sendiri dimulai pada bulan Juni 2017. Proses yang dilakukan &nbsp;pada budidaya jagung di kelompok tani Sumber Jaya dalah &nbsp;penyiapan lahan, penanaman benih jagung, pemupukan, pemeliharaan, pemberantasan hama dan penyakit tanaman, panen dan pasca panen.</p>\r\n\r\n<p>Sebagai Tindak lanjut kerjasama desa mitra pada tanggal 16 September 2017, dari pukul 08.00 WIB - 13.00 WIB dilaksanakan praktik siswa SMK PP Negeri Sembawa , sebanyak 59 siswa SMK PP Negeri Sembawa tingkat XI melaksanakan panen Jagung di Kelompok Tani Sumber Jaya, Hal ini bertujuan untuk menambah pengetahuan siswa SMK PP Negeri SMK PP Negeri Sembawa tentang budidaya tanaman jagung, membandingkan pengetahuan yang didapat di sekolah dan dunia nyata.</p>\r\n\r\n<p>Panen jagung di kelompok tani Sumber Jaya dilaksanakan dengan konvensional mesin pipil dan menggunakan teknologi corn combine harvester. Pada kesempatan ini, siswa SMK PP Negeri Sembawa melihat dan melaksanakan panen dengan kedua cara ini. Serta menganalisa usaha tani pada proses panen pada kelompok tani Sumber Jaya dengan perbandingan 1 : 1,4 untuk panen dengan konvensional mesin pipil berbanding dengan menggunakan alat corn combine harvester. Modernisasi pertanian berupa penggunaan alat-alat mesin pertanian di era sekarang ini sudah tidak terelakan lagi. Selain bertujuan untuk melakukan efisiensi didalam pembiayaan usaha tani, juga sebagai jawaban atas kelangkaan tenaga kerja pertanian. Penggunaan alat upaya menekan susut hasil (<em>losses</em>), mempertahankan kualitas hasil serta meningkatkan nilai tambah dan daya saing, yang pada akhirnya akan meningkatan pendapatan petani, sehingga bisa mengurangi angka kemiskinan</p>\r\n\r\n<p>Ketua Kelompok Tani Sumber jaya bapak Pariyem mengatakan, saat ini sudah banyak pemuda-pemuda di Desa Banyu Urip yang berminat di dunia pertanian, dunia pertanian sekarang bisa dikatakan dapat mensejahterakan serta dengan bantuan teknologi pertanian dapat mempermudah dan mengefiensikan waktu dan tenaga. Untuk pemasaran hasil panen jagung kelompok tani Sumber Jaya sudah bekerja sama dengan pemborong secara kolektif.</p>\r\n\r\n<p>Ketua Pelaksana kegiatan Pengembangan Desa Mitra Dr. Zulkipli, M.Si mengharapkan dengan kegiatan desa mitra ini dapat menjawab kegalauan menteri pertanian yang menyatakan bahwa sekarang ini banyak anak muda tidak mau jadi petani, dengan melihat bahwa petani bisa sejahtera dan sukses diharapkan banyak anak muda yang mau jadi petani.</p>\r\n', '2018-03-25 15:44:34', 5, 'Kerja_Sama', 0, 'aae2c84d5a66b9fd663fc3c5c93e3bc3.png', 1, 'Administrator', 0, 'panen-jagung-di-desa-banyu-uri-kerja-sama-desa-mitra-smk-pp-negeri-sembawa.html', 0),
 (46, 'LOWONGAN KERJA PT PNS', NULL, '2018-03-25 15:44:34', 7, 'Pengumuman', 2, '385cc49d1ab13746a540aec8687fedaf (1).jpg', 1, 'Administrator', 0, 'lowongan-kerja-pt-pns.html', 0),
-(47, 'RECRUITMENT PT SEBANGUN BUMI ANDALAS (SBA)', '<p>Informasi untuk alumni SMK-PPN SEMBAWA, bahwa PT SEBANGUN BUMI ANDALAS (SBA) yang bergerak di bidang Hutan Tanaman Industri akan melakukan perekrutan calon karyawan. sehubungan dengan hal itu, kami mengajak alumni khususnya pria untuk bergabung mengikuti pelaksanaan recruitment tersebut pada: Hari/Tanggal : Senin/21 Agustus 2017 Waktu : 09.00 wib s/d selesai Tempat : SMK- PP Negeri Sembawa Demikian informasi dari pihak humas. semoga dapat membantu para alumni yang sedang mencari pekerjaan. Terima kasih</p>\r\n', '2018-03-25 15:46:23', 7, 'Pengumuman', 3, 'c34ea18d1e8930b177b89bb7ab2ff870.png', 1, 'Administrator', 0, 'recruitment-pt-sebangun-bumi-andalas-sba.html', 1);
+(47, 'RECRUITMENT PT SEBANGUN BUMI ANDALAS (SBA)', '<p>Informasi untuk alumni SMK-PPN SEMBAWA, bahwa PT SEBANGUN BUMI ANDALAS (SBA) yang bergerak di bidang Hutan Tanaman Industri akan melakukan perekrutan calon karyawan. sehubungan dengan hal itu, kami mengajak alumni khususnya pria untuk bergabung mengikuti pelaksanaan recruitment tersebut pada: Hari/Tanggal : Senin/21 Agustus 2017 Waktu : 09.00 wib s/d selesai Tempat : SMK- PP Negeri Sembawa Demikian informasi dari pihak humas. semoga dapat membantu para alumni yang sedang mencari pekerjaan. Terima kasih</p>\r\n', '2018-03-25 15:46:23', 7, 'Pengumuman', 4, 'c34ea18d1e8930b177b89bb7ab2ff870.png', 1, 'Administrator', 0, 'recruitment-pt-sebangun-bumi-andalas-sba.html', 1);
 
 -- --------------------------------------------------------
 
@@ -830,12 +844,12 @@ ALTER TABLE `tbl_inbox`
 -- AUTO_INCREMENT for table `tbl_jejak_pendapat`
 --
 ALTER TABLE `tbl_jejak_pendapat`
-  MODIFY `jejak_pendapat_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `jejak_pendapat_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 --
 -- AUTO_INCREMENT for table `tbl_kategori`
 --
 ALTER TABLE `tbl_kategori`
-  MODIFY `kategori_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `kategori_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 --
 -- AUTO_INCREMENT for table `tbl_kategori_files`
 --
@@ -860,7 +874,7 @@ ALTER TABLE `tbl_pengguna`
 -- AUTO_INCREMENT for table `tbl_pengunjung`
 --
 ALTER TABLE `tbl_pengunjung`
-  MODIFY `pengunjung_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=961;
+  MODIFY `pengunjung_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=965;
 --
 -- AUTO_INCREMENT for table `tbl_portfolio`
 --
@@ -875,7 +889,7 @@ ALTER TABLE `tbl_post_rating`
 -- AUTO_INCREMENT for table `tbl_post_views`
 --
 ALTER TABLE `tbl_post_views`
-  MODIFY `views_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=101;
+  MODIFY `views_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=104;
 --
 -- AUTO_INCREMENT for table `tbl_siswa`
 --
