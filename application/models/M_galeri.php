@@ -64,11 +64,15 @@ class M_galeri extends CI_Model{
 	}
 
 	function get_galeri_by_album_id($idalbum){
-		$hsl=$this->db->query("SELECT tbl_galeri.*,DATE_FORMAT(galeri_tanggal,'%d/%m/%Y') AS tanggal,album_nama FROM tbl_galeri join tbl_album on galeri_album_id=album_id where galeri_album_id='$idalbum' ORDER BY galeri_id DESC");
+		$hsl=$this->db->query("SELECT tbl_galeri.*,DATE_FORMAT(galeri_tanggal,'%d/%m/%Y') AS tanggal,album_nama FROM tbl_galeri join tbl_album on galeri_album_id=album_id WHERE galeri_album_id='$idalbum' ORDER BY galeri_id DESC");
 		return $hsl;
 	}
 	function gallery_perpage($offset,$limit){
 		$hsl=$this->db->query("SELECT tbl_galeri.*,DATE_FORMAT(galeri_tanggal,'%d/%m/%Y') AS tanggal FROM tbl_galeri ORDER BY galeri_id DESC limit $offset,$limit");
+		return $hsl;
+	}
+	function gallery_perpage_by_id($offset,$limit,$idalbum){
+		$hsl=$this->db->query("SELECT tbl_galeri.*,DATE_FORMAT(galeri_tanggal,'%d/%m/%Y') AS tanggal FROM tbl_galeri where galeri_album_id='$idalbum' ORDER BY galeri_id DESC limit $offset,$limit");
 		return $hsl;
 	}
 
