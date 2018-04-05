@@ -580,7 +580,7 @@ a:focus {
   padding-left: 20px;
   margin-right: auto;
   margin-left: auto;
-  width: 1110px;
+  width: 1146px;
   *zoom: 1;
 }
 .containernav-fluid:before,
@@ -664,7 +664,7 @@ h3,
 h4,
 h5,
 h6 {
-  margin:0 0 35px;
+  margin:0 0 40px;
   font-family:Georgia;
   line-height: 24px;
   color: #4a4a4a;

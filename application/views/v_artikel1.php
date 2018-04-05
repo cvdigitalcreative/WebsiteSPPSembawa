@@ -13,8 +13,8 @@
 	<!-- header -->
 	
   <header id="header">
-    <section class="container container-fluid">
-      <h1><img src="<?php echo base_url()?>assets/images/Logo1.png" style="width: 192px;"><a href="<?php echo base_url()?>"></a></h1>
+   <section class="">
+      <h1 ><a href="<?php echo base_url()?>"><img src="<?php echo base_url()?>assets/images/bg-sekolah.jpg" style="height: 240px;width: 100%;margin-left: auto;margin-right: auto;"></a></h1>
     </section>
   	<section class="nav-holder">
     	<section class="containernav-fluid">

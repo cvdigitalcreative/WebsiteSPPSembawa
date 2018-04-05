@@ -57,8 +57,8 @@
 	<!-- header -->
 	
   <header id="header">
-    <section class="container container-fluid">
-      <h1 ><a href="<?php echo base_url()?>"><img src="<?php echo base_url()?>assets/images/Logo1.png" style="width: 192px;"></a></h1>
+    <section class="">
+      <h1 ><a href="<?php echo base_url()?>"><img src="<?php echo base_url()?>assets/images/bg-sekolah.jpg" style="height: 240px;width: 100%;margin-left: auto;margin-right: auto;"></a></h1>
     </section>
   	<section class="nav-holder">
     	<section class="containernav-fluid">
@@ -106,6 +106,7 @@
 				<li class="dropdown <?php echo $cek6?>"> <a class="dropdown-toggle" href="<?php echo base_url().'Artikel/'?>">Informasi Publik <b class="caret"></b> </a>
                   <ul class="dropdown-menu">
                   	<li><a href="<?php echo base_url().'Artikel/'?>">Berita</a></li>
+                    <li><a href="<?php echo base_url().'Informasi/infografis'?>">Infografis</a></li>
                   	<li><a href="<?php echo base_url().'Informasi/informasi_publik_berkala'?>">Informasi Publik Berkala</a></li>
           	    	<li><a href="<?php echo base_url().'Informasi/informasi_publik_setiap_saat'?>">Informasi Publik Setiap Saat</a></li>
                   <li><a href="<?php echo base_url().'Informasi/setiap_saat'?>">Setiap Saat</a></li>
