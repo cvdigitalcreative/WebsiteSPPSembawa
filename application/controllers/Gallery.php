@@ -16,7 +16,7 @@
 		
 		function index(){
 
-			$jum = $this->m_galeri->get_all_galeri();
+			$jum = $this->m_galeri->get_galeri_by_album_id(4);
 			$page=$this->uri->segment(3);
 	        if(!$page):
 	            $offset = 0;
@@ -50,7 +50,7 @@
 		    $config['next_tag_close'] = '</li>';
 	        $this->pagination->initialize($config);
 	        $x['page'] =$this->pagination->create_links();
-			$x['data']=$this->m_galeri->gallery_perpage($offset,$limit);
+			$x['data']=$this->m_galeri->gallery_perpage_by_id($offset,$limit,4);
 			$x['alb']=$this->m_album->get_all_album();
 	        $y['title'] = 'Gallery Photo';
 			$this->load->view('v_header',$y);

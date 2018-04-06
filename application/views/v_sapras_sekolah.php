@@ -1,20 +1,20 @@
 
   
-	</section>
+  </section>
 
-	
+  
   <section class="content-holder b-none inner_content" style="margin-top: 50px;">
   
-  	<section class="container container-fluid">
+    <section class="container container-fluid">
 
-	          <section class="row-fluid">
+            <section class="row-fluid">
 
-		<h2 class="heading"> Gallery Photo</h2>
-		<span class="border-line m-bottom" style="margin-top: 5px;margin-left: -19px;"></span>
-		
+    <h2 class="heading"> Sapras Sekolah</h2>
+    <span class="border-line m-bottom" style="margin-top: 5px;margin-left: -19px;"></span>
+    
 <section class="page_content">
-	<?php foreach ($data->result() as $row): ?>
-		<figure class="span4"> <a data-toggle="lightbox" href="#<?php echo $row->galeri_id?>" > <img class="team-img f-width-img" src="<?php echo base_url().'assets/images/'.$row->galeri_gambar;?>" style="width: 577px;height: 244px;" alt="<?php echo $row->galeri_judul?>"/> </a> </figure>
+  <?php foreach ($data->result() as $row): ?>
+    <figure class="span4"> <a data-toggle="lightbox" href="#<?php echo $row->galeri_id?>" > <img class="team-img f-width-img" src="<?php echo base_url().'assets/images/'.$row->galeri_gambar;?>" style="width: 577px;height: 244px;" alt="<?php echo $row->galeri_judul?>"/> </a> </figure>
 
             <div id="<?php echo $row->galeri_id?>" class="lightbox hide fade"  tabindex="-1" role="dialog" aria-hidden="true">
               <div class='lightbox-header'>
@@ -27,21 +27,21 @@
               </div>
             </div>
 
-	<?php endforeach ?>
+  <?php endforeach ?>
 
 
-			</section>
+      </section>
 
-		  </section>
+      </section>
       <section class="pagination" style="margin-bottom: 34px;margin-top: -48px;margin-left: 465px; ">  
       <?php echo $page;?> 
     </section>
  
-	</section>
+  </section>
   
   </section>
    
-	</section>
+  </section>
     
   </section>
 
