@@ -89,14 +89,14 @@
             </span>
           </a>
         </li>
-        <li class="<?php echo $cek5?>">
+        <!-- <li class="<?php echo $cek5?>">
           <a href="<?php echo base_url().'admin/pengumuman'?>">
             <i class="fa fa-volume-up"></i> <span>Pengumuman</span>
             <span class="pull-right-container">
               <small class="label pull-right"></small>
             </span>
           </a>
-        </li>
+        </li> -->
         <li class="treeview <?php echo $cek6?>">
           <a href="#">
             <i class="fa fa-download"></i>
@@ -107,7 +107,7 @@
           </a>
           <ul class="treeview-menu">
             <li><a href="<?php echo base_url().'admin/files'?>"><i class="fa fa-download"></i> Download</a></li>
-            <li><a href="<?php echo base_url().'admin/kategori_file'?>"><i class="fa fa-clone "></i> Kategori File</a></li>
+            <!-- <li><a href="<?php echo base_url().'admin/kategori_file'?>"><i class="fa fa-clone "></i> Kategori File</a></li> -->
           </ul>
         </li>
         <li class="treeview <?php echo $cek7?>">
@@ -119,7 +119,7 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="<?php echo base_url().'admin/album'?>"><i class="fa fa-clone"></i> Album</a></li>
+            <!-- <li><a href="<?php echo base_url().'admin/album'?>"><i class="fa fa-clone"></i> Album</a></li> -->
             <li><a href="<?php echo base_url().'admin/galeri'?>"><i class="fa fa-picture-o"></i> Photos</a></li>
             <li><a href="<?php echo base_url().'admin/video'?>"><i class="fa fa-clone"></i> Video</a></li>
           </ul>

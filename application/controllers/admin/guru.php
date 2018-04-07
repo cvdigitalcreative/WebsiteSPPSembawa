@@ -23,7 +23,7 @@ class Guru extends CI_Controller{
 	function simpan_guru(){
 				$config['upload_path'] = './assets/images/'; //path folder
 	            $config['allowed_types'] = 'gif|jpg|png|jpeg|bmp'; //type yang dapat diakses bisa anda sesuaikan
-	            $config['encrypt_name'] = TRUE; //nama yang terupload nantinya
+	            // $config['encrypt_name'] = TRUE; //nama yang terupload nantinya
 
 	            $this->upload->initialize($config);
 	            if(!empty($_FILES['filefoto']['name']))
@@ -49,9 +49,10 @@ class Guru extends CI_Controller{
 							$jenkel=strip_tags($this->input->post('xjenkel'));
 							$tmp_lahir=strip_tags($this->input->post('xtmp_lahir'));
 							$tgl_lahir=strip_tags($this->input->post('xtgl_lahir'));
+							$jenis_gtk=strip_tags($this->input->post('xjgtk'));
 							$mapel=strip_tags($this->input->post('xmapel'));
 
-							$this->m_guru->simpan_guru($nip,$nama,$jenkel,$tmp_lahir,$tgl_lahir,$mapel,$photo);
+							$this->m_guru->simpan_guru($nip,$nama,$jenkel,$tmp_lahir,$tgl_lahir,$jenis_gtk,$mapel,$photo);
 							echo $this->session->set_flashdata('msg','success');
 							redirect('admin/guru');
 					}else{
@@ -65,9 +66,10 @@ class Guru extends CI_Controller{
 					$jenkel=strip_tags($this->input->post('xjenkel'));
 					$tmp_lahir=strip_tags($this->input->post('xtmp_lahir'));
 					$tgl_lahir=strip_tags($this->input->post('xtgl_lahir'));
+					$jenis_gtk=strip_tags($this->input->post('xjgtk'));
 					$mapel=strip_tags($this->input->post('xmapel'));
 
-					$this->m_guru->simpan_guru_tanpa_img($nip,$nama,$jenkel,$tmp_lahir,$tgl_lahir,$mapel);
+					$this->m_guru->simpan_guru_tanpa_img($nip,$nama,$jenkel,$tmp_lahir,$tgl_lahir,$jenis_gtk,$mapel);
 					echo $this->session->set_flashdata('msg','success');
 					redirect('admin/guru');
 				}
@@ -78,7 +80,7 @@ class Guru extends CI_Controller{
 				
 	            $config['upload_path'] = './assets/images/'; //path folder
 	            $config['allowed_types'] = 'gif|jpg|png|jpeg|bmp'; //type yang dapat diakses bisa anda sesuaikan
-	            $config['encrypt_name'] = TRUE; //nama yang terupload nantinya
+	            // $config['encrypt_name'] = TRUE; //nama yang terupload nantinya
 
 	            $this->upload->initialize($config);
 	            if(!empty($_FILES['filefoto']['name']))
@@ -108,9 +110,10 @@ class Guru extends CI_Controller{
 							$jenkel=strip_tags($this->input->post('xjenkel'));
 							$tmp_lahir=strip_tags($this->input->post('xtmp_lahir'));
 							$tgl_lahir=strip_tags($this->input->post('xtgl_lahir'));
+							$jenis_gtk=strip_tags($this->input->post('xjgtk'));
 							$mapel=strip_tags($this->input->post('xmapel'));
 
-							$this->m_guru->update_guru($kode,$nip,$nama,$jenkel,$tmp_lahir,$tgl_lahir,$mapel,$photo);
+							$this->m_guru->update_guru($kode,$nip,$nama,$jenkel,$tmp_lahir,$tgl_lahir,$jenis_gtk,$mapel,$photo);
 							echo $this->session->set_flashdata('msg','info');
 							redirect('admin/guru');
 	                    
@@ -126,8 +129,9 @@ class Guru extends CI_Controller{
 							$jenkel=strip_tags($this->input->post('xjenkel'));
 							$tmp_lahir=strip_tags($this->input->post('xtmp_lahir'));
 							$tgl_lahir=strip_tags($this->input->post('xtgl_lahir'));
+							$jenis_gtk=strip_tags($this->input->post('xjgtk'));
 							$mapel=strip_tags($this->input->post('xmapel'));
-							$this->m_guru->update_guru_tanpa_img($kode,$nip,$nama,$jenkel,$tmp_lahir,$tgl_lahir,$mapel);
+							$this->m_guru->update_guru_tanpa_img($kode,$nip,$nama,$jenkel,$tmp_lahir,$tgl_lahir,$jenis_gtk,$mapel);
 							echo $this->session->set_flashdata('msg','info');
 							redirect('admin/guru');
 	            } 

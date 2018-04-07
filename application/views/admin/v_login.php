@@ -55,7 +55,7 @@
     
     <!-- /.social-auth-links -->
     <hr/>
-    <p><center>Copyright <?php echo date('Y');?> by <a href="http://digitalcreative.web.id/">Creative Design</a> <br/> All Right Reserved</center></p>
+    <p><center> <strong>Copyright &copy; 2018 <a href="http://digitalcreative.web.id">Digital Creative</a>.</strong> All rights reserved.</center></p>
   </div>
   <!-- /.login-box-body -->
 </div>

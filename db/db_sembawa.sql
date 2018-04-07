@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 04, 2018 at 05:05 PM
+-- Generation Time: Apr 07, 2018 at 10:23 AM
 -- Server version: 10.1.16-MariaDB
 -- PHP Version: 5.6.24
 
@@ -44,7 +44,8 @@ CREATE TABLE `tbl_album` (
 
 INSERT INTO `tbl_album` (`album_id`, `album_nama`, `album_tanggal`, `album_pengguna_id`, `album_author`, `album_count`, `album_cover`) VALUES
 (4, 'photo', '2017-01-24 01:31:13', 1, 'Administrator', 8, '463cc7af7e2f6907c0aea38df42bb31c.jpg'),
-(5, 'Sapras Sekolah', '2018-03-27 01:02:20', 1, 'Administrator', 0, 'ceaed94393ca54103959f9c47d988988.jpg');
+(5, 'Sapras Sekolah', '2018-03-27 01:02:20', 1, 'Administrator', 21, 'ceaed94393ca54103959f9c47d988988.jpg'),
+(9, 'infografis', '2018-04-05 12:58:19', 1, 'Administrator', 6, 'AndroidPIT-best-free-android-apps-hero2.');
 
 -- --------------------------------------------------------
 
@@ -171,7 +172,34 @@ INSERT INTO `tbl_galeri` (`galeri_id`, `galeri_judul`, `galeri_tanggal`, `galeri
 (17, 'PKL @ PADI', '2017-01-24 01:33:08', '54ac28d964172d73db3f9cb0b7d2f281.jpg', 4, 1, 'M Fikri Setiadi'),
 (18, 'PKL @ PTPN VII', '2017-01-24 01:33:24', '8ae0413e8fe0e664f868da3419fc46be.jpg', 4, 1, 'M Fikri Setiadi'),
 (19, 'Agribisnis Pengolahan Hasil Pertanian', '2017-08-08 00:54:58', 'DSC_0038.JPG', 4, 1, 'M Fikri Setiadi'),
-(20, 'Agribisnis Tanaman Pangan', '2018-03-25 16:03:10', 'DSC_0004.JPG', 4, 1, 'M Fikri Setiadi');
+(20, 'Agribisnis Tanaman Pangan', '2018-03-25 16:03:10', 'DSC_0004.JPG', 4, 1, 'M Fikri Setiadi'),
+(21, 'Infografis-1', '2018-04-05 14:46:32', 'photo_2018-04-05_14-48-45.jpg', 9, 1, 'Administrator'),
+(22, 'Infografis-2', '2018-04-05 14:46:55', 'photo_2018-04-05_14-48-48.jpg', 9, 1, 'Administrator'),
+(23, 'Infografis-3', '2018-04-05 14:48:30', 'photo_2018-04-05_14-48-49.jpg', 9, 1, 'Administrator'),
+(24, 'Infografis-4', '2018-04-05 14:48:47', 'photo_2018-04-05_14-48-50.jpg', 9, 1, 'Administrator'),
+(25, 'Infografis-5', '2018-04-05 14:49:06', 'photo_2018-04-05_14-48-52.jpg', 9, 1, 'Administrator'),
+(26, 'Infografis-6', '2018-04-05 14:49:24', 'photo_2018-04-05_14-48-54.jpg', 9, 1, 'Administrator'),
+(27, 'Biogas', '2018-04-06 08:34:44', 'Biogas.jpg', 5, 1, 'Administrator'),
+(28, 'Perpustakaan', '2018-04-06 08:35:19', 'DSC_0595.JPG', 5, 1, 'Administrator'),
+(29, 'Halaman upacara dan halaman Depan Sekolah ', '2018-04-06 08:36:25', 'DSC_0614.JPG', 5, 1, 'Administrator'),
+(30, 'Mushola', '2018-04-06 08:37:56', 'Mushola.JPG', 5, 1, 'Administrator'),
+(31, 'Lapangan Basket', '2018-04-06 08:38:37', 'lapangan_basket.jpg', 5, 1, 'Administrator'),
+(32, 'Lapangan Sepak Bola', '2018-04-06 08:39:21', 'Lapangan_Bola_kaki.jpg', 5, 1, 'Administrator'),
+(33, 'Lapangan Futsal', '2018-04-06 08:39:41', 'Lapangan_Futsal.jpg', 5, 1, 'Administrator'),
+(34, 'Lapangan Volly', '2018-04-06 08:40:49', 'Lapangan_Volly.jpg', 5, 1, 'Administrator'),
+(35, 'Hand Tractor', '2018-04-06 08:41:27', 'Hand_Tractor.JPG', 5, 1, 'Administrator'),
+(36, 'Laboratorium Komputer 1', '2018-04-06 08:57:17', 'DSC_0900.JPG', 5, 1, 'Administrator'),
+(37, 'Green House Halaman Depan', '2018-04-06 08:57:50', 'Green_House_Tampak_depan.jpg', 5, 1, 'Administrator'),
+(38, 'Green House', '2018-04-06 08:58:17', 'Green_House.jpg', 5, 1, 'Administrator'),
+(40, 'Kegiatan Seminar Pakerin', '2018-04-06 08:58:48', 'Keg__Seminar_Prakerin1.JPG', 5, 1, 'Administrator'),
+(41, 'Kultur Jaringan', '2018-04-06 08:59:16', 'Kultur_Jaringan.JPG', 5, 1, 'Administrator'),
+(42, 'Lab. Kimia', '2018-04-06 08:59:50', 'Lab__Kimia.JPG', 5, 1, 'Administrator'),
+(43, 'Lab. komputer', '2018-04-06 09:01:14', 'lab__KOmputer.jpg', 5, 1, 'Administrator'),
+(44, 'Lab. TPHP', '2018-04-06 09:01:43', 'Lab__TPHP.JPG', 5, 1, 'Administrator'),
+(45, 'PKWU', '2018-04-06 09:02:30', 'PKWU.JPG', 5, 1, 'Administrator'),
+(46, 'Ruang Kelas', '2018-04-06 09:02:57', 'Ruang_Kelas.JPG', 5, 1, 'Administrator'),
+(47, 'Ruang lab komputer', '2018-04-06 09:03:25', 'Ruang_Lab_Komputer.jpg', 5, 1, 'Administrator'),
+(48, 'Ruang', '2018-04-06 09:03:47', 'Ruang.JPG', 5, 1, 'Administrator');
 
 -- --------------------------------------------------------
 
@@ -197,7 +225,25 @@ CREATE TABLE `tbl_guru` (
 
 INSERT INTO `tbl_guru` (`guru_id`, `guru_nama`, `guru_gambar`, `guru_tanggal`, `guru_tempat`, `guru_kelamin`, `nik`, `guru_jenis`, `guru_mapel`) VALUES
 (1, 'Anita Andri Yanti, Sp, MP', NULL, '2018-04-25', NULL, 'P', '19710108 199903 2 001', NULL, 'Bhs.Inggris'),
-(2, 'Arie Ansyah, ST', NULL, '20 Mei 1977', NULL, 'L', '19770520 200812 1 002', NULL, 'Matematika');
+(2, 'Arie Ansyah, ST', NULL, '20 Mei 1977', NULL, 'L', '19770520 200812 1 002', NULL, 'Matematika'),
+(3, 'Drs. Abdul Ghofur', '0f1ea92dcb4d291d6555be2eb7012e0e1.jpeg', '19 Maret 1966', 'Sembawa', 'L', '19660319 200701 1 001', 'Honor', 'Sejarah'),
+(4, '02 Mei 1983', NULL, '02 Mei 1983', '', 'L', '19830502 200912 1 003', '', ''),
+(5, 'Erni Prabawati, S.Pi', NULL, '18 April 1979', '', 'P', '19790418 200812 2 002', '', ''),
+(6, '19750113 200601 2 001', NULL, '13 Januari 1975', '', 'P', '19750113 200601 2 001', '', ''),
+(7, 'Eva Rolianti, S.Pd', NULL, '09 Oktober 1987', '', 'P', '19871009 201101 2 020', '', ''),
+(8, 'Fitriani, SE', NULL, '28 September 1978', '', 'P', '19780928 200604 2 019', '', ''),
+(9, '19720116 200604 2 017', NULL, '16 Januari 1972', '', 'P', '19720116 200604 2 017', '', ''),
+(10, 'Jekti Pratikta K, SE, M.Si', NULL, '	04 November 1979', '', 'L', '19791104 200212 2 001', '', ''),
+(11, 'Junaedi, SP', NULL, '21 Januari 1971', '', 'L', '19710121 200312 1 001	', '', ''),
+(12, 'Kasmawati, SP', NULL, '28 Februari 1970', '', 'P', '19700228 200812 2 001	', '', ''),
+(13, 'Leni Misdiyanti, S.Pd.I', NULL, '16 Oktober 1978', '', 'P', '19781016 200312 2 002', '', ''),
+(14, 'Mona Nur Moulia, S.TP, M.Sc	', NULL, '19 April 1980', '', 'P', '19800419 200501 2 002', '', ''),
+(15, 'Ruhil Fida, S.TP, M.Pd', NULL, '19 Agustus 1980', '', 'P', '19800819 200501 2 001', '', ''),
+(16, 'Siwi Purwati, S.Pd', NULL, '02 Oktober 1984', '', 'P', '19841002 200912 2 004', '', ''),
+(17, 'Soma Komaruddin, SP', NULL, '18 Mei 1970', '', 'L', '19700518 200112 1 001', '', ''),
+(18, 'Tri Wicaksono, S.ST', NULL, '21 Desember 1981', '', 'L', '19811221 200912 1 002', '', ''),
+(19, 'Yudi Astoni, S.Tp, M.Sc', NULL, '	02 Januari 1980', '', 'L', '	19800102 200312 1 002', '', ''),
+(20, 'Yuli Herlina, SP, M.Sc', NULL, '27 Juli 1966', '', 'P', '19660727 199203 2 002	', '', '');
 
 -- --------------------------------------------------------
 
@@ -283,8 +329,7 @@ CREATE TABLE `tbl_kategori_files` (
 
 INSERT INTO `tbl_kategori_files` (`kategori_f_id`, `kategori_nama`) VALUES
 (1, 'Informasi publik berkala'),
-(2, 'Informasi publik setiap saat'),
-(3, 'Sapras Sekolah');
+(2, 'Informasi publik setiap saat');
 
 -- --------------------------------------------------------
 
@@ -393,7 +438,7 @@ CREATE TABLE `tbl_pengguna` (
 --
 
 INSERT INTO `tbl_pengguna` (`pengguna_id`, `pengguna_nama`, `pengguna_moto`, `pengguna_jenkel`, `pengguna_username`, `pengguna_password`, `pengguna_tentang`, `pengguna_email`, `pengguna_nohp`, `pengguna_facebook`, `pengguna_twitter`, `pengguna_linkdin`, `pengguna_google_plus`, `pengguna_status`, `pengguna_level`, `pengguna_register`, `pengguna_photo`) VALUES
-(1, 'Administrator', 'Just do it', 'L', 'admin', 'e10adc3949ba59abbe56e057f20f883e', '', 'fikrifiver97@gmail.com', '081277159401', 'facebook.com/m_fikri_setiadi', 'twitter.com/fiver_fiver', '', '', 1, '1', '2016-09-03 06:07:55', '74eec6ad37550cc12fe8fa83d46878af.jpg');
+(1, 'Administrator', 'Just do it', 'L', 'admin', 'fbc3d72d0c72deda863f838b5bf66f58', '', 'fikrifiver97@gmail.com', '081277159401', 'facebook.com/m_fikri_setiadi', 'twitter.com/fiver_fiver', '', '', 1, '1', '2016-09-03 06:07:55', '74eec6ad37550cc12fe8fa83d46878af.jpg');
 
 -- --------------------------------------------------------
 
@@ -424,7 +469,10 @@ INSERT INTO `tbl_pengunjung` (`pengunjung_id`, `pengunjung_tanggal`, `pengunjung
 (961, '2018-04-02 04:54:10', '::1', 'Chrome'),
 (962, '2018-04-03 05:37:51', '::1', 'Chrome'),
 (963, '2018-04-04 13:48:35', '::1', 'Chrome'),
-(964, '2018-04-04 13:48:35', '::1', 'Chrome');
+(964, '2018-04-04 13:48:35', '::1', 'Chrome'),
+(965, '2018-04-05 09:31:29', '::1', 'Chrome'),
+(966, '2018-04-06 06:48:26', '::1', 'Chrome'),
+(967, '2018-04-07 06:50:04', '::1', 'Chrome');
 
 -- --------------------------------------------------------
 
@@ -598,7 +646,8 @@ INSERT INTO `tbl_post_views` (`views_id`, `views_tanggal`, `views_ip`, `views_tu
 (100, '2018-03-31 18:16:34', '::1', 8),
 (101, '2018-04-02 14:48:35', '::1', 47),
 (102, '2018-04-03 13:21:17', '::1', 9),
-(103, '2018-04-03 13:21:52', '::1', 8);
+(103, '2018-04-03 13:21:52', '::1', 8),
+(104, '2018-04-05 09:34:44', '::1', 47);
 
 -- --------------------------------------------------------
 
@@ -657,7 +706,7 @@ INSERT INTO `tbl_tulisan` (`tulisan_id`, `tulisan_judul`, `tulisan_isi`, `tulisa
 (44, 'STUDI BANDING PEGAWAI SMK PP NEGERI SEMBAWA KE POLITANI PAYAKUMBUH', '<p>Pada tanggal 20-24 September 2017, pegawai SMK PP Negeri Sembawa berkesempatan untuk mengunjungi Politeknik Pertanian Negeri Payakumbuh dalam rangka menambah wawasan dan pengetahuan untuk mewujudkan program-program prioritas yang sudah di canangkan oleh SMK PP Negeri Sembawa untuk kedepannya menjadi Politeknik Pertanian Pembangunan (Polbangtan).</p>\r\n\r\n<p>Untuk meningkatkan pengetahuan dan keterampilan Tenaga Kependidikan dalam pelayanan maka ada beberapa bidang yang dipelajari di POLITANI Payakumbuh seperti kegiatan Kepegawaian, akademik,&nbsp; kemahasiswaan, Perpustakaan, Praktik lapangan.</p>\r\n\r\n<p>Kegiatan seperti ini tentunya sangat bagus bagi perkembangan suatu kebutuhan yang diharapkan sebagaimana mestinya. Dalam kegiatan ini, Pegawai SMK PP Negeri Sembawa langsung disambut oleh Wakil Direktur I&nbsp; dan para beberapa civitas academica POLTANI Payakumbuh. Pengetahuan-pengetahuan postif dari POLITANI Payakumbuh dapat dicontoh kedepannya dalam Pembentukan POLBANGTAN Sembawa. (Humas)</p>\r\n', '2018-03-25 15:36:24', 3, 'Kegiatan_Mingguan', 1, '739189eee692ca0f53392070b1e4ca46.jpg', 1, 'Administrator', 0, 'studi-banding-pegawai-smk-pp-negeri-sembawa-ke-politani-payakumbuh.html', 0),
 (45, 'Panen Jagung di Desa Banyu Urip Kerja sama Desa Mitra SMK PP Negeri Sembawa', '<p>SMK PP Negeri sembawa sebagai salah satu UPT Badan Penyuluhan Pengembangan Sumber Daya manusia Pertanian mendukung program kementerian pertanian &nbsp;dalam rangka ketahanan pangan dengan salah satu programnya adalah Pengembangan Desa Mitra sebagai upaya regenerasi petani. SMK PP Negeri Sembawa memiliki lima kelompok tani binaan dalam program Desa Mitra tahun 2017, salah satunya adalah Kelompok tani Sumber Jaya yang terletak di Desa Banyu Urip Kecamatan Tanjung Lago, Kabupaten Banyuasin.</p>\r\n\r\n<p>Salah satu kegiatan yang dilakukan di kelompok tani Sumber Jaya adalah&nbsp; budidaya tanaman jagung varietas BISI 18 yang dilaksanakan setelah panen padi. Hal ini dikarenakan Desa Banyu Urip adalah daerah pasang surut sehingga memungkinkan untuk melakukan budidaya tanaman jagung pada musim kemarau. Setiap anggota kelompok tani rata-rata memiliki luas lahan 2 hektar pada budidaya jagung ini, kegiatan budidaya ini sendiri dimulai pada bulan Juni 2017. Proses yang dilakukan &nbsp;pada budidaya jagung di kelompok tani Sumber Jaya dalah &nbsp;penyiapan lahan, penanaman benih jagung, pemupukan, pemeliharaan, pemberantasan hama dan penyakit tanaman, panen dan pasca panen.</p>\r\n\r\n<p>Sebagai Tindak lanjut kerjasama desa mitra pada tanggal 16 September 2017, dari pukul 08.00 WIB - 13.00 WIB dilaksanakan praktik siswa SMK PP Negeri Sembawa , sebanyak 59 siswa SMK PP Negeri Sembawa tingkat XI melaksanakan panen Jagung di Kelompok Tani Sumber Jaya, Hal ini bertujuan untuk menambah pengetahuan siswa SMK PP Negeri SMK PP Negeri Sembawa tentang budidaya tanaman jagung, membandingkan pengetahuan yang didapat di sekolah dan dunia nyata.</p>\r\n\r\n<p>Panen jagung di kelompok tani Sumber Jaya dilaksanakan dengan konvensional mesin pipil dan menggunakan teknologi corn combine harvester. Pada kesempatan ini, siswa SMK PP Negeri Sembawa melihat dan melaksanakan panen dengan kedua cara ini. Serta menganalisa usaha tani pada proses panen pada kelompok tani Sumber Jaya dengan perbandingan 1 : 1,4 untuk panen dengan konvensional mesin pipil berbanding dengan menggunakan alat corn combine harvester. Modernisasi pertanian berupa penggunaan alat-alat mesin pertanian di era sekarang ini sudah tidak terelakan lagi. Selain bertujuan untuk melakukan efisiensi didalam pembiayaan usaha tani, juga sebagai jawaban atas kelangkaan tenaga kerja pertanian. Penggunaan alat upaya menekan susut hasil (<em>losses</em>), mempertahankan kualitas hasil serta meningkatkan nilai tambah dan daya saing, yang pada akhirnya akan meningkatan pendapatan petani, sehingga bisa mengurangi angka kemiskinan</p>\r\n\r\n<p>Ketua Kelompok Tani Sumber jaya bapak Pariyem mengatakan, saat ini sudah banyak pemuda-pemuda di Desa Banyu Urip yang berminat di dunia pertanian, dunia pertanian sekarang bisa dikatakan dapat mensejahterakan serta dengan bantuan teknologi pertanian dapat mempermudah dan mengefiensikan waktu dan tenaga. Untuk pemasaran hasil panen jagung kelompok tani Sumber Jaya sudah bekerja sama dengan pemborong secara kolektif.</p>\r\n\r\n<p>Ketua Pelaksana kegiatan Pengembangan Desa Mitra Dr. Zulkipli, M.Si mengharapkan dengan kegiatan desa mitra ini dapat menjawab kegalauan menteri pertanian yang menyatakan bahwa sekarang ini banyak anak muda tidak mau jadi petani, dengan melihat bahwa petani bisa sejahtera dan sukses diharapkan banyak anak muda yang mau jadi petani.</p>\r\n', '2018-03-25 15:44:34', 5, 'Kerja_Sama', 0, 'aae2c84d5a66b9fd663fc3c5c93e3bc3.png', 1, 'Administrator', 0, 'panen-jagung-di-desa-banyu-uri-kerja-sama-desa-mitra-smk-pp-negeri-sembawa.html', 0),
 (46, 'LOWONGAN KERJA PT PNS', NULL, '2018-03-25 15:44:34', 7, 'Pengumuman', 2, '385cc49d1ab13746a540aec8687fedaf (1).jpg', 1, 'Administrator', 0, 'lowongan-kerja-pt-pns.html', 0),
-(47, 'RECRUITMENT PT SEBANGUN BUMI ANDALAS (SBA)', '<p>Informasi untuk alumni SMK-PPN SEMBAWA, bahwa PT SEBANGUN BUMI ANDALAS (SBA) yang bergerak di bidang Hutan Tanaman Industri akan melakukan perekrutan calon karyawan. sehubungan dengan hal itu, kami mengajak alumni khususnya pria untuk bergabung mengikuti pelaksanaan recruitment tersebut pada: Hari/Tanggal : Senin/21 Agustus 2017 Waktu : 09.00 wib s/d selesai Tempat : SMK- PP Negeri Sembawa Demikian informasi dari pihak humas. semoga dapat membantu para alumni yang sedang mencari pekerjaan. Terima kasih</p>\r\n', '2018-03-25 15:46:23', 7, 'Pengumuman', 4, 'c34ea18d1e8930b177b89bb7ab2ff870.png', 1, 'Administrator', 0, 'recruitment-pt-sebangun-bumi-andalas-sba.html', 1);
+(47, 'RECRUITMENT PT SEBANGUN BUMI ANDALAS (SBA)', '<p>Informasi untuk alumni SMK-PPN SEMBAWA, bahwa PT SEBANGUN BUMI ANDALAS (SBA) yang bergerak di bidang Hutan Tanaman Industri akan melakukan perekrutan calon karyawan. sehubungan dengan hal itu, kami mengajak alumni khususnya pria untuk bergabung mengikuti pelaksanaan recruitment tersebut pada: Hari/Tanggal : Senin/21 Agustus 2017 Waktu : 09.00 wib s/d selesai Tempat : SMK- PP Negeri Sembawa Demikian informasi dari pihak humas. semoga dapat membantu para alumni yang sedang mencari pekerjaan. Terima kasih</p>\r\n', '2018-03-25 15:46:23', 7, 'Pengumuman', 5, 'c34ea18d1e8930b177b89bb7ab2ff870.png', 1, 'Administrator', 0, 'recruitment-pt-sebangun-bumi-andalas-sba.html', 1);
 
 -- --------------------------------------------------------
 
@@ -814,7 +863,7 @@ ALTER TABLE `tbl_video`
 -- AUTO_INCREMENT for table `tbl_album`
 --
 ALTER TABLE `tbl_album`
-  MODIFY `album_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `album_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 --
 -- AUTO_INCREMENT for table `tbl_files`
 --
@@ -829,12 +878,12 @@ ALTER TABLE `tbl_form`
 -- AUTO_INCREMENT for table `tbl_galeri`
 --
 ALTER TABLE `tbl_galeri`
-  MODIFY `galeri_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `galeri_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=49;
 --
 -- AUTO_INCREMENT for table `tbl_guru`
 --
 ALTER TABLE `tbl_guru`
-  MODIFY `guru_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `guru_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 --
 -- AUTO_INCREMENT for table `tbl_inbox`
 --
@@ -854,7 +903,7 @@ ALTER TABLE `tbl_kategori`
 -- AUTO_INCREMENT for table `tbl_kategori_files`
 --
 ALTER TABLE `tbl_kategori_files`
-  MODIFY `kategori_f_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `kategori_f_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT for table `tbl_kelas`
 --
@@ -874,7 +923,7 @@ ALTER TABLE `tbl_pengguna`
 -- AUTO_INCREMENT for table `tbl_pengunjung`
 --
 ALTER TABLE `tbl_pengunjung`
-  MODIFY `pengunjung_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=965;
+  MODIFY `pengunjung_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=968;
 --
 -- AUTO_INCREMENT for table `tbl_portfolio`
 --
@@ -889,7 +938,7 @@ ALTER TABLE `tbl_post_rating`
 -- AUTO_INCREMENT for table `tbl_post_views`
 --
 ALTER TABLE `tbl_post_views`
-  MODIFY `views_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=104;
+  MODIFY `views_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=105;
 --
 -- AUTO_INCREMENT for table `tbl_siswa`
 --
