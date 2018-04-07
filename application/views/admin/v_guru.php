@@ -91,7 +91,7 @@
     <div class="pull-right hidden-xs">
       <b>Version</b> 1.0
     </div>
-    <strong>Copyright &copy; 2017 <a href="http://mfikri.com">M Fikri Setiadi</a>.</strong> All rights reserved.
+     <strong>Copyright &copy; 2018 <a href="http://digitalcreative.web.id">Digital Creative</a>.</strong> All rights reserved.
   </footer>
 
   <!-- Control Sidebar -->
@@ -332,21 +332,28 @@
                                     <div class="form-group">
                                         <label for="inputUserName" class="col-sm-4 control-label">Tempat Lahir</label>
                                         <div class="col-sm-7">
-                                            <input type="text" name="xtmp_lahir" class="form-control" id="inputUserName" placeholder="Tempat Lahir" required>
+                                            <input type="text" name="xtmp_lahir" class="form-control" id="inputUserName" placeholder="Tempat Lahir">
                                         </div>
                                     </div>
 
                                     <div class="form-group">
                                         <label for="inputUserName" class="col-sm-4 control-label">Tanggal Lahir</label>
                                         <div class="col-sm-7">
-                                            <input type="text" name="xtgl_lahir" class="form-control" id="inputUserName" placeholder="Contoh: 25 September 1993" required>
+                                            <input type="text" name="xtgl_lahir" class="form-control" id="inputUserName" placeholder="Contoh: 25 September 1993">
                                         </div>
                                     </div>
 
                                     <div class="form-group">
                                         <label for="inputUserName" class="col-sm-4 control-label">Mata Pelajaran</label>
                                         <div class="col-sm-7">
-                                            <input type="text" name="xmapel" class="form-control" id="inputUserName" placeholder="Contoh: PPKN, Matematika" required>
+                                            <input type="text" name="xmapel" class="form-control" id="inputUserName" placeholder="Contoh: PPKN, Matematika">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="inputUserName" class="col-sm-4 control-label">Jenis GTK</label>
+                                        <div class="col-sm-7">
+                                            <input type="text" name="xjgtk" class="form-control" id="inputUserName" placeholder="Contoh: Honor">
                                         </div>
                                     </div>
                                     
@@ -376,6 +383,7 @@
               $jenkel=$i['guru_kelamin'];
               $tmp_lahir=$i['guru_tempat'];
               $tgl_lahir=$i['guru_tanggal'];
+              $jenis_gtk=$i['guru_jenis'];
               $mapel=$i['guru_mapel'];
               $photo=$i['guru_gambar'];
             ?>
@@ -433,21 +441,28 @@
                                     <div class="form-group">
                                         <label for="inputUserName" class="col-sm-4 control-label">Tempat Lahir</label>
                                         <div class="col-sm-7">
-                                            <input type="text" name="xtmp_lahir" value="<?php echo $tmp_lahir;?>" class="form-control" id="inputUserName" placeholder="Tempat Lahir" required>
+                                            <input type="text" name="xtmp_lahir" value="<?php echo $tmp_lahir;?>" class="form-control" id="inputUserName" placeholder="Tempat Lahir">
                                         </div>
                                     </div>
 
                                     <div class="form-group">
                                         <label for="inputUserName" class="col-sm-4 control-label">Tanggal Lahir</label>
                                         <div class="col-sm-7">
-                                            <input type="text" name="xtgl_lahir" value="<?php echo $tgl_lahir;?>" class="form-control" id="inputUserName" placeholder="Contoh: 25 September 1993" required>
+                                            <input type="text" name="xtgl_lahir" value="<?php echo $tgl_lahir;?>" class="form-control" id="inputUserName" placeholder="Contoh: 25 September 1993">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="inputUserName" class="col-sm-4 control-label">Jenis GTK</label>
+                                        <div class="col-sm-7">
+                                            <input type="text" name="xjgtk" value="<?php echo $jenis_gtk?>" class="form-control" id="inputUserName" placeholder="Contoh: Honor">
                                         </div>
                                     </div>
 
                                     <div class="form-group">
                                         <label for="inputUserName" class="col-sm-4 control-label">Mata Pelajaran</label>
                                         <div class="col-sm-7">
-                                            <input type="text" name="xmapel" value="<?php echo $mapel;?>" class="form-control" id="inputUserName" placeholder="Contoh: PPKN, Matematika" required>
+                                            <input type="text" name="xmapel" value="<?php echo $mapel;?>" class="form-control" id="inputUserName" placeholder="Contoh: PPKN, Matematika">
                                         </div>
                                     </div>
                                     

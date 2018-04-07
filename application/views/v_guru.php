@@ -29,26 +29,39 @@
               </thead>
               <tbody>
           		 <?php
-          		 		$b = $data->result_array();
-          				$size = sizeof($b);
-          				for($i=0;$i<$size;$i++){
+          		 		 $no=0;
+                    foreach ($data->result_array() as $i) :
+                       $no++;
+                       $id=$i['guru_id'];
+                       $nik=$i['nik'];
+                       $nama=$i['guru_nama'];
+                       $jenkel=$i['guru_kelamin'];
+                       $mapel=$i['guru_mapel'];
+                       $tempat_lahir=$i['guru_tempat'];
+                       $tanggal_lahir=$i['guru_tanggal'];
+                       $photo=$i['guru_gambar'];
+                       $jenis=$i['guru_jenis'];
           		?> 
           		<tr>
-          			<td style="text-align: center;"><?php echo $i+1?></td>
+          			<td style="text-align: center;"><?php echo $no?></td>
           			<?php if(empty($photo)):?>
-                  <td><img  src="<?php echo base_url().'assets/images/user_blank.png';?>"></td>
+                  <td><img style="width:85px;" src="<?php echo base_url().'assets/images/user_blank.png';?>"></td>
                   <?php else:?>
-                  <td><img src="<?php echo base_url().'assets/images/'.$b[$i]['guru_gambar'];?>"></td>
+                  <td><img  style="width:85px;" src="<?php echo base_url().'assets/images/'.$photo;?>"></td>
                   <?php endif;?>
-          			<td><?php echo $b[$i]['nik']?></td>
-          			<td><?php echo $b[$i]['guru_nama']?></td>
-          			<td><?php echo $b[$i]['guru_kelamin']?></td>
-                <td><?php echo $b[$i]['guru_mapel']?></td>
-          			<td><?php echo $b[$i]['guru_tempat']?></td>
-          			<td><?php echo $b[$i]['guru_tanggal']?></td>
-          			<td><?php echo $b[$i]['guru_jenis']?></td>
+          			<td><?php echo $nik?></td>
+          			<td><?php echo $nama?></td>
+          			<?php if($jenkel=='L'):?>
+                  <td>Laki-Laki</td>
+                  <?php elseif($jenkel=='P'):?>
+                  <td>Perempuan</td>
+                  <?php endif;?>
+                <td><?php echo $mapel?></td>
+          			<td><?php echo $tempat_lahir?></td>
+          			<td><?php echo $tanggal_lahir?></td>
+          			<td><?php echo $jenis?></td>
           		</tr>
-          		<?php }?>
+          		<?php endforeach;?>
               </tbody>
             </table>
 		</section>
