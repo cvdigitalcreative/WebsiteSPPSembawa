@@ -5522,6 +5522,8 @@ button.close {
     position: static;
   }
   .container{ width:320px;}
+  .container1{ width:320px;}
+  .container2{ width:430px;}
   .cp-menu{
 	display:none !important;
   }
@@ -5925,6 +5927,20 @@ button.close {
   .navbar-fixed-top .container,
   .navbar-fixed-bottom .container {
     width: 1170px;
+  }
+
+  .container2,
+  .navbar-static-top .container2,
+  .navbar-fixed-top .container2,
+  .navbar-fixed-bottom .container2 {
+    width: 1170px;
+  }
+
+  .container1,
+  .navbar-static-top .container1,
+  .navbar-fixed-top .container1,
+  .navbar-fixed-bottom .container1 {
+    width: 1281px;
   }
   .span12 {
     width: 1170px;

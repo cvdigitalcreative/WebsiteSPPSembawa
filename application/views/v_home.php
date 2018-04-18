@@ -49,7 +49,7 @@
   </section>
   
   <section class="content-holder">
-    <section class="container-fluid">
+    <section class="container1 container-fluid">
    	  <section class="row-fluid">	
       <figure class="span9">
    

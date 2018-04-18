@@ -30,10 +30,11 @@
   <?php endforeach ?>
 
 
+
       </section>
 
       </section>
-      <section class="pagination" style="margin-bottom: 34px;margin-top: -48px;margin-left: 465px; ">  
+      <section class="pagination">  
       <?php echo $page;?> 
     </section>
  

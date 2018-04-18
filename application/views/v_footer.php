@@ -1,6 +1,6 @@
  <!-- footer -->
   <section class="footer-top">
-  	<section class="container2-fluid">
+  	<section class="container container2-fluid">
     	<figure class="span3" style="margin-right: 50px;">
         	<h2>Tautan</h2>
             <ul class="a-list">
