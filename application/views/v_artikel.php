@@ -29,9 +29,10 @@
 			<li class="dropdown"> <a class="dropdown-toggle" href="<?php echo base_url()?>" >Home<b class="caret"></b> </a>
                   <ul class="dropdown-menu">
                   	<li><a href="<?php echo base_url(). 'Home/profil'?>">Profil</a></li>
+                  	<li><a href="<?php echo base_url(). 'Home/kataSambutan'?>">Kata Sambutan</a></li>
                   </ul>
                 </li>
-				<li class="dropdown"> <a class="dropdown-toggle" href="<?php echo base_url().'Civitas'?>">Civitas<b class="caret"></b> </a>
+				<li class="dropdown"> <a class="dropdown-toggle" href="#">Civitas<b class="caret"></b> </a>
                   <ul class="dropdown-menu">
 					<li> <a href="<?php echo base_url().'Civitas'?>">Peserta Didik</a> </li>
 					<li> <a href="<?php echo base_url().'Civitas/guru'?>"> Guru dan Tenaga Kerja</a> </li>
@@ -41,14 +42,14 @@
       
       <li class="dropdown"> <a class="dropdown-toggle" href="<?php echo base_url().'Ppdb'?>">PPDB</a></li>
 			
-      <li class="dropdown"> <a class="dropdown-toggle" href="<?php echo base_url().'Kurikulum'?>" >Kurikulum<b class="caret"></b> </a>
+      <li class="dropdown"> <a class="dropdown-toggle" href="#" >Kurikulum<b class="caret"></b> </a>
         <ul class="dropdown-menu">
        		<li> <a href="<?php echo base_url().'Kurikulum'?>">Kalender Pendidikan</a> </li>
        		<li> <a href="http://dapo.dikdasmen.kemdikbud.go.id/sekolah/964D53F4E9937D2E5327">DAPODIK</a> </li>
         </ul>
       </li>
 				
-		<li class="dropdown"> <a class="dropdown-toggle" href="<?php echo base_url().'Sarana'?>" >Sarana Prasarana<b class="caret"></b> </a>
+		<li class="dropdown"> <a class="dropdown-toggle" href="#" >Sarana Prasarana<b class="caret"></b> </a>
                   <ul class="dropdown-menu">
                   	<li><a href="<?php echo base_url().'Sarana'?>">Sapras Sekolah</a></li>
                   <li><a href="<?php echo base_url().'Sarana/tuk'?>">TUK</a></li>
@@ -58,7 +59,7 @@
                   </ul>
         </li>
 				
-				<li class="dropdown active"> <a class="dropdown-toggle" href="<?php echo base_url().'Artikel/'?>">Informasi Publik <b class="caret"></b> </a>
+				<li class="dropdown active"> <a class="dropdown-toggle" href="#">Informasi Publik <b class="caret"></b> </a>
                   <ul class="dropdown-menu">
                   	<li><a href="<?php echo base_url().'Artikel/'?>">Berita</a></li>
                   	<li><a href="<?php echo base_url().'Informasi/informasi_publik_berkala'?>">Informasi Publik Berkala</a></li>
@@ -70,7 +71,7 @@
                   </ul>
         </li>
 				
-				<li class="dropdown"> <a class="dropdown-toggle" href="<?php echo base_url().'Gallery'?>">Gallery<b class="caret"></b></a>
+				<li class="dropdown"> <a class="dropdown-toggle" href="#">Gallery<b class="caret"></b></a>
                   <ul class="dropdown-menu">
                   	<li><a href="<?php echo base_url().'Gallery'?>">Gallery Photo</a></li>
           	    	  <li><a href="<?php echo base_url().'Gallery/video'?>">Gallery Video</a></li>
