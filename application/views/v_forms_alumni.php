@@ -2,32 +2,22 @@
   
 	</section>
 
-	
-<?php
-	error_reporting(0);
-    $b=$data->row_array();
-    $title=$b['pengumuman_judul'];
-    $author=$b['pengumuman_author'];
-    $date=$b['tanggal'];
-    $deskripsi=strip_tags($b['pengumuman_deskripsi']);
-?>
-
   <section class="content-holder b-none inner_content" style="margin-top: 50px;">
   
   	<section class="container container-fluid">
 
 	          <section class="row-fluid">
 
-		<h2 class="heading">PPDB</h2>
+		<h2 class="heading">Form Alumni</h2>
 		<span class="border-line m-bottom" style="margin-top: 5px;margin-left: -19px;"></span>
 		
 	<section class="page_content">
 		<section class="span9 first">
 
-			<h2>NOTE : </h2>
-			<h2> <?php echo $deskripsi?> </h2>
+			<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeU52Q122K4nvLSgHMViVbKn2jLrH8OKiXfAzdfISVkOIO2pw/viewform?embedded=true" width="100%" height="1425" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 			
-			</section>
+			
+		</section>
 			<figure class="span3" style="width: 245px;margin-left: 44px;margin-top: 4px;">
 		          <blockquote>
 		          <h2 style='border-bottom: 6px solid #3a813c; width: 243px;margin-left: -15px;'></h2>

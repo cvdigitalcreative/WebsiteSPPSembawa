@@ -51,6 +51,45 @@
           		<?php endforeach;?>           
               </tbody>
             </table>
+            <br />
+            <br />
+            <p>Note : Jika ingin meminta file dibawah ini, anda harus menghubungi admin melalui menu <strong>Hubungi Kami</strong></p>
+            <table class="table table-bordered" id="myTable">
+              <thead>
+                <tr>
+                  <th style="width: 20px;">No</th>
+                  <th>Nama File</th>
+                  <th>Tanggal</th>
+                  <th>Author</th>
+                  <th>Aksi</th>
+                </tr>
+              </thead>
+              <tbody>
+              <?php
+                        $no=0;
+                        foreach ($kontak->result_array() as $c) :
+                            $no++;
+                            $id=$c['file_id'];
+                            $judul=$c['file_judul'];
+                            $deskripsi=$c['file_deskripsi'];
+                            $oleh=$c['file_oleh'];
+                            $tanggal=$c['tanggal'];
+                            $download=$c['file_download'];
+                            $file=$c['file_data'];
+                           
+                ?>
+              <tr>
+                <td style="text-align: center;"><?php echo $no?></td>
+                <td><?php echo $judul?></td>
+                <td><?php echo $tanggal?></td>
+                <td><?php echo $oleh?></td>
+                <td style="text-align: center;"><a href="<?php echo base_url(). 'Informasi/hubungi_kami'?>" >
+                  Kontak admin
+                </a></td>
+              </tr>
+              <?php endforeach;?>           
+              </tbody>
+            </table>
 		</section>
 	</section>
    

@@ -78,6 +78,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<li> <a href="<?php echo base_url().'Civitas'?>">Peserta Didik</a> </li>
 					<li> <a href="<?php echo base_url().'Civitas/guru'?>"> Guru dan Tenaga Kerja</a> </li>
 					<li> <a href="<?php echo base_url().'Civitas/alumni'?>"> Alumni</a> </li>
+          <li> <a href="<?php echo base_url().'Civitas/form_alumni'?>"> Form Alumni</a> </li>
                   </ul>
                 </li>
       
@@ -183,7 +184,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							<input type="text" placeholder="Email" name="xemail" required />
 							<p> Kontak </p>
 							<input type="text" placeholder="Kontak" name="xkontak" required />
-							<p> Comment </p>
+							<p> Isi pesan</p>
 							<textarea id="comments" cols="60" name="xpesan" rows="15" required> </textarea> <br />
 
               <?php echo $this->session->flashdata('msg');?>

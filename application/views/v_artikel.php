@@ -37,6 +37,7 @@
 					<li> <a href="<?php echo base_url().'Civitas'?>">Peserta Didik</a> </li>
 					<li> <a href="<?php echo base_url().'Civitas/guru'?>"> Guru dan Tenaga Kerja</a> </li>
 					<li> <a href="<?php echo base_url().'Civitas/alumni'?>"> Alumni</a> </li>
+					<li> <a href="<?php echo base_url().'Civitas/form_alumni'?>"> Form Alumni</a> </li>
                   </ul>
                 </li>
       
