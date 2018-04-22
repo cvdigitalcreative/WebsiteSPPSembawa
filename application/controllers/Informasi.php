@@ -22,6 +22,7 @@
 	{
 		$y['title'] = 'Informasi Publik Berkala';
 		$key = 1;
+		$x['kontak'] =$this->m_files->get_file_by_name(4);
 		$x['data']=$this->m_files->get_file_by_name($key);
 		$this->load->view('v_header',$y);
 		$this->load->view('v_sidebar',["side" => 6]);

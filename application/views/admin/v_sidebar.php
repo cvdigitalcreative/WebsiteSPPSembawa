@@ -89,14 +89,14 @@
             </span>
           </a>
         </li>
-        <!-- <li class="<?php echo $cek5?>">
+        <li class="<?php echo $cek5?>">
           <a href="<?php echo base_url().'admin/pengumuman'?>">
             <i class="fa fa-volume-up"></i> <span>Pengumuman</span>
             <span class="pull-right-container">
               <small class="label pull-right"></small>
             </span>
           </a>
-        </li> -->
+        </li>
         <li class="treeview <?php echo $cek6?>">
           <a href="#">
             <i class="fa fa-download"></i>
